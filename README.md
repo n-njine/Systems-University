@@ -57,7 +57,7 @@ Systems-University/
 ├── cybersecurity/
 ├── docker/
 ├── bash/
-├── python/
+├── programming/
 ├── operating-systems/
 ├── ctf-writeups/
 ├── projects/
