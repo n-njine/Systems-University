@@ -1,0 +1,15 @@
+site_name: Systems University
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Courses: courses/index.md
+  - Concepts: concepts/index.md
+  - Systems: systems/index.md
+  - Security: security/index.md
+  - CTF: ctf/index.md
+  - Labs: labs/index.md
+  - Problem Sets: problem-sets/index.md
+  - Meta: meta/index.md
