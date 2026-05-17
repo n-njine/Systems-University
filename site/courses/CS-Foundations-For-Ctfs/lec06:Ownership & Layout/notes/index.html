@@ -1,0 +1,1467 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-6-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ownership-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Ownership &amp; Layout”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-pointer-to-pointers-multidimensional-arrays-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. POINTER TO POINTERS &amp; MULTI‑DIMENSIONAL ARRAYS (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. POINTER TO POINTERS &amp; MULTI‑DIMENSIONAL ARRAYS (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-pointer-to-pointer-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Pointer to Pointer (int **)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-multidimensional-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Multi‑dimensional Arrays
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-pointers-to-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Pointers to Arrays
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-struct-and-typedef-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. STRUCT AND TYPEDEF (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. STRUCT AND TYPEDEF (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-defining-and-using-structs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Defining and Using Structs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pointer-to-struct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Pointer to Struct
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-linked-list-of-structs-revisited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Linked List of Structs (Revisited)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-typedef-type-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 typedef – Type Aliases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bitwise-operations-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. BITWISE OPERATIONS (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. BITWISE OPERATIONS (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-operators-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Operators &amp; Precedence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-bit-masking-and-settingclearingtoggling-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Bit Masking and Setting/Clearing/Toggling Bits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-printing-binary-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Printing Binary Representation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-endianness-little-vs-big" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Endianness: Little vs Big
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-xor-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 XOR “Encryption”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-bitfields-in-structs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Bitfields in Structs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-preprocessor-macros-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. PREPROCESSOR &amp; MACROS (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. PREPROCESSOR &amp; MACROS (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-objectlike-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Object‑like Macros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-functionlike-macros-and-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Function‑like Macros and Pitfalls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-conditional-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Conditional Compilation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-assert-and-debugging-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 assert and Debugging Macros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-common-predefined-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Common Predefined Macros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-error-handling-errno-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. ERROR HANDLING &amp; ERRNO (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. ERROR HANDLING &amp; ERRNO (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-return-codes-and-errno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Return Codes and errno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-safe-coding-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Safe Coding Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-makefile-basics-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. MAKEFILE BASICS (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. MAKEFILE BASICS (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-simple-makefile-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Simple Makefile Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-object-files-separate-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Object Files &amp; Separate Compilation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-phony-targets-and-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Phony Targets and Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniproject-hash-table-phonebook-insession-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📞 MINI‑PROJECT: HASH TABLE PHONEBOOK (IN‑SESSION, 1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📞 MINI‑PROJECT: HASH TABLE PHONEBOOK (IN‑SESSION, 1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-implementation-code-along" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Implementation (Code Along)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-6-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 6 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 6 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps61-kr-exercises-chapter-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑1: K&amp;R Exercises Chapter 6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps62-cs50-week-2-problem-set-readability-and-caesar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑2: CS50 Week 2 Problem Set – Readability and Caesar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps63-project-hash-table-phonebook-full" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑3: Project – Hash Table Phonebook (Full)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps64-picoctf-reverse-engineering-intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑4: picoCTF Reverse Engineering Intro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps65-overthewire-bandit-2124" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑5: OverTheWire Bandit 21‑24
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps66-read-smashing-the-stack-finish-the-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑6: Read “Smashing the Stack” (Finish the Paper)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps67-week-6-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS6‑7: Week 6 Reflection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>The past five weeks have given you a programmer’s eyes. This week, you gain an <strong>exploit developer’s eyes</strong>. Pointers to pointers, structs, bitwise operations, macros, and Makefiles—these are the tools that make you capable of reading real source code, understanding complex memory layouts, and beginning to see how a malicious input can turn data into control. Every section in this deep dive is chosen to appear in real-world CTF challenges: heap metadata, packet headers, linked lists, XOR decryption, and manual memory crafting.</p>
+<h1 id="week-6-intensive-deep-dive">🔥 WEEK 6: INTENSIVE DEEP DIVE</h1>
+<h2 id="ownership-layout"><em>“Ownership &amp; Layout”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:30</td>
+<td>Pointer to Pointers &amp; Multi‑dimensional Arrays</td>
+</tr>
+<tr>
+<td>1:30 – 2:30</td>
+<td><code>struct</code> and <code>typedef</code></td>
+</tr>
+<tr>
+<td>2:30 – 4:00</td>
+<td>Bitwise Operations</td>
+</tr>
+<tr>
+<td>4:00 – 5:00</td>
+<td>Preprocessor &amp; Macros</td>
+</tr>
+<tr>
+<td>5:00 – 5:30</td>
+<td>Error Handling &amp; <code>errno</code></td>
+</tr>
+<tr>
+<td>5:30 – 6:00</td>
+<td>Makefile Basics</td>
+</tr>
+<tr>
+<td>6:00 – 7:00</td>
+<td>Mini‑Project: Hash Table Phonebook</td>
+</tr>
+<tr>
+<td>7:00 – 8:00</td>
+<td>Problem Set Kickoff &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-pointer-to-pointers-multidimensional-arrays-15-hours">1. POINTER TO POINTERS &amp; MULTI‑DIMENSIONAL ARRAYS (1.5 HOURS)</h2>
+<p>You’ve mastered single pointers. Now we add a level of indirection—essential for dynamically allocated 2D structures, modifying pointers themselves in functions, and understanding complex data types in disassembly.</p>
+<h3 id="11-pointer-to-pointer-int">1.1 Pointer to Pointer (<code>int **</code>)</h3>
+<p>A <code>T **</code> holds the address of a pointer that holds the address of a <code>T</code>. This allows us to modify a pointer passed to a function, and to build dynamic 2D arrays.</p>
+<pre><code class="language-c">int x = 10;
+int *p = &amp;x;
+int **pp = &amp;p;
+
+printf(&quot;%d\n&quot;, **pp);  // 10
+</code></pre>
+<p><strong>Call-by-reference for pointers:</strong> Imagine a function that allocates memory and wants to give back the new pointer. Without <code>**</code>, you can only modify the pointed-to value, not the pointer itself.</p>
+<pre><code class="language-c">void allocate_array(int **arr, int n) {
+    *arr = (int*)malloc(n * sizeof(int));
+}
+
+int main() {
+    int *data = NULL;
+    allocate_array(&amp;data, 5);
+    // now data points to the allocated block
+    free(data);
+}
+</code></pre>
+<p><strong>Exercise:</strong> Write <code>void append_node(Node **head, int value)</code> that appends a node to a linked list, correctly updating the head if the list was empty. (You did something similar in Week 5, but here’s the explicit double‑pointer version.)</p>
+<h3 id="12-multidimensional-arrays">1.2 Multi‑dimensional Arrays</h3>
+<p>C offers two forms: statically declared 2D arrays and dynamically allocated pointer‑to‑pointer tables. They are <strong>not</strong> the same in memory.</p>
+<p><strong>Static 2D array:</strong> Contiguous block of memory, row‑major order.</p>
+<pre><code class="language-c">int mat[3][4];  // 3 rows, 4 cols, 12 ints contiguous
+</code></pre>
+<p><code>mat[i][j]</code> is accessed as <code>*(*(mat + i) + j)</code>. The compiler knows the row width (4 ints), so <code>mat+i</code> jumps <code>i*4*sizeof(int)</code> bytes.</p>
+<p><strong>Dynamic 2D array using pointer‑to‑pointer:</strong> You allocate an array of pointers, each pointing to a row (potentially separate allocations).</p>
+<pre><code class="language-c">int **mat2 = (int**)malloc(rows * sizeof(int*));
+for (int i = 0; i &lt; rows; i++)
+    mat2[i] = (int*)malloc(cols * sizeof(int));
+</code></pre>
+<p>Now <code>mat2[i][j]</code> works syntactically, but memory is <strong>not</strong> contiguous—each row can be anywhere. This matters for cache behavior and for exploits: a buffer overflow in one row won’t necessarily corrupt the next row unless the allocator places them contiguously (they probably won’t be).</p>
+<p><strong>Single‑block dynamic 2D:</strong> For cache efficiency and easier overflows, you can allocate a flat <code>int *block = malloc(rows*cols*sizeof(int))</code> and index with <code>block[i*cols + j]</code>. Many CTF binary challenges use this pattern.</p>
+<p><strong>Exercise:</strong> Implement a function <code>int **create_matrix(int rows, int cols)</code> that returns a pointer‑to‑pointer matrix, and another <code>void free_matrix(int **mat, int rows)</code> that frees all rows and then the row pointers. Check with Valgrind.</p>
+<p><strong>CTF relevance:</strong> In a heap exploit, understanding whether a target uses a contiguous block or pointer‑to‑pointer affects how you can corrupt metadata or adjacent objects. A flat array overflow can corrupt the next object; a row‑pointer table overflow might overwrite a pointer that later gets dereferenced (arbitrary write).</p>
+<h3 id="13-pointers-to-arrays">1.3 Pointers to Arrays</h3>
+<p>You can declare a pointer to an entire array (fixed size):</p>
+<pre><code class="language-c">int arr[3][4];
+int (*p)[4] = arr;   // p points to a row of 4 ints
+p++;                  // advances by one whole row (4 ints)
+</code></pre>
+<p>This is less common but appears in some legacy code and CTF reversing. Don't confuse <code>int *p[4]</code> (array of pointers) with <code>int (*p)[4]</code> (pointer to array).</p>
+<p><strong>Exercise:</strong> Read a 2D static array using a pointer to array, and print elements using pointer arithmetic.</p>
+<hr />
+<h2 id="2-struct-and-typedef-1-hour">2. <code>STRUCT</code> AND <code>TYPEDEF</code> (1 HOUR)</h2>
+<p>Structures let you group variables of different types into a single, meaningful unit. They are the foundation of objects in C, network packet headers, and heap chunk metadata.</p>
+<h3 id="21-defining-and-using-structs">2.1 Defining and Using Structs</h3>
+<pre><code class="language-c">struct Student {
+    char name[50];
+    int age;
+    float gpa;
+};
+
+struct Student s1;
+s1.age = 21;
+strcpy(s1.name, &quot;Alice&quot;);
+
+// Or initialise:
+struct Student s2 = {&quot;Bob&quot;, 22, 3.5};
+</code></pre>
+<p>Memory layout: fields are placed sequentially, but the compiler may add <strong>padding</strong> between fields to satisfy alignment requirements (e.g., an <code>int</code> often at a 4‑byte aligned address). The size of a struct may be larger than the sum of its members.</p>
+<p><strong>Check alignment:</strong></p>
+<pre><code class="language-c">printf(&quot;Size: %zu\n&quot;, sizeof(struct Student));  // likely 60 or 64
+</code></pre>
+<p><strong>Why padding matters:</strong> When you craft an exploit payload that overwrites a struct, you must account for padding bytes—otherwise your controlled data might land in the gaps and not where you think.</p>
+<h3 id="22-pointer-to-struct">2.2 Pointer to Struct</h3>
+<pre><code class="language-c">struct Student *sp = &amp;s1;
+sp-&gt;age = 21;   // equivalent to (*sp).age
+</code></pre>
+<p>The arrow operator <code>-&gt;</code> dereferences a pointer and accesses a member.</p>
+<p><strong>Exercise:</strong> Write a function <code>void print_student(const struct Student *s)</code> that prints all fields.</p>
+<h3 id="23-linked-list-of-structs-revisited">2.3 Linked List of Structs (Revisited)</h3>
+<p>Your <code>Node</code> from Week 5 is a struct. Now embed arbitrary data:</p>
+<pre><code class="language-c">typedef struct Node {
+    int id;
+    char data[32];
+    struct Node *next;
+} Node;
+</code></pre>
+<p><strong>Exercise:</strong> Write a function <code>Node *find_by_id(Node *head, int id)</code> that traverses and returns the node with matching id.</p>
+<h3 id="24-typedef-type-aliases">2.4 <code>typedef</code> – Type Aliases</h3>
+<pre><code class="language-c">typedef unsigned long size_t;
+typedef struct Student Student;  // now we can just write Student s;
+</code></pre>
+<p><code>typedef</code> doesn’t create a new type, just an alias. Use it to reduce verbosity and improve readability.</p>
+<p><strong>Example:</strong> <code>typedef int (*cmp_fn)(const void*, const void*);</code> defines <code>cmp_fn</code> as a pointer to a comparison function. This is exactly how <code>qsort</code>'s callback works.</p>
+<p><strong>CTF connection:</strong> In reverse engineering, you'll see structures all the time. Recognizing them in Ghidra or IDA (e.g., a struct with <code>char</code>, <code>int</code>, <code>pointer</code> fields) helps you understand program state. Many exploit primitives involve overwriting struct fields (e.g., a function pointer in a struct, or a <code>size</code> field before a buffer to cause a larger overflow).</p>
+<hr />
+<h2 id="3-bitwise-operations-15-hours">3. BITWISE OPERATIONS (1.5 HOURS)</h2>
+<p>Bitwise operators are your Swiss army knife for cryptography, binary data manipulation, flag checks, and shellcode encoding. Every CTF player breathes hex and bitops.</p>
+<h3 id="31-operators-precedence">3.1 Operators &amp; Precedence</h3>
+<ul>
+<li><code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>~</code> (NOT)</li>
+<li><code>&lt;&lt;</code> (left shift), <code>&gt;&gt;</code> (right shift)</li>
+</ul>
+<p><strong>Note:</strong> <code>^</code> XOR is not exponentiation—it’s exclusive OR. <code>&amp;</code> and <code>|</code> are bitwise, not logical (which are <code>&amp;&amp;</code> and <code>||</code>).</p>
+<p><strong>Exercise:</strong> Without compiling, compute: <code>5 &amp; 3</code>, <code>5 | 3</code>, <code>5 ^ 3</code>, <code>~5</code> (two’s complement 32-bit), <code>5 &lt;&lt; 1</code>, <code>5 &gt;&gt; 1</code>.</p>
+<h3 id="32-bit-masking-and-settingclearingtoggling-bits">3.2 Bit Masking and Setting/Clearing/Toggling Bits</h3>
+<pre><code class="language-c">unsigned int flags = 0;
+flags |= (1 &lt;&lt; 3);      // set bit 3
+flags &amp;= ~(1 &lt;&lt; 2);     // clear bit 2
+flags ^= (1 &lt;&lt; 1);      // toggle bit 1
+int is_set = (flags &amp; (1 &lt;&lt; 3)) != 0;  // test bit 3
+</code></pre>
+<p><strong>Use case:</strong> A CTF protocol might use a byte where each bit represents a flag (e.g., is_encrypted, is_compressed). You’ll parse these with masks.</p>
+<h3 id="33-printing-binary-representation">3.3 Printing Binary Representation</h3>
+<p>Write a function <code>print_binary(unsigned int n)</code> that prints the 32-bit binary representation of <code>n</code>. This will be your debugging friend.</p>
+<pre><code class="language-c">void print_binary(unsigned int n) {
+    for (int i = 31; i &gt;= 0; i--) {
+        putchar((n &amp; (1 &lt;&lt; i)) ? '1' : '0');
+        if (i % 8 == 0) putchar(' ');
+    }
+    putchar('\n');
+}
+</code></pre>
+<p><strong>Exercise:</strong> Run <code>print_binary(0xDEADBEEF)</code>. Output should be <code>11011110 10101101 10111110 11101111</code>.</p>
+<h3 id="34-endianness-little-vs-big">3.4 Endianness: Little vs Big</h3>
+<p>x86 is little‑endian: least significant byte stored at lowest address. A 32‑bit value <code>0xAABBCCDD</code> in memory: <code>DD, CC, BB, AA</code>. This is crucial when you inject addresses into a payload.</p>
+<p><strong>Demo:</strong></p>
+<pre><code class="language-c">unsigned int val = 0xAABBCCDD;
+unsigned char *p = (unsigned char*)&amp;val;
+for (int i = 0; i &lt; 4; i++)
+    printf(&quot;%02x &quot;, p[i]);   // output: dd cc bb aa
+</code></pre>
+<p><strong>CTF relevance:</strong> When crafting a ROP chain, you’ll pack addresses using <code>p64(addr)</code> which produces little‑endian bytes. Endianness errors cause exploits to fail silently.</p>
+<h3 id="35-xor-encryption">3.5 XOR “Encryption”</h3>
+<p>XOR is reversible: <code>(A ^ K) ^ K = A</code>. Use this to write a simple XOR cipher:</p>
+<pre><code class="language-c">void xor_cipher(char *data, size_t len, char key) {
+    for (size_t i = 0; i &lt; len; i++) {
+        data[i] ^= key;
+    }
+}
+</code></pre>
+<p><strong>Exercise:</strong> Encrypt a string with key <code>0x2A</code>, then decrypt it back. Print intermediate hex.</p>
+<p><strong>CTF connection:</strong> Many crypto and reversing challenges involve XORing with a single byte or a repeating key. Your bitwise skills will let you write solvers quickly.</p>
+<h3 id="36-bitfields-in-structs">3.6 Bitfields in Structs</h3>
+<p>C allows specifying exact bit widths:</p>
+<pre><code class="language-c">struct Packet {
+    unsigned int version : 4;
+    unsigned int type    : 4;
+    unsigned int length  : 16;
+};
+</code></pre>
+<p>The layout is compiler‑dependent but common in protocol implementations. Exploits may overwrite such bitfields to bypass checks.</p>
+<hr />
+<h2 id="4-preprocessor-macros-1-hour">4. PREPROCESSOR &amp; MACROS (1 HOUR)</h2>
+<p>The preprocessor is a text‑manipulation engine. It can create flexible code, but also obfuscate and introduce subtle bugs. Understanding macros helps you read real‑world codebases and CTF challenge source.</p>
+<h3 id="41-objectlike-macros">4.1 Object‑like Macros</h3>
+<pre><code class="language-c">#define MAX_SIZE 256
+</code></pre>
+<p><code>MAX_SIZE</code> is replaced literally by <code>256</code> before compilation. No type safety, just substitution.</p>
+<h3 id="42-functionlike-macros-and-pitfalls">4.2 Function‑like Macros and Pitfalls</h3>
+<pre><code class="language-c">#define SQUARE(x) x * x
+// Problem: SQUARE(1+2) -&gt; 1+2*1+2 = 5, not 9.
+// Fix: #define SQUARE(x) ((x) * (x))
+</code></pre>
+<p><strong>Always parenthesize both arguments and the whole expression.</strong></p>
+<p><strong>Common macro traps:</strong>
+- Multiple evaluation: <code>#define MAX(a,b) ((a)&gt;(b)?(a):(b))</code> and then <code>MAX(i++, j++)</code> increments twice.
+- No type safety.
+- Use <code>do { ... } while(0)</code> for multi‑statement macros to make them safe with semicolons.</p>
+<p><strong>Debugging macros:</strong> Use <code>gcc -E</code> to see the preprocessed output and check expansions.</p>
+<h3 id="43-conditional-compilation">4.3 Conditional Compilation</h3>
+<pre><code class="language-c">#ifdef DEBUG
+    printf(&quot;Debug: x = %d\n&quot;, x);
+#endif
+
+#if defined(__linux__)
+    // Linux-specific
+#elif defined(_WIN32)
+    // Windows
+#endif
+</code></pre>
+<p>This is how portable code and debug prints are controlled. In CTF binary challenges, the challenge might parse flags differently based on compile‑time defines.</p>
+<h3 id="44-assert-and-debugging-macros">4.4 <code>assert</code> and Debugging Macros</h3>
+<p><code>assert(condition)</code> from <code>&lt;assert.h&gt;</code> is a macro that terminates the program if the condition is false, and is stripped when <code>NDEBUG</code> is defined.</p>
+<p><strong>Build your own DEBUG macro:</strong></p>
+<pre><code class="language-c">#ifdef DEBUG
+#define debug_printf(fmt, ...) fprintf(stderr, &quot;[%s:%d] &quot; fmt, __FILE__, __LINE__, ##__VA_ARGS__)
+#else
+#define debug_printf(fmt, ...)
+#endif
+</code></pre>
+<p>Use it: <code>debug_printf("x=%d\n", x);</code>. This prints file and line only in debug mode.</p>
+<p><strong>Exercise:</strong> Add <code>debug_printf</code> to your linked list functions and test with <code>-DDEBUG</code> flag.</p>
+<h3 id="45-common-predefined-macros">4.5 Common Predefined Macros</h3>
+<ul>
+<li><code>__FILE__</code>, <code>__LINE__</code>, <code>__func__</code> – useful for logging.</li>
+<li><code>__DATE__</code>, <code>__TIME__</code> – not often used, but appear.</li>
+</ul>
+<p><strong>CTF connection:</strong> In reversing, you might see strings left from debug macros, giving away source file paths or function names. Exploit developers use macros to quickly switch between local testing and remote attack configurations.</p>
+<hr />
+<h2 id="5-error-handling-errno-05-hour">5. ERROR HANDLING &amp; <code>ERRNO</code> (0.5 HOUR)</h2>
+<p>C programs report errors via return values and a global variable <code>errno</code>. Not checking them leads to crashes and exploitable states; checking them is the difference between a robust tool and a fragile one.</p>
+<h3 id="51-return-codes-and-errno">5.1 Return Codes and <code>errno</code></h3>
+<p>Many standard functions return <code>-1</code> or <code>NULL</code> on error and set <code>errno</code> (from <code>&lt;errno.h&gt;</code>) to a code like <code>EACCES</code>, <code>ENOMEM</code>, <code>EINVAL</code>.</p>
+<pre><code class="language-c">#include &lt;errno.h&gt;
+#include &lt;string.h&gt;
+FILE *f = fopen(&quot;nonexistent.txt&quot;, &quot;r&quot;);
+if (f == NULL) {
+    fprintf(stderr, &quot;Error opening file: %s\n&quot;, strerror(errno));
+    // or perror(&quot;fopen&quot;);
+    exit(EXIT_FAILURE);
+}
+</code></pre>
+<p><code>perror()</code> prints a description of <code>errno</code> to stderr. <code>strerror()</code> returns the string.</p>
+<h3 id="52-safe-coding-practices">5.2 Safe Coding Practices</h3>
+<ul>
+<li>Always check <code>malloc</code> return for <code>NULL</code>.</li>
+<li>Check <code>fopen</code>, <code>fread</code>, <code>fwrite</code> returns.</li>
+<li>Use <code>feof()</code> and <code>ferror()</code> on streams.</li>
+</ul>
+<p><strong>Exercise:</strong> Write a robust file‑read function <code>char *read_file(const char *path)</code> that returns the content as a dynamically allocated string, or <code>NULL</code> on any error, with detailed error output.</p>
+<p><strong>CTF exploitation angle:</strong> A program that doesn’t check <code>malloc</code> failure might still use the returned <code>NULL</code> pointer, leading to a null pointer dereference (DoS) or, in rare cases, writable NULL page mapping. In some CTFs, you might need to manipulate <code>errno</code>‑based paths to cause intentionally faulty behavior.</p>
+<hr />
+<h2 id="6-makefile-basics-05-hour">6. MAKEFILE BASICS (0.5 HOUR)</h2>
+<p>As your projects grow, typing long <code>gcc</code> commands is error‑prone. A <code>Makefile</code> automates compilation and can teach you about build systems used in real CTF problem sources.</p>
+<h3 id="61-simple-makefile-structure">6.1 Simple Makefile Structure</h3>
+<pre><code class="language-make">CC = gcc
+CFLAGS = -Wall -Wextra -pedantic -std=c11 -g
+
+all: my_program
+
+my_program: main.c utils.c utils.h
+    $(CC) $(CFLAGS) -o my_program main.c utils.c
+
+clean:
+    rm -f my_program *.o
+</code></pre>
+<ul>
+<li><code>all</code> is the default target (first in file).</li>
+<li>Dependencies: <code>my_program</code> depends on source files; if they change, it recompiles.</li>
+<li><strong>Tab</strong> character must precede commands (not spaces).</li>
+</ul>
+<h3 id="62-object-files-separate-compilation">6.2 Object Files &amp; Separate Compilation</h3>
+<pre><code class="language-make">OBJS = main.o utils.o
+
+my_program: $(OBJS)
+    $(CC) $(CFLAGS) -o my_program $(OBJS)
+
+%.o: %.c
+    $(CC) $(CFLAGS) -c $&lt; -o $@
+</code></pre>
+<ul>
+<li><code>$&lt;</code> is the first prerequisite (the .c file), <code>$@</code> is the target (the .o file).</li>
+<li>Now only changed files are recompiled.</li>
+</ul>
+<h3 id="63-phony-targets-and-variables">6.3 Phony Targets and Variables</h3>
+<ul>
+<li><code>.PHONY: all clean</code> prevents conflicts with files named <code>all</code> or <code>clean</code>.</li>
+<li>Use <code>CFLAGS</code>, <code>LDFLAGS</code> for linking flags.</li>
+</ul>
+<p><strong>Exercise:</strong> Write a Makefile for your linked list project (multiple .c files: <code>main.c</code>, <code>list.c</code>, <code>list.h</code>). Build with <code>make</code>, run with <code>./list</code>, clean with <code>make clean</code>. Then add a <code>debug</code> target that sets <code>CFLAGS += -DDEBUG -O0</code>.</p>
+<p><strong>CTF context:</strong> Many CTF challenges provide a <code>Makefile</code>; understanding it helps you compile with correct flags (e.g., <code>-no-pie</code>, <code>-fno-stack-protector</code>). You’ll also write Makefiles for your exploit tools.</p>
+<hr />
+<h2 id="miniproject-hash-table-phonebook-insession-1-hour">📞 MINI‑PROJECT: HASH TABLE PHONEBOOK (IN‑SESSION, 1 HOUR)</h2>
+<p>This project cements structs, pointers, dynamic allocation, and introduces a fundamental data structure used everywhere.</p>
+<h3 id="71-design">7.1 Design</h3>
+<ul>
+<li>Hash table: array of 101 buckets (prime for less collisions).</li>
+<li>Each bucket is a pointer to a linked list of entries.</li>
+<li>Entry struct: <code>char name[50]; char phone[20]; struct Entry *next;</code>.</li>
+<li>Hash function: sum of ASCII values of characters modulo 101.</li>
+<li>Operations: <code>add</code>, <code>find</code>, <code>delete</code>, <code>list_all</code>.</li>
+</ul>
+<h3 id="72-implementation-code-along">7.2 Implementation (Code Along)</h3>
+<pre><code class="language-c">#define TABLE_SIZE 101
+
+typedef struct Entry {
+    char name[50];
+    char phone[20];
+    struct Entry *next;
+} Entry;
+
+typedef struct Phonebook {
+    Entry *buckets[TABLE_SIZE];
+} Phonebook;
+
+unsigned int hash(const char *name) {
+    unsigned int h = 0;
+    while (*name) {
+        h = h * 31 + *name;  // djb2 simplified
+        name++;
+    }
+    return h % TABLE_SIZE;
+}
+
+void pb_init(Phonebook *pb) {
+    for (int i = 0; i &lt; TABLE_SIZE; i++)
+        pb-&gt;buckets[i] = NULL;
+}
+
+int pb_add(Phonebook *pb, const char *name, const char *phone) {
+    unsigned int idx = hash(name);
+    Entry *e = (Entry*)malloc(sizeof(Entry));
+    if (!e) return -1;
+    strncpy(e-&gt;name, name, sizeof(e-&gt;name)-1);
+    strncpy(e-&gt;phone, phone, sizeof(e-&gt;phone)-1);
+    e-&gt;name[sizeof(e-&gt;name)-1] = '\0';
+    e-&gt;phone[sizeof(e-&gt;phone)-1] = '\0';
+    e-&gt;next = pb-&gt;buckets[idx];
+    pb-&gt;buckets[idx] = e;
+    return 0;
+}
+
+char *pb_find(Phonebook *pb, const char *name) {
+    unsigned int idx = hash(name);
+    for (Entry *e = pb-&gt;buckets[idx]; e; e = e-&gt;next) {
+        if (strcmp(e-&gt;name, name) == 0)
+            return e-&gt;phone;
+    }
+    return NULL;
+}
+
+void pb_free(Phonebook *pb) {
+    for (int i = 0; i &lt; TABLE_SIZE; i++) {
+        Entry *e = pb-&gt;buckets[i];
+        while (e) {
+            Entry *next = e-&gt;next;
+            free(e);
+            e = next;
+        }
+        pb-&gt;buckets[i] = NULL;
+    }
+}
+</code></pre>
+<p><strong>Exercise:</strong> Implement <code>pb_delete(Phonebook *pb, const char *name)</code> that removes and frees the entry, handling the case where it's the first node in the bucket (need to update the bucket pointer, using a double pointer is elegant).</p>
+<p><strong>Why this matters:</strong> In CTF, you may encounter custom hash tables in challenges (e.g., a cache, a login database). Understanding this implementation lets you reason about bugs like hash collision DoS, use-after-free in deletion, or dangling pointers.</p>
+<hr />
+<h2 id="week-6-problem-set-daily-24-hours">📝 WEEK 6 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps61-kr-exercises-chapter-6">PS6‑1: K&amp;R Exercises Chapter 6</h3>
+<p>Complete exercises 6‑1 to 6‑5 (or at least 6‑1 through 6‑4).
+- 6‑1: Enhanced version of <code>getword</code> to handle underscores, string constants, comments.
+- 6‑2: Read a C source file and group variable names by first 6 characters (use your hash table or a linked list).
+- 6‑3: Cross‑ref program – print all words along with line numbers where they appear (a simple index).
+- 6‑4: Word frequency counting, print sorted by frequency (requires sorting a struct).
+- 6‑5: Undefine a macro (implement a symbol table).<br />
+These exercises directly practice structs, pointers, and complex data structures.</p>
+<h3 id="ps62-cs50-week-2-problem-set-readability-and-caesar">PS6‑2: CS50 Week 2 Problem Set – Readability and Caesar</h3>
+<p>If not yet done, complete “Readability” (Coleman‑Liau index) and “Caesar” (implementation of Caesar cipher in C). This solidifies C string handling and command‑line arguments. Use only C standard library; no external crypto.</p>
+<h3 id="ps63-project-hash-table-phonebook-full">PS6‑3: Project – Hash Table Phonebook (Full)</h3>
+<p>Finish the phonebook started in session. Add:
+- <code>pb_delete</code> function.
+- Main menu loop (add, find, delete, list all, exit).
+- Persistence: load/save phonebook to a text file (one entry per line: <code>name:phone</code>).
+- Support command‑line arguments: <code>./phonebook add "John" "555-1212"</code>, <code>./phonebook find "John"</code>, etc.
+- Ensure zero memory leaks (Valgrind).</p>
+<p>This is a medium‑size C project that reinforces everything from Weeks 5‑6.</p>
+<h3 id="ps64-picoctf-reverse-engineering-intro">PS6‑4: picoCTF Reverse Engineering Intro</h3>
+<p>Log into picoGym and solve at least 3 challenges under “Reverse Engineering” (e.g., “keygenme‑py”, “Transformation”, “Mod 26”, “ARMssembly 0” if you’re adventurous). For each, write a short solution summary. Use the skills of pointer reasoning and bitwise operations where applicable.</p>
+<h3 id="ps65-overthewire-bandit-2124">PS6‑5: OverTheWire Bandit 21‑24</h3>
+<p>Complete and document. These levels deal with <code>cron</code>, shell variables, and a SUID bit usage that writes to a file. Pay special attention to how a timed job can be exploited.</p>
+<h3 id="ps66-read-smashing-the-stack-finish-the-paper">PS6‑6: Read “Smashing the Stack” (Finish the Paper)</h3>
+<p>Finish Aleph One’s paper. Now you have enough background to understand the assembly snippets. After reading, attempt to explain in your own words the steps of the exploit: determine offset, overwrite return address to point into the buffer, place shellcode, land with NOP sled. This prepares you for Week 7’s Bomb Lab.</p>
+<h3 id="ps67-week-6-reflection">PS6‑7: Week 6 Reflection</h3>
+<p>In <code>week6_reflection.md</code>:
+1. What was the most challenging part of implementing the hash table? (Edge cases, double pointers?)
+2. How do bitwise operations change the way you think about data?
+3. Describe a situation in a CTF where knowing struct padding could help build an exploit payload.
+4. How does the Makefile improve your development workflow?</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>This week you’ve added the final bricks to your C foundation. You can manipulate pointers at multiple levels, design complex data structures, manipulate bits like a pro, and compile efficiently. These skills aren’t just academic—they appear constantly in CTF challenges: a binary may use a custom hash table for user sessions (vulnerable to corruption), network packets have bit‑level flags, and shellcode is encoded with XOR.</p>
+<p>Next week, you’ll cross the threshold into assembly language and start the legendary CMU Bomb Lab. Everything you’ve learned about pointers and memory will become visual and immediate when you see the stack frame in GDB and realize: you control the return address.</p>
+<p><strong>Build that phonebook. Run <code>gcc -Wall -g -o phonebook phonebook.c</code>. Fight the segfaults. You’re a memory‑owner now.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

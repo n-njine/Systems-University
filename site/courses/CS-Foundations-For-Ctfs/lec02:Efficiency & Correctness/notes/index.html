@@ -1,0 +1,1404 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-2-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#efficiency-correctness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Efficiency &amp; Correctness”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-bigo-notation-complexity-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ PART 1: BIG‑O NOTATION &amp; COMPLEXITY (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ PART 1: BIG‑O NOTATION &amp; COMPLEXITY (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-why-does-efficiency-matter-for-ctfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Why Does Efficiency Matter for CTFs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-counting-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Counting Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-formalizing-bigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Formalizing Big‑O
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-measuring-growth-empirically" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Measuring Growth Empirically
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-sorting-algorithms-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 PART 2: SORTING ALGORITHMS (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 PART 2: SORTING ALGORITHMS (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bubble-sort-the-pedagogical-bad-boy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Bubble Sort (the pedagogical bad boy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-selection-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Selection Sort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-pythons-builtin-sort-timsort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Python’s Built‑in Sort (Timsort)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-testing-debugging-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧪 PART 3: TESTING &amp; DEBUGGING (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 PART 3: TESTING &amp; DEBUGGING (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-assertions-as-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Assertions as Contracts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-the-debugger-pdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 The Debugger: pdb
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-testing-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Testing Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-file-io-modules-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 PART 4: FILE I/O &amp; MODULES (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁 PART 4: FILE I/O &amp; MODULES (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-reading-and-writing-text-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Reading and Writing Text Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-parsing-csv-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Parsing CSV Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-filebased-microproject-log-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 File‑Based Micro‑Project: Log Analyzer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-recursion-deep-dive-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌳 PART 5: RECURSION DEEP DIVE (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌳 PART 5: RECURSION DEEP DIVE (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-the-anatomy-of-recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 The Anatomy of Recursion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-classic-examples-code-along" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Classic Examples (Code Along)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-tower-of-hanoi-conceptual-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Tower of Hanoi (Conceptual &amp; Implementation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-recursion-on-data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Recursion on Data Structures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-maze-solving-with-depthfirst-search-the-big-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Maze Solving with Depth‑First Search (The Big Project)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-monte-carlo-simulation-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎲 PART 6: MONTE CARLO SIMULATION (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎲 PART 6: MONTE CARLO SIMULATION (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-the-random-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 The random Module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-estimating-by-throwing-darts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Estimating π by Throwing Darts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-simulating-a-gambling-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Simulating a Gambling Game
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-plotting-convergence-optional-but-rewarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Plotting Convergence (Optional, but rewarding)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-2-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 2 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 2 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps21-mit-60001-problem-set-1-credit-card-debt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑1: MIT 6.0001 Problem Set 1 – Credit Card Debt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps22-hackerrank-python-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑2: HackerRank Python Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps23-project-secure-password-generator-zip-cracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑3: Project – Secure Password Generator &amp; ZIP Cracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps24-overthewire-bandit-levels-58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑4: OverTheWire Bandit Levels 5‑8
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps25-read-guttag-chapters-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑5: Read Guttag Chapters 10‑11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps26-write-a-binary-search-explained-blog-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑6: Write a “Binary Search Explained” Blog Post
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps27-week-2-reflection-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS2‑7: Week 2 Reflection Log
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>We’re building on the rock-solid Week 1. You’re comfortable in the CLI, you can think in Python, and you’ve already cracked Caesar ciphers and bandit levels. Now it’s time to make your code <strong>efficient</strong>, <strong>correct</strong>, and <strong>unstoppable</strong>.</p>
+<p>This week is about transforming you from someone who writes scripts that <em>happen to work</em> into someone who <strong>thinks like a computer scientist</strong>. You’ll learn to measure time, master recursion, debug fearlessly, and harness randomness. These are the skills that separate a script kiddie from a CTF competitor who can reverse a binary’s custom search algorithm, brute‑force a password space intelligently, or fuzz a program with statistical precision.</p>
+<h1 id="week-2-intensive-deep-dive">🔥 WEEK 2: INTENSIVE DEEP DIVE</h1>
+<h2 id="efficiency-correctness"><em>“Efficiency &amp; Correctness”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:30</td>
+<td>Big‑O Notation &amp; Complexity</td>
+</tr>
+<tr>
+<td>1:30 – 2:30</td>
+<td>Sorting Algorithms</td>
+</tr>
+<tr>
+<td>2:30 – 3:30</td>
+<td>Testing &amp; Debugging</td>
+</tr>
+<tr>
+<td>3:30 – 4:30</td>
+<td>File I/O &amp; Modules</td>
+</tr>
+<tr>
+<td>4:30 – 6:00</td>
+<td>Recursion (Deep Dive)</td>
+</tr>
+<tr>
+<td>6:00 – 7:00</td>
+<td>Monte Carlo Simulation</td>
+</tr>
+<tr>
+<td>7:00 – 8:00</td>
+<td>Problem Set Kickoff &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-bigo-notation-complexity-15-hours">⏱️ PART 1: BIG‑O NOTATION &amp; COMPLEXITY (1.5 HOURS)</h2>
+<h3 id="11-why-does-efficiency-matter-for-ctfs">1.1 Why Does Efficiency Matter for CTFs?</h3>
+<p>In a CTF, you might need to brute‑force a 6‑character password. That’s trivial (a few seconds). But what if the key space is all possible 20‑byte sequences? An O(2ⁿ) algorithm will run until the heat death of the universe. Understanding complexity lets you know <strong>instantly</strong> whether an approach is feasible, and it helps you spot the hidden shortcut the challenge author left.</p>
+<h3 id="12-counting-operations">1.2 Counting Operations</h3>
+<p>Start with linear search. Given a list of <code>n</code> numbers, find <code>target</code>.</p>
+<pre><code class="language-python">def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+</code></pre>
+<p><strong>Trace:</strong> In the worst case, how many comparisons does it make? Exactly <code>n</code>. We say it’s <strong>O(n)</strong>: the time grows linearly with the input size.</p>
+<p><strong>Now binary search</strong> (requires sorted list):</p>
+<pre><code class="language-python">def binary_search(arr, target):
+    low, high = 0, len(arr)-1
+    while low &lt;= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] &lt; target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+</code></pre>
+<p><strong>Trace worst case:</strong> Each iteration halves the search space. For <code>n</code> elements, maximum iterations ≈ log₂(n). So <strong>O(log n)</strong>.</p>
+<p><strong>Code‑along:</strong> Create a list of 1,000,000 ordered integers. Use <code>time.time()</code> to measure how long each search takes for the worst case (target not in list). Compare:</p>
+<pre><code class="language-python">import time, random
+n = 10**6
+data = list(range(n))
+target = -1  # not present
+
+start = time.time()
+linear_search(data, target)
+print(&quot;Linear:&quot;, time.time() - start)
+
+start = time.time()
+binary_search(data, target)
+print(&quot;Binary:&quot;, time.time() - start)
+</code></pre>
+<p>You should see a massive difference. This is the power of algorithmic choice.</p>
+<h3 id="13-formalizing-bigo">1.3 Formalizing Big‑O</h3>
+<ul>
+<li><strong>Big‑O (O)</strong> describes an upper bound on growth.</li>
+<li><strong>Common complexities:</strong> O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ).</li>
+<li><strong>Rules of thumb:</strong></li>
+<li>A single loop over <code>n</code> items → O(n).</li>
+<li>Nested loop over <code>n</code> items → O(n²).</li>
+<li>Loop that repeatedly divides problem size → O(log n).</li>
+<li>Combinations multiply: two sequential O(n) loops → O(n + n) = O(n) (drop constants).</li>
+</ul>
+<p><strong>Exercise:</strong> Determine the complexity of:</p>
+<pre><code class="language-python">def mystery(n):
+    count = 0
+    for i in range(n):
+        j = 1
+        while j &lt; n:
+            j *= 2
+            count += 1
+    return count
+</code></pre>
+<p>(Answer: O(n log n) – outer loop n times, inner loop log₂(n) times.)</p>
+<p><strong>CTF Preview:</strong> In binary exploitation, you’ll often need to find the exact offset to overwrite the return address. If the offset is unknown, you can binary search the payload size: halfway crash? move down. No crash? move up. This is exactly O(log n) cookie‑cutting, and it saves immense time over brute‑forcing.</p>
+<h3 id="14-measuring-growth-empirically">1.4 Measuring Growth Empirically</h3>
+<p>Write a small harness that times your functions for increasing <code>n</code> and plots a simple text graph (or if you want, install matplotlib and plot). This builds intuition for what O(n²) <em>feels</em> like when your program suddenly slows to a crawl.</p>
+<hr />
+<h2 id="part-2-sorting-algorithms-1-hour">📊 PART 2: SORTING ALGORITHMS (1 HOUR)</h2>
+<p>Sorting is a fundamental operation, and understanding its cost is critical for everything from database queries to manipulating payloads in a specific order.</p>
+<h3 id="21-bubble-sort-the-pedagogical-bad-boy">2.1 Bubble Sort (the pedagogical bad boy)</h3>
+<pre><code class="language-python">def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] &gt; arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+</code></pre>
+<p><strong>Complexity:</strong> Outer loop → n, inner loop → up to n → O(n²). Count comparisons: about n(n‑1)/2.</p>
+<p><strong>Interactive task:</strong> Implement it and test on <code>[5,2,9,1,5,6]</code>. Print the list after each pass. Notice how the largest element “bubbles” up.</p>
+<h3 id="22-selection-sort">2.2 Selection Sort</h3>
+<pre><code class="language-python">def selection_sort(arr):
+    for i in range(len(arr)):
+        min_idx = i
+        for j in range(i+1, len(arr)):
+            if arr[j] &lt; arr[min_idx]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+</code></pre>
+<p>Also O(n²). Compare performance with bubble sort on a list of 10,000 random numbers.</p>
+<h3 id="23-pythons-builtin-sort-timsort">2.3 Python’s Built‑in Sort (Timsort)</h3>
+<p><code>arr.sort()</code> is O(n log n) and stable. It’s a hybrid merge‑insertion sort that exploits runs of already‑sorted data. You’ll rarely write your own sorting algorithm for production, but <strong>understanding what’s under the hood lets you reason about worst‑case inputs</strong>. For example, some naive quicksort implementations degrade to O(n²) if given sorted data. In a CTF, if you see a server that sorts user‑provided data and becomes slow, you might craft a pathological input to cause a denial‑of‑service (DoS).</p>
+<p><strong>Exercise:</strong> Write a function that generates the worst‑case input for selection sort (descending order). Confirm by counting comparisons.</p>
+<hr />
+<h2 id="part-3-testing-debugging-1-hour">🧪 PART 3: TESTING &amp; DEBUGGING (1 HOUR)</h2>
+<p>Code that passes a couple of happy‑path tests is <strong>not</strong> correct code. You need to think adversarially about your own functions—exactly like an attacker.</p>
+<h3 id="31-assertions-as-contracts">3.1 Assertions as Contracts</h3>
+<p>Put <code>assert</code> statements at the start and end of functions to guarantee pre‑ and post‑conditions.</p>
+<pre><code class="language-python">def median(nums):
+    &quot;&quot;&quot;Return median of a non-empty list of numbers.&quot;&quot;&quot;
+    assert len(nums) &gt; 0, &quot;Empty list not allowed&quot;
+    sorted_nums = sorted(nums)
+    n = len(sorted_nums)
+    if n % 2 == 1:
+        return sorted_nums[n // 2]
+    else:
+        return (sorted_nums[n//2 - 1] + sorted_nums[n//2]) / 2
+
+# Test cases
+assert median([5]) == 5
+assert median([1,3]) == 2
+assert median([1,2,3]) == 2
+</code></pre>
+<p>If any assert fails, you get an immediate, clear error instead of a silent wrong answer.</p>
+<p><strong>Why CTF?</strong> When writing an exploit, you’ll assert that the target program’s output contains a certain pattern to know your shellcode executed. Assertions are your automated sanity checks.</p>
+<h3 id="32-the-debugger-pdb">3.2 The Debugger: <code>pdb</code></h3>
+<p>Python’s built‑in debugger is your time‑travel microscope.
+1. Insert <code>breakpoint()</code> anywhere in your code (Python 3.7+).
+2. Run the script. It will pause at that line and give you a <code>(Pdb)</code> prompt.
+3. Commands:
+   - <code>n</code> (next) – execute current line and stop at the next line in the same function.
+   - <code>s</code> (step) – step into any function call.
+   - <code>c</code> (continue) – run until next breakpoint or end.
+   - <code>p variable</code> – print value.
+   - <code>l</code> – list surrounding code.
+   - <code>q</code> – quit.</p>
+<p><strong>Debug this buggy function:</strong></p>
+<pre><code class="language-python">def average(lst):
+    total = 0
+    for i in range(len(lst) + 1):  # bug: off-by-one
+        total += lst[i]
+    return total / len(lst)
+
+print(average([10,20,30]))
+</code></pre>
+<p>It will raise an <code>IndexError</code>. Add <code>breakpoint()</code> before the loop, step through, and watch <code>i</code> exceed the last index. Fix it. Now use <code>pdb</code> to set a conditional breakpoint: <code>b 4, i == len(lst)</code> to catch exactly when it goes out of bounds.</p>
+<p><strong>In‑session drill:</strong> Write a function <code>binary_to_decimal(bin_str)</code> that converts a binary string to integer (e.g., "1010" → 10). Include assertions that the string contains only 0s and 1s. Then deliberately introduce a bug (like ignoring the last bit) and use <code>pdb</code> to locate it.</p>
+<h3 id="33-testing-philosophy">3.3 Testing Philosophy</h3>
+<p>Write a separate <code>test_my_module.py</code> that imports your functions and runs a series of tests. This habit pays off immensely when your exploit script relies on helper functions that must not fail.</p>
+<hr />
+<h2 id="part-4-file-io-modules-1-hour">📁 PART 4: FILE I/O &amp; MODULES (1 HOUR)</h2>
+<p>Real CTF data comes in files: packet captures, firmware dumps, encoded strings, logs. You need to read and write files effortlessly.</p>
+<h3 id="41-reading-and-writing-text-files">4.1 Reading and Writing Text Files</h3>
+<pre><code class="language-python"># Reading whole file
+with open('data.txt', 'r') as f:
+    content = f.read()
+
+# Reading line by line
+with open('log.txt', 'r') as f:
+    for line in f:
+        print(line.strip())
+
+# Writing
+with open('output.txt', 'w') as f:
+    f.write(&quot;Hello, CTF!\n&quot;)
+</code></pre>
+<p>The <code>with</code> statement ensures the file is closed automatically, even if an error occurs.</p>
+<h3 id="42-parsing-csv-files">4.2 Parsing CSV Files</h3>
+<p>Given a file <code>grades.csv</code>:</p>
+<pre><code>name,score
+alice,88
+bob,92
+charlie,85
+</code></pre>
+<p>Write a script that reads it and prints the name of the student with the highest score. Do it <strong>first</strong> using the <code>csv</code> module, and <strong>then</strong> manually using <code>split(',')</code> to understand the low‑level parsing.</p>
+<p><strong>Manual approach:</strong></p>
+<pre><code class="language-python">with open('grades.csv') as f:
+    header = f.readline()  # skip
+    best_name, best_score = None, -1
+    for line in f:
+        name, score_str = line.strip().split(',')
+        score = int(score_str)
+        if score &gt; best_score:
+            best_score, best_name = score, name
+    print(best_name, best_score)
+</code></pre>
+<p><strong>Using <code>csv</code> module:</strong></p>
+<pre><code class="language-python">import csv
+with open('grades.csv') as f:
+    reader = csv.DictReader(f)
+    max_row = max(reader, key=lambda row: int(row['score']))
+    print(max_row['name'], max_row['score'])
+</code></pre>
+<p><strong>CTF connection:</strong> Many web challenges return data as CSV or JSON. You’ll often need to extract the flag from a large dump. Efficiency in parsing matters—<code>DictReader</code> is elegant but might be slower than manual splitting for huge files.</p>
+<h3 id="43-filebased-microproject-log-analyzer">4.3 File‑Based Micro‑Project: Log Analyzer</h3>
+<p>Create a file <code>access.log</code> with fake Apache‑style entries (just copy‑paste a few lines from the internet). Write a script that counts how many times each IP address appears. Use a dictionary. This is a tiny forensics warm‑up.</p>
+<hr />
+<h2 id="part-5-recursion-deep-dive-15-hours">🌳 PART 5: RECURSION DEEP DIVE (1.5 HOURS)</h2>
+<p>Recursion is a mindset shift. It’s also the foundation of many exploit techniques (return‑oriented programming essentially constructs a recursive chain on the stack). Embrace it.</p>
+<h3 id="51-the-anatomy-of-recursion">5.1 The Anatomy of Recursion</h3>
+<p>Every recursive function must have:
+1. <strong>Base case(s):</strong> the simplest input that stops the recursion.
+2. <strong>Recursive step:</strong> breaks the problem into a smaller instance of the same problem and calls itself.</p>
+<h3 id="52-classic-examples-code-along">5.2 Classic Examples (Code Along)</h3>
+<p><strong>Factorial:</strong></p>
+<pre><code class="language-python">def fact(n):
+    if n == 0:          # base case
+        return 1
+    return n * fact(n-1) # recursive step
+</code></pre>
+<p>Draw the recursion tree for <code>fact(4)</code>. Each call creates a new stack frame. When <code>n</code> hits 0, the frames unwind, multiplying.</p>
+<p><strong>Fibonacci (Naive):</strong></p>
+<pre><code class="language-python">def fib(n):
+    if n &lt;= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+</code></pre>
+<p>This is beautiful but <strong>horrifically inefficient</strong> O(2ⁿ). Compute <code>fib(35)</code> and watch it crawl.</p>
+<p><strong>Discussion:</strong> Why so slow? Because it recomputes the same values countless times. This is a perfect intro to <strong>memoization</strong> (caching). You can add a dictionary to store results. We’ll revisit when we cover dynamic programming.</p>
+<h3 id="53-tower-of-hanoi-conceptual-implementation">5.3 Tower of Hanoi (Conceptual &amp; Implementation)</h3>
+<p>You have three pegs and <code>n</code> disks of different sizes. Move all disks from peg A to peg C, never placing a larger disk on a smaller one.</p>
+<pre><code class="language-python">def hanoi(n, source, target, auxiliary):
+    if n == 1:
+        print(f&quot;Move disk 1 from {source} to {target}&quot;)
+        return
+    hanoi(n-1, source, auxiliary, target)
+    print(f&quot;Move disk {n} from {source} to {target}&quot;)
+    hanoi(n-1, auxiliary, target, source)
+
+hanoi(3, 'A', 'C', 'B')
+</code></pre>
+<p><strong>Trace this on paper.</strong> Understand that the function calls itself to move <code>n-1</code> disks out of the way. The number of moves is 2ⁿ - 1, exponential. This is why brute‑forcing some problems is impossible.</p>
+<h3 id="54-recursion-on-data-structures">5.4 Recursion on Data Structures</h3>
+<p><strong>Sum of a list recursively:</strong></p>
+<pre><code class="language-python">def rec_sum(lst):
+    if not lst:
+        return 0
+    return lst[0] + rec_sum(lst[1:])
+</code></pre>
+<p>This is elegant but creates many list slices, which is O(n²) in total! A better version uses an index parameter. Understand the trade‑off.</p>
+<h3 id="55-maze-solving-with-depthfirst-search-the-big-project">5.5 Maze Solving with Depth‑First Search (The Big Project)</h3>
+<p>This is the centerpiece of today’s recursion. You’ll write a solver that takes a 2D grid of 0s (path) and 1s (walls) and finds the exit from a start point.</p>
+<p><strong>Grid representation:</strong></p>
+<pre><code class="language-python">maze = [
+    [0, 1, 0, 0, 0],
+    [0, 0, 0, 1, 0],
+    [1, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0]
+]
+start = (0,0); exit = (4,4)
+</code></pre>
+<p><strong>DFS algorithm:</strong>
+- Mark the current cell as visited (e.g., set to 2).
+- If current is exit → success.
+- For each neighbor (up, down, left, right):
+  - If within bounds, is a path (0), and not visited → recursively try that direction.
+  - If recursion returns true, propagate true upward.
+- If all directions fail, backtrack (unmark cell, though not strictly necessary with marker) and return false.</p>
+<p><strong>Write <code>solve_maze(maze, x, y, exit_x, exit_y, path)</code>.</strong> The function prints the coordinates of the path when found, or "No path".</p>
+<p>This is your first <strong>state‑space search</strong> —the same algorithm used by vulnerability scanners to map reachable code paths. In a CTF, you might use DFS to find a sequence of moves in a lock‑picking challenge.</p>
+<hr />
+<h2 id="part-6-monte-carlo-simulation-1-hour">🎲 PART 6: MONTE CARLO SIMULATION (1 HOUR)</h2>
+<p>Randomness isn’t just for games; it’s for estimating probabilities where analytical math is hard, for fuzzing, and for breaking crypto that uses bad randomness.</p>
+<h3 id="61-the-random-module">6.1 The <code>random</code> Module</h3>
+<pre><code class="language-python">import random
+random.random()       # float in [0.0, 1.0)
+random.randint(1,6)   # dice
+random.choice(['a','b','c'])
+random.shuffle(lst)
+</code></pre>
+<p><strong>Seeding for reproducibility:</strong> <code>random.seed(42)</code> makes the sequence deterministic, useful for debugging.</p>
+<h3 id="62-estimating-by-throwing-darts">6.2 Estimating π by Throwing Darts</h3>
+<p>Imagine a unit circle inscribed in a unit square. The area of the circle is π/4. If you throw darts uniformly at the square, the proportion that land in the circle approximates π/4.</p>
+<pre><code class="language-python">import random
+
+def estimate_pi(n):
+    inside = 0
+    for _ in range(n):
+        x, y = random.random(), random.random()
+        if x*x + y*y &lt;= 1.0:
+            inside += 1
+    return 4 * inside / n
+
+print(estimate_pi(100000))
+</code></pre>
+<p>Run with increasing <code>n</code>. The error decreases as 1/√n. This is your first Monte Carlo method.</p>
+<h3 id="63-simulating-a-gambling-game">6.3 Simulating a Gambling Game</h3>
+<p>Consider a simple game: flip a fair coin. Heads you win \$1, tails you lose \$1. Start with \$10, what’s the probability you go broke within 100 bets? Solve analytically? Hard. Monte Carlo: easy.</p>
+<pre><code class="language-python">def sim_broke(start=10, max_bets=100, trials=10000):
+    broke = 0
+    for _ in range(trials):
+        money = start
+        for _ in range(max_bets):
+            if money == 0:
+                broke += 1
+                break
+            if random.random() &lt; 0.5:
+                money += 1
+            else:
+                money -= 1
+    return broke / trials
+
+print(sim_broke())
+</code></pre>
+<p>This gives you a feel for the “gambler’s ruin” problem.</p>
+<p><strong>CTF connection:</strong> Fuzzers are a kind of Monte Carlo simulation—they randomly (or semi‑randomly) generate inputs and monitor for crashes. If you can model a program’s behavior, you can estimate how many fuzz iterations are needed to trigger a rare bug. Later you’ll build a mutation fuzzer; the same sampling mindset applies.</p>
+<h3 id="64-plotting-convergence-optional-but-rewarding">6.4 Plotting Convergence (Optional, but rewarding)</h3>
+<p>If you have matplotlib (<code>pip install matplotlib</code>), plot the running average of π estimate vs trial number. You’ll see it converge. This teaches you to visualize data, critical for analyzing side‑channel leakage (e.g., timing distributions).</p>
+<hr />
+<h2 id="week-2-problem-set-daily-24-hours">📝 WEEK 2 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps21-mit-60001-problem-set-1-credit-card-debt">PS2‑1: MIT 6.0001 Problem Set 1 – Credit Card Debt</h3>
+<p>Complete all three parts of PS1 from MIT OCW (available on MIT OpenCourseWare):
+- <strong>Part A:</strong> Calculating the minimum fixed monthly payment to pay off debt in a year by brute force (loop increments by \$10).
+- <strong>Part B:</strong> Same, but using bisection search (binary search) to find the exact payment to the cent. This is the <strong>key learning</strong> —you’ll implement a binary search over a continuous range with condition derived from a simulation loop.
+- <strong>Part C:</strong> Apply it to a different case.</p>
+<p>This problem bridges loops, conditionals, and binary search. It’s a classic.</p>
+<h3 id="ps22-hackerrank-python-practice">PS2‑2: HackerRank Python Practice</h3>
+<p>Go to <a href="https://www.hackerrank.com/domains/python">HackerRank Python</a> and solve at least <strong>10 problems</strong> from the “Basic Data Types” and “Strings” sections. Some recommended ones:
+- Lists: “List Comprehensions”, “Find the Runner‑Up Score!”, “Nested Lists”
+- Strings: “sWAP cASE”, “String Split and Join”, “Mutations”, “Find a string”
+- Additionally, solve “Introduction to Sets” and “Symmetric Difference” to get a first taste of sets.</p>
+<p>These enforce Python fluency with data structures.</p>
+<h3 id="ps23-project-secure-password-generator-zip-cracker">PS2‑3: Project – Secure Password Generator &amp; ZIP Cracker</h3>
+<ol>
+<li><strong>Generator:</strong> Write a script <code>passgen.py</code> that generates a random password of specified length, ensuring it includes at least one lowercase, one uppercase, one digit, and one special character. It should be cryptographically random (use <code>random.SystemRandom</code> or <code>secrets</code> module, but for now <code>random</code> is fine). It takes length as command‑line argument.</li>
+<li><strong>ZIP Cracker:</strong> Create a password‑protected ZIP file containing a flag file (e.g., <code>flag.txt</code> with content <code>CTF{brut3_f0rc3_m4ster}</code>). Use the <code>zipfile</code> module. Write a script <code>zip_crack.py</code> that:</li>
+<li>Takes a ZIP filename and a dictionary file path.</li>
+<li>Opens the ZIP and attempts to extract <code>flag.txt</code> using each password in the dictionary.</li>
+<li>If successful, prints the password and the flag.</li>
+<li><strong>Bonus:</strong> If dictionary fails, implement a brute‑force over all 4‑letter lowercase passwords (aaaa‑zzzz) and measure the time. This shows how small the space is for short passwords.
+You are allowed to use the <code>zipfile</code> and <code>itertools</code> modules.</li>
+</ol>
+<p><strong>CTF scenario:</strong> Many challenges involve cracking a ZIP with a known small keyspace. This project makes you ready.</p>
+<h3 id="ps24-overthewire-bandit-levels-58">PS2‑4: OverTheWire Bandit Levels 5‑8</h3>
+<p>Continue the Bandit wargame. For each level, after finding the password, update your <code>bandit_notes.md</code> with:
+- The command(s) used.
+- The vulnerability or misconfiguration exploited (e.g., file permissions, SUID bit, grep‑able word).
+- Any pitfalls you encountered.</p>
+<p>Levels 5‑8 introduce <code>file</code>, <code>find</code>, <code>grep</code>, and <code>/etc/passwd</code>‑style data. You’ll get comfortable with file system forensics.</p>
+<h3 id="ps25-read-guttag-chapters-1011">PS2‑5: Read Guttag Chapters 10‑11</h3>
+<ul>
+<li><strong>Chapter 10 (Some Simple Algorithms):</strong> Focus on search algorithms (binary search), hashing, and maybe sorting. You’ve implemented them, now read the formal treatment.</li>
+<li><strong>Chapter 11 (Plotting and More about Classes):</strong> Skim plotting, but pay attention to the class section: inheritance, <code>__str__</code>, etc. We’ll dive into OOP next week, so this is a primer.</li>
+</ul>
+<h3 id="ps26-write-a-binary-search-explained-blog-post">PS2‑6: Write a “Binary Search Explained” Blog Post</h3>
+<p>Write a short, self‑contained explanation of binary search (the algorithm and its O(log n) complexity) as if teaching a peer. Include:
+- The prerequisites (sorted array).
+- Step‑by‑step example with a small array.
+- A code snippet in Python.
+- Why it’s faster than linear search, with a graph of runtime growth (even if hand‑drawn, insert a photo).
+- A CTF‑related application: how you might use bisection to find a buffer overflow offset.</p>
+<p>This solidifies your understanding and builds your communication skills—vital for writing clear CTF write‑ups.</p>
+<h3 id="ps27-week-2-reflection-log">PS2‑7: Week 2 Reflection Log</h3>
+<p>Create <code>week2_reflection.md</code> and answer:
+1. What was the hardest concept this week (Big‑O, recursion, or debugging?) and how did you overcome it?
+2. Describe a moment when you used <code>pdb</code> to fix a bug that you couldn’t spot just by reading code.
+3. How has your thinking about efficiency changed? Give an example where you chose a faster approach after analyzing complexity.
+4. What was your proudest achievement from the problem set?</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>This week, you’re no longer just a coder; you’re an <strong>algorithmic thinker</strong>. You’ve learned to:
+- Measure and predict your code’s performance.
+- Make algorithms work for you, not against you.
+- Debug with surgical precision.
+- Wield recursion to solve mazes and crack passwords.
+- Use randomness to estimate the impossible.</p>
+<p>Carry these skills forward. Next week, you’ll build real‑world‑ready object‑oriented systems and start laying the groundwork for your CTF tool library. The maze solver’s DFS will evolve into graph‑based fuzzers; the Monte Carlo simulation will become your side‑channel analysis; and the sorting knowledge will help you spot algorithmic vulnerabilities.</p>
+<p>Close this document, open your terminal, and start writing the <code>estimate_pi</code> function. <strong>Make it work, then make it fast.</strong></p>
+<p>Let’s conquer Week 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

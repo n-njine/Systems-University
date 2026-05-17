@@ -1,0 +1,1343 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-9-super-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#processes-the-unix-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Processes &amp; The Unix Shell"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-unix-processes-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 PART 1: UNIX PROCESSES (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 PART 1: UNIX PROCESSES (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-process-creation-with-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Process Creation with fork()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-execve-replace-the-process-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 execve() – Replace the Process Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-wait-and-zombieoprhan-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 wait() and Zombie/Oprhan Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-process-ids-and-parent-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Process IDs and Parent Relationships
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-file-descriptors-redirection-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 PART 2: FILE DESCRIPTORS &amp; REDIRECTION (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁 PART 2: FILE DESCRIPTORS &amp; REDIRECTION (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-the-fd-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 The FD Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-system-calls-open-close-read-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 System Calls: open(), close(), read(), write()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-dup2-for-redirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 dup2() for Redirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-input-redirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Input Redirection (&lt;)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-heredoc-and-pipes-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Here‑doc and Pipes (Preview)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-pipes-interprocess-communication-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 PART 3: PIPES &amp; INTER‑PROCESS COMMUNICATION (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 PART 3: PIPES &amp; INTER‑PROCESS COMMUNICATION (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-pipeint-fd2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 pipe(int fd[2])
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-implementing-ls-wc-l" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Implementing ls | wc -l
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-multiple-pipes-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Multiple Pipes (Future)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-signal-handling-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ PART 4: SIGNAL HANDLING (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ PART 4: SIGNAL HANDLING (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-common-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Common Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-signal-handlers-using-sigaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Signal Handlers using sigaction()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-ignoring-and-blocking-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Ignoring and Blocking Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-zombie-reaping-with-sigchld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Zombie Reaping with SIGCHLD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-minishell-project-architecture-execution-2-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ PART 5: MINI‑SHELL PROJECT – ARCHITECTURE &amp; EXECUTION (2 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ PART 5: MINI‑SHELL PROJECT – ARCHITECTURE &amp; EXECUTION (2 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-core-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Core Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-reading-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Reading Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-tokenizing-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Tokenizing the Command Line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-builtins-cd-exit-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Builtins: cd, exit, help
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-external-command-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 External Command Execution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-redirection-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Redirection Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-pipes-for-a-single-pipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Pipes for a Single Pipe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-signal-handling-in-the-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Signal Handling in the Shell
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-testing-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Testing &amp; Iteration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-9-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 9 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 9 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps91-complete-the-mini-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑1: Complete the Mini Shell
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps92-mit-6828-xv6-book-chapter-0-operating-system-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑2: MIT 6.828 xv6 Book – Chapter 0 (Operating System Interfaces)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps93-overthewire-bandit-2527" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑3: OverTheWire Bandit 25‑27
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps94-write-a-simple-cronjob-exploit-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑4: Write a Simple cronjob Exploit (Simulation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps95-picoctf-general-skills-forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑5: picoCTF – General Skills &amp; Forensics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps96-write-a-shellcode-that-uses-execve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑6: Write a shellcode that uses execve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps97-week-9-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS9‑7: Week 9 Reflection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>The heap and format strings taught you to corrupt memory. Now you’ll learn to <strong>control the system itself</strong>. This week we dive into the Unix process model, file descriptors, pipes, and signals. Then you’ll pour everything into building a working Unix shell from scratch. Mastering this layer unlocks privilege escalation, command injection, and the deep understanding of how a compromised binary interacts with the kernel. This is the bridge between binary exploitation and full system control.</p>
+<h1 id="week-9-super-intensive-deep-dive">🔥 WEEK 9: SUPER INTENSIVE DEEP DIVE</h1>
+<h2 id="processes-the-unix-shell"><em>"Processes &amp; The Unix Shell"</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:30</td>
+<td>Unix Processes: <code>fork</code>, <code>exec</code>, <code>wait</code></td>
+</tr>
+<tr>
+<td>1:30 – 3:00</td>
+<td>File Descriptors &amp; Redirection</td>
+</tr>
+<tr>
+<td>3:00 – 4:00</td>
+<td>Pipes &amp; Inter‑Process Communication</td>
+</tr>
+<tr>
+<td>4:00 – 5:00</td>
+<td>Signal Handling</td>
+</tr>
+<tr>
+<td>5:00 – 7:00</td>
+<td>Mini‑Shell Project: Tokenizer &amp; Execution</td>
+</tr>
+<tr>
+<td>7:00 – 8:00</td>
+<td>Problem Set Kickoff &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-unix-processes-15-hours">🧠 PART 1: UNIX PROCESSES (1.5 HOURS)</h2>
+<p>Everything you run on Linux is a process. Exploits spawn reverse shells, escalate privileges, and interact with the kernel through the <strong>process model</strong>. You must understand <code>fork</code>/<code>exec</code>/<code>wait</code> like a second language.</p>
+<h3 id="11-process-creation-with-fork">1.1 Process Creation with <code>fork()</code></h3>
+<ul>
+<li><code>pid_t fork(void)</code> creates a child process that is an exact copy of the parent (code, stack, file descriptors).</li>
+<li>Returns <strong>0</strong> to child, <strong>child’s PID</strong> to parent, or <strong>‑1</strong> on error.</li>
+<li>After fork, both run concurrently. Whichever gets scheduled first is non‑deterministic.</li>
+</ul>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+
+int main() {
+    pid_t pid = fork();
+    if (pid &lt; 0) {
+        perror(&quot;fork failed&quot;);
+        return 1;
+    } else if (pid == 0) {
+        printf(&quot;I am child, PID = %d\n&quot;, getpid());
+    } else {
+        printf(&quot;I am parent, child PID = %d, my PID = %d\n&quot;, pid, getpid());
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>Key observation:</strong> Both print from the same program memory—yet they execute different branches. This is the foundation of how a shell runs external commands.</p>
+<h3 id="12-execve-replace-the-process-image">1.2 <code>execve()</code> – Replace the Process Image</h3>
+<p><code>int execve(const char *pathname, char *const argv[], char *const envp[])</code> loads a new program into the current process memory. It does <strong>not</strong> create a new process; the old one is replaced.</p>
+<p>Typical pattern in a shell: <strong>fork then exec</strong>—child calls <code>exec</code>, parent waits.</p>
+<pre><code class="language-c">char *args[] = {&quot;/bin/ls&quot;, &quot;-l&quot;, NULL};
+execve(&quot;/bin/ls&quot;, args, NULL);
+perror(&quot;execve failed&quot;); // only reached if error
+</code></pre>
+<p><strong>Exercise:</strong> Write a program that forks a child, child does <code>execve("/bin/ls", ...)</code>, parent prints "Waiting" then calls <code>wait</code>.</p>
+<h3 id="13-wait-and-zombieoprhan-processes">1.3 <code>wait()</code> and Zombie/Oprhan Processes</h3>
+<ul>
+<li><code>pid_t wait(int *wstatus)</code> blocks until a child terminates. Stores exit status.</li>
+<li>If parent doesn’t <code>wait</code>, the child becomes a <strong>zombie</strong> (defunct) until parent terminates (then reparented to init).</li>
+<li>If parent exits before child, the child becomes an <strong>orphan</strong>, adopted by init (PID 1).</li>
+</ul>
+<pre><code class="language-c">int status;
+pid_t wpid = wait(&amp;status);
+if (WIFEXITED(status))
+    printf(&quot;Child exited with %d\n&quot;, WEXITSTATUS(status));
+else if (WIFSIGNALED(status))
+    printf(&quot;Child killed by signal %d\n&quot;, WTERMSIG(status));
+</code></pre>
+<p>These macros from <code>&lt;sys/wait.h&gt;</code> decode the status.</p>
+<p><strong>CTF connection:</strong> In security challenges, you may encounter SUID binaries that fork and execute without properly dropping privileges. Or race conditions where a child can modify state before the parent checks. Zombie processes can be used for resource exhaustion.</p>
+<h3 id="14-process-ids-and-parent-relationships">1.4 Process IDs and Parent Relationships</h3>
+<ul>
+<li><code>getpid()</code>, <code>getppid()</code>.</li>
+<li>Understanding process tree is important in forensic analysis of malware.</li>
+</ul>
+<p><strong>Code‑along:</strong> Write a loop that forks multiple children and waits for all, printing when each terminates.</p>
+<hr />
+<h2 id="part-2-file-descriptors-redirection-15-hours">📁 PART 2: FILE DESCRIPTORS &amp; REDIRECTION (1.5 HOURS)</h2>
+<p>Everything is a file. Your shell must be able to redirect input/output of commands to files. This is done by manipulating <strong>file descriptors</strong> before <code>exec</code>.</p>
+<h3 id="21-the-fd-table">2.1 The FD Table</h3>
+<p>Each process has a table of file descriptors. 0 = stdin, 1 = stdout, 2 = stderr. When you <code>open()</code>, the kernel returns the lowest unused FD.</p>
+<h3 id="22-system-calls-open-close-read-write">2.2 System Calls: <code>open()</code>, <code>close()</code>, <code>read()</code>, <code>write()</code></h3>
+<pre><code class="language-c">int fd = open(&quot;output.txt&quot;, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+if (fd &lt; 0) { perror(&quot;open&quot;); exit(1); }
+write(fd, &quot;hello\n&quot;, 6);
+close(fd);
+</code></pre>
+<h3 id="23-dup2-for-redirection">2.3 <code>dup2()</code> for Redirection</h3>
+<p><code>dup2(oldfd, newfd)</code> makes <code>newfd</code> point to the same file structure as <code>oldfd</code>, closing <code>newfd</code> first if open. Then we can redirect stdout to a file:</p>
+<pre><code class="language-c">int fd = open(&quot;output.txt&quot;, O_WRONLY|O_CREAT|O_TRUNC, 0644);
+dup2(fd, STDOUT_FILENO);
+close(fd);  // fd no longer needed
+execlp(&quot;ls&quot;, &quot;ls&quot;, NULL);  // output goes to file
+</code></pre>
+<p>In the child process, after <code>fork</code>, we redirect then <code>exec</code>.</p>
+<p><strong>Exercise:</strong> Write a program that implements <code>&gt; file</code> redirection: takes filename as argument, opens it, <code>dup2</code> to stdout, then executes <code>echo hello</code>.</p>
+<h3 id="24-input-redirection">2.4 Input Redirection (<code>&lt;</code>)</h3>
+<p>Similar, but <code>dup2(fd, STDIN_FILENO)</code> before executing command.</p>
+<h3 id="25-heredoc-and-pipes-preview">2.5 Here‑doc and Pipes (Preview)</h3>
+<p>Even advanced shell features are built on <code>pipe()</code> and descriptor manipulation.</p>
+<p><strong>CTF connection:</strong> Many SUID binaries open files with elevated privileges. If they don’t properly close descriptors or if an attacker can manipulate the fd table (e.g., through <code>close + dup2</code> tricks), they can read/write sensitive files. This is the basis of <strong>file descriptor attacks</strong> and <strong>privilege escalation</strong>.</p>
+<p><strong>Mini‑project:</strong> In the session, start a <code>redir.c</code> that parses a simple command line and performs redirection.</p>
+<hr />
+<h2 id="part-3-pipes-interprocess-communication-1-hour">🔗 PART 3: PIPES &amp; INTER‑PROCESS COMMUNICATION (1 HOUR)</h2>
+<p>Pipes connect the stdout of one process to the stdin of another, the heart of Unix pipelines.</p>
+<h3 id="31-pipeint-fd2">3.1 <code>pipe(int fd[2])</code></h3>
+<ul>
+<li>Creates a unidirectional byte stream. <code>fd[0]</code> is read end, <code>fd[1]</code> is write end.</li>
+<li>Normally used between parent and child, or between two children.</li>
+</ul>
+<h3 id="32-implementing-ls-wc-l">3.2 Implementing <code>ls | wc -l</code></h3>
+<p>The shell must:
+1. Create a pipe.
+2. Fork first child: redirect stdout to pipe write end, close read end, exec <code>ls</code>.
+3. Fork second child: redirect stdin to pipe read end, close write end, exec <code>wc -l</code>.
+4. Parent closes both ends and waits for both children.</p>
+<pre><code class="language-c">int pipefd[2];
+pipe(pipefd);          // create pipe
+
+pid_t pid1 = fork();
+if (pid1 == 0) {
+    // child1: ls
+    dup2(pipefd[1], STDOUT_FILENO);
+    close(pipefd[0]); close(pipefd[1]);
+    execlp(&quot;ls&quot;, &quot;ls&quot;, NULL);
+    perror(&quot;exec ls&quot;); exit(1);
+}
+
+pid_t pid2 = fork();
+if (pid2 == 0) {
+    // child2: wc -l
+    dup2(pipefd[0], STDIN_FILENO);
+    close(pipefd[0]); close(pipefd[1]);
+    execlp(&quot;wc&quot;, &quot;wc&quot;, &quot;-l&quot;, NULL);
+    perror(&quot;exec wc&quot;); exit(1);
+}
+
+close(pipefd[0]); close(pipefd[1]);
+wait(NULL); wait(NULL);
+</code></pre>
+<p><strong>Key pitfall:</strong> Always close unused pipe ends in each process, otherwise reader will hang waiting for end‑of‑file.</p>
+<p><strong>Exercise:</strong> Write a program that pipes <code>ps aux | grep root</code>.</p>
+<h3 id="33-multiple-pipes-future">3.3 Multiple Pipes (Future)</h3>
+<p>Generalization for longer pipelines requires careful descriptor management; we’ll implement in the shell project.</p>
+<p><strong>CTF connection:</strong> In a jail escape or restricted shell, you might need to create a pipe between two commands to bypass restrictions. Also, understanding how data flows through descriptors helps in crafting command injection payloads.</p>
+<hr />
+<h2 id="part-4-signal-handling-1-hour">⚡ PART 4: SIGNAL HANDLING (1 HOUR)</h2>
+<p>Signals are software interrupts. Your shell must handle <code>SIGINT</code> (Ctrl+C) without dying, and manage foreground/background job control.</p>
+<h3 id="41-common-signals">4.1 Common Signals</h3>
+<ul>
+<li><code>SIGINT</code> (2): Interrupt from keyboard.</li>
+<li><code>SIGCHLD</code> (17): Child status change.</li>
+<li><code>SIGTERM</code> (15): Termination request.</li>
+<li><code>SIGKILL</code> (9): Cannot be caught/ignored.</li>
+</ul>
+<h3 id="42-signal-handlers-using-sigaction">4.2 Signal Handlers using <code>sigaction()</code></h3>
+<p>Better than <code>signal()</code> due to portability and control.</p>
+<pre><code class="language-c">#include &lt;signal.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+
+void sigint_handler(int sig) {
+    write(STDOUT_FILENO, &quot;\nCaught SIGINT!\n&quot;, 16);
+}
+
+int main() {
+    struct sigaction sa;
+    sa.sa_handler = sigint_handler;
+    sigemptyset(&amp;sa.sa_mask);
+    sa.sa_flags = 0;
+    sigaction(SIGINT, &amp;sa, NULL);
+
+    printf(&quot;Press Ctrl+C...\n&quot;);
+    while (1) pause();  // wait for signal
+    return 0;
+}
+</code></pre>
+<p>Important: only use <strong>async‑signal‑safe</strong> functions in a handler (e.g., <code>write</code>, not <code>printf</code>). In our shell, the handler might just set a flag.</p>
+<h3 id="43-ignoring-and-blocking-signals">4.3 Ignoring and Blocking Signals</h3>
+<ul>
+<li><code>signal(SIGINT, SIG_IGN)</code> prevents Ctrl+C from killing a process.</li>
+<li>Blocking signals with <code>sigprocmask()</code> can protect critical sections.</li>
+</ul>
+<p><strong>Shell design:</strong> The shell itself should ignore <code>SIGINT</code>, but foreground child processes should receive it normally. The shell can manage this by setting signal dispositions after fork/exec.</p>
+<h3 id="44-zombie-reaping-with-sigchld">4.4 Zombie Reaping with <code>SIGCHLD</code></h3>
+<p>Instead of blocking <code>wait</code>, a shell can set a <code>SIGCHLD</code> handler that reaps children in the background. This is advanced but powerful.</p>
+<p><strong>CTF connection:</strong> Signal handling can be buggy. Race conditions between a signal and main code can cause double‑free, use‑after‑free, or bypass of security checks. Also, some exploits use <code>SIGABRT</code> to trigger a core dump with sensitive data.</p>
+<hr />
+<h2 id="part-5-minishell-project-architecture-execution-2-hours">🖥️ PART 5: MINI‑SHELL PROJECT – ARCHITECTURE &amp; EXECUTION (2 HOURS)</h2>
+<p>Now you build a minimal but functional Unix shell. This is the capstone of the session, combining everything you’ve learned.</p>
+<h3 id="51-core-loop">5.1 Core Loop</h3>
+<pre><code class="language-c">while (1) {
+    print_prompt();
+    char *line = read_input();
+    if (line == NULL) break;  // EOF
+    if (strlen(line) == 0) continue;
+    execute(line);
+    free(line);
+}
+</code></pre>
+<h3 id="52-reading-input">5.2 Reading Input</h3>
+<p>Use <code>getline()</code> (GNU) or <code>fgets</code>. <code>getline</code> dynamically allocates, so you must free.</p>
+<pre><code class="language-c">char *line = NULL;
+size_t len = 0;
+ssize_t nread = getline(&amp;line, &amp;len, stdin);
+if (nread == -1) exit(0);
+line[strcspn(line, &quot;\n&quot;)] = 0;  // strip newline
+</code></pre>
+<h3 id="53-tokenizing-the-command-line">5.3 Tokenizing the Command Line</h3>
+<p>We need to split by whitespace, respecting quotes (basic), and extract redirections <code>&gt;</code>, <code>&lt;</code>, and pipe <code>|</code>.</p>
+<p>Simplest version: use <code>strtok()</code> or custom parser.</p>
+<pre><code class="language-c">char **parse(char *line, int *argc) {
+    char **args = malloc(64 * sizeof(char*));
+    char *token = strtok(line, &quot; &quot;);
+    int i = 0;
+    while (token != NULL) {
+        args[i++] = token;
+        token = strtok(NULL, &quot; &quot;);
+    }
+    args[i] = NULL;
+    *argc = i;
+    return args;
+}
+</code></pre>
+<p>But we need to detect special symbols: <code>&lt;</code>, <code>&gt;</code>, <code>|</code>. So we’ll keep them as separate tokens.</p>
+<h3 id="54-builtins-cd-exit-help">5.4 Builtins: <code>cd</code>, <code>exit</code>, <code>help</code></h3>
+<ul>
+<li><code>cd</code> must change the shell’s own working directory via <code>chdir(path)</code>.</li>
+<li><code>exit</code> terminates the shell.</li>
+<li>Implement using <code>strcmp</code>.</li>
+</ul>
+<pre><code class="language-c">if (strcmp(args[0], &quot;cd&quot;) == 0) {
+    if (args[1] == NULL) fprintf(stderr, &quot;expected argument to cd\n&quot;);
+    else if (chdir(args[1]) != 0) perror(&quot;cd&quot;);
+    continue;
+}
+</code></pre>
+<h3 id="55-external-command-execution">5.5 External Command Execution</h3>
+<p>For simple commands (no pipes), fork and exec.</p>
+<pre><code class="language-c">pid_t pid = fork();
+if (pid == 0) {
+    execvp(args[0], args);   // search PATH
+    perror(&quot;execvp&quot;);
+    exit(EXIT_FAILURE);
+} else if (pid &gt; 0) {
+    wait(NULL);
+} else {
+    perror(&quot;fork&quot;);
+}
+</code></pre>
+<p><code>execvp</code> uses <code>PATH</code> automatically, so users don’t need full paths.</p>
+<h3 id="56-redirection-implementation">5.6 Redirection Implementation</h3>
+<p>Scan tokens for <code>&lt;</code> and <code>&gt;</code>. Save the filename. Remove those tokens from args before passing to exec. Then in child, before <code>exec</code>:</p>
+<pre><code class="language-c">if (input_file) { 
+    int fd = open(input_file, O_RDONLY);
+    dup2(fd, STDIN_FILENO); close(fd);
+}
+if (output_file) {
+    int fd = open(output_file, O_WRONLY|O_CREAT|O_TRUNC, 0644);
+    dup2(fd, STDOUT_FILENO); close(fd);
+}
+</code></pre>
+<p><strong>Exercise:</strong> Implement a simple <code>&gt;</code> redirection in your shell during the session.</p>
+<h3 id="57-pipes-for-a-single-pipe">5.7 Pipes for a Single Pipe</h3>
+<p>Detect <code>|</code> token. Split the command into left and right parts. Create pipe, fork left, fork right, as shown earlier. Must carefully close fds.</p>
+<h3 id="58-signal-handling-in-the-shell">5.8 Signal Handling in the Shell</h3>
+<ul>
+<li>Shell ignores <code>SIGINT</code>, but child processes should have default (Ctrl+C kills child).</li>
+<li>We can achieve this by resetting signal dispositions in child before exec (or rely on default after fork).</li>
+</ul>
+<pre><code class="language-c">signal(SIGINT, SIG_IGN);   // shell ignores
+// In child, before exec:
+signal(SIGINT, SIG_DFL);
+</code></pre>
+<h3 id="59-testing-iteration">5.9 Testing &amp; Iteration</h3>
+<p>In the remaining time, build step by step. Start with a working <code>execute</code> that handles simple commands, then add builtins, then redirection, then pipes. Test after each addition.</p>
+<p><strong>CTF connection:</strong> This shell becomes your post‑exploitation tool. You can customize it to automatically exfiltrate flags, avoid detection, or execute multi‑stage payloads. Understanding how a shell works internally also helps you break out of restricted shells (jail escapes) and command injection.</p>
+<hr />
+<h2 id="week-9-problem-set-daily-24-hours">📝 WEEK 9 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps91-complete-the-mini-shell">PS9‑1: Complete the Mini Shell</h3>
+<p>Add these features:
+- <strong>Redirection</strong> <code>&lt;</code>, <code>&gt;</code>, <code>&gt;&gt;</code> (append).
+- <strong>Single pipe</strong> <code>|</code>. Bonus: support multiple pipes.
+- <strong>Background execution</strong> (<code>&amp;</code>): If command ends with <code>&amp;</code>, don’t <code>wait</code> in parent; print child PID.
+- <strong><code>jobs</code> builtin</strong>: track background processes and list them.
+- <strong>Signal handling</strong>: Ensure Ctrl+C kills only the foreground child, not the shell. Shell should reclaim children periodically (or via <code>SIGCHLD</code>).</p>
+<h3 id="ps92-mit-6828-xv6-book-chapter-0-operating-system-interfaces">PS9‑2: MIT 6.828 xv6 Book – Chapter 0 (Operating System Interfaces)</h3>
+<p>Read Chapter 0 of the xv6 commentary (available on <a href="https://pdos.csail.mit.edu/6.828/">pdos.csail.mit.edu</a>). It explains processes, system calls, I/O, and file descriptors exactly matching this week’s material. Absorb it.</p>
+<h3 id="ps93-overthewire-bandit-2527">PS9‑3: OverTheWire Bandit 25‑27</h3>
+<p>Continue the Bandit journey. Document each. Level 26 is a tricky “setuid” and restricted shell; your new knowledge should help.</p>
+<h3 id="ps94-write-a-simple-cronjob-exploit-simulation">PS9‑4: Write a Simple <code>cronjob</code> Exploit (Simulation)</h3>
+<p>Create a SUID binary that uses <code>system()</code> to run a cleanup script with a path to a file. Then exploit it by manipulating <code>PATH</code> or using symlinks to escalate to root. This brings together <code>fork</code>/<code>exec</code>, privileges, and command injection.</p>
+<h3 id="ps95-picoctf-general-skills-forensics">PS9‑5: picoCTF – General Skills &amp; Forensics</h3>
+<p>Spend some time on picoGym expanding your breadth: solve 5 challenges in “General Skills” or “Forensics” (e.g., “droids0”, “whitePages”). Keep your Python sharp.</p>
+<h3 id="ps96-write-a-shellcode-that-uses-execve">PS9‑6: Write a shellcode that uses <code>execve</code></h3>
+<p>Using assembly (manual or via pwntools), write a minimal shellcode that calls <code>execve("/bin/sh", NULL, NULL)</code> without any null bytes. Explain each instruction. This will connect your assembly knowledge (Week 7) with the <code>exec</code> system call.</p>
+<p><strong>Tip:</strong> Syscall number for <code>execve</code> on x86‑64 is 59 (<code>0x3b</code>). Use <code>pwntools</code> <code>shellcraft.execve("/bin/sh")</code> to generate, then disassemble and study.</p>
+<h3 id="ps97-week-9-reflection">PS9‑7: Week 9 Reflection</h3>
+<p>In <code>week9_reflection.md</code>:
+1. What was the trickiest part of building the shell? (Pipes? Signal handling? Tokenization?)
+2. How does understanding <code>fork/exec</code> change your view of what happens when you run a program?
+3. Describe a security vulnerability that could arise from incorrectly managing file descriptors or signals in a SUID binary.
+4. How do you think the shell will evolve into your own CTF command‑and‑control tool?</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>You now own the process. You can spawn children, wire them together with pipes, redirect their I/O, and respond to signals. You’ve built a shell from scratch—one of the most empowering projects of any CS curriculum. This isn’t just a toy; it’s a blueprint for how every command injection exploit works, how post‑exploitation agents run, and how privilege escalation baits are set.</p>
+<p>Next week, we’ll enhance the shell with background jobs, environment variables, and deeper signal handling, then move into the OS engineering mindset (xv6). The path from C to OS to kernel exploitation is now clear.</p>
+<p><strong>Open your editor. Write the main loop. Run <code>./myshell</code> and type <code>ls</code>. The terminal is yours.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

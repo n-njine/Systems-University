@@ -1,0 +1,1366 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-10-super-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-the-debugger-shell-mastery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Scripting the Debugger &amp; Shell Mastery”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-shell-enhancement-i-environment-path-builtins-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 PART 1: SHELL ENHANCEMENT I – ENVIRONMENT, PATH, BUILTINS (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 PART 1: SHELL ENHANCEMENT I – ENVIRONMENT, PATH, BUILTINS (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-custom-path-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Custom PATH Resolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-tilde-expansion-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Tilde Expansion and ~
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-builtins-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Builtins: history
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-shell-enhancement-ii-background-jobs-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ PART 2: SHELL ENHANCEMENT II – BACKGROUND JOBS &amp; &amp; (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ PART 2: SHELL ENHANCEMENT II – BACKGROUND JOBS &amp; &amp; (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-detecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Detecting &amp;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-running-in-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Running in Background
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-listing-jobs-jobs-builtin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Listing Jobs: jobs Builtin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-bringing-jobs-to-foreground-fg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Bringing Jobs to Foreground: fg
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-job-control-reaping-zombies-sigchld-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧟 PART 3: JOB CONTROL &amp; REAPING ZOMBIES (SIGCHLD) (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧟 PART 3: JOB CONTROL &amp; REAPING ZOMBIES (SIGCHLD) (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-sigchld-handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 SIGCHLD Handler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-updating-the-job-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Updating the Job Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-environment-configuration-files-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 PART 4: ENVIRONMENT &amp; CONFIGURATION FILES (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏠 PART 4: ENVIRONMENT &amp; CONFIGURATION FILES (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-reading-a-startup-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Reading a Startup File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-saving-history-on-exit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Saving History on Exit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-gdb-scripting-with-python-automating-analysis-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 PART 5: GDB SCRIPTING WITH PYTHON – AUTOMATING ANALYSIS (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐍 PART 5: GDB SCRIPTING WITH PYTHON – AUTOMATING ANALYSIS (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-enabling-python-in-gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Enabling Python in GDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-writing-a-simple-gdb-command-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Writing a Simple GDB Command in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-hooking-breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Hooking Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-automating-exploit-offset-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Automating Exploit Offset Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-dumping-heap-chunks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Dumping Heap Chunks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-reverse-engineering-deep-dive-keygen-challenge-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 PART 6: REVERSE ENGINEERING DEEP DIVE – KEYGEN CHALLENGE (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 PART 6: REVERSE ENGINEERING DEEP DIVE – KEYGEN CHALLENGE (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-the-challenge-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 The Challenge Binary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-writing-a-keygen-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Writing a Keygen in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-using-unicorn-for-emulation-teaser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Using Unicorn for Emulation (Teaser)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-7-git-basics-project-management-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧰 PART 7: GIT BASICS &amp; PROJECT MANAGEMENT (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧰 PART 7: GIT BASICS &amp; PROJECT MANAGEMENT (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-setting-up-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Setting Up a Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-basic-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Basic Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-branching-and-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Branching and Merging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-remote-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Remote Repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-10-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 10 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 10 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps101-finish-your-shell-with-all-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑1: Finish Your Shell with All Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps102-gdb-automation-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑2: GDB Automation Scripts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps103-pwnablekr-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑3: pwnable.kr – “input”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps104-reverse-engineering-keygen-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑4: Reverse Engineering Keygen (Challenge)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps105-overthewire-leviathan-levels-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑5: OverTheWire Leviathan Levels 0‑2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps106-read-advanced-programming-in-the-unix-environment-stevens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑6: Read “Advanced Programming in the UNIX Environment” (Stevens)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps107-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS10‑7: Reflection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>Your shell runs commands. Now it’s time to make it a <strong>real shell</strong>—with job control, environment management, history, and the polish of a professional tool. Then we’ll turn the tables: instead of just <strong>using</strong> a debugger, you’ll learn to <strong>script GDB with Python</strong>, automating the most tedious parts of exploit development. By the end of this week, you’ll have a fully functional custom shell that can serve as your post‑exploitation agent, and the ability to bend GDB to your will with one‑liners.</p>
+<h1 id="week-10-super-intensive-deep-dive">🔥 WEEK 10: SUPER INTENSIVE DEEP DIVE</h1>
+<h2 id="scripting-the-debugger-shell-mastery"><em>“Scripting the Debugger &amp; Shell Mastery”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:30</td>
+<td>Shell Enhancement I: Environment, PATH, Builtins</td>
+</tr>
+<tr>
+<td>1:30 – 2:30</td>
+<td>Shell Enhancement II: Background Jobs &amp; <code>&amp;</code></td>
+</tr>
+<tr>
+<td>2:30 – 3:00</td>
+<td>Job Control &amp; Reaping Zombies (SIGCHLD)</td>
+</tr>
+<tr>
+<td>3:00 – 3:30</td>
+<td>Environment &amp; Configuration Files</td>
+</tr>
+<tr>
+<td>3:30 – 5:00</td>
+<td>GDB Scripting with Python: Automating Analysis</td>
+</tr>
+<tr>
+<td>5:00 – 6:30</td>
+<td>Reverse Engineering Deep Dive: Keygen Challenge</td>
+</tr>
+<tr>
+<td>6:30 – 7:00</td>
+<td>Git Basics &amp; Project Management</td>
+</tr>
+<tr>
+<td>7:00 – 8:00</td>
+<td>Problem Set Kickoff, Live Debugging &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-shell-enhancement-i-environment-path-builtins-15-hours">🧠 PART 1: SHELL ENHANCEMENT I – ENVIRONMENT, PATH, BUILTINS (1.5 HOURS)</h2>
+<p>Your shell can execute commands and do simple pipes. Now we add the features that make it feel like a true Unix shell.</p>
+<h3 id="11-environment-variables">1.1 Environment Variables</h3>
+<p>Each process inherits an <strong>environment</strong> — an array of <code>"KEY=VALUE"</code> strings. The shell must manage its own environment and pass it to children via <code>execve()</code> (or use <code>execvpe</code>).</p>
+<ul>
+<li>Read the current environment with the global <code>extern char **environ</code>.</li>
+<li>Functions: <code>getenv()</code>, <code>setenv()</code>, <code>unsetenv()</code>, <code>putenv()</code>.</li>
+</ul>
+<p><strong>Add <code>export</code> and <code>unset</code> builtins:</strong></p>
+<pre><code class="language-c">if (strcmp(args[0], &quot;export&quot;) == 0) {
+    if (args[1]) {
+        char *eq = strchr(args[1], '=');
+        if (eq) {
+            *eq = '\0';
+            setenv(args[1], eq+1, 1);
+        } else {
+            // export existing variable? Just ignore or set to empty
+            setenv(args[1], &quot;&quot;, 1);
+        }
+    } else {
+        // print all env vars
+        for (char **env = environ; *env; env++)
+            printf(&quot;%s\n&quot;, *env);
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>CTF connection:</strong> Many privilege‑escalation exploits manipulate <code>PATH</code> or <code>LD_PRELOAD</code> to trick SUID binaries into loading malicious libraries. Your shell can be used to craft these environments precisely.</p>
+<h3 id="12-custom-path-resolution">1.2 Custom <code>PATH</code> Resolution</h3>
+<p>Your shell should find executables by searching the directories listed in <code>PATH</code>. Write a function <code>resolve_path(cmd)</code> that returns a full path if found, or NULL.</p>
+<pre><code class="language-c">char *path_search(const char *cmd) {
+    if (strchr(cmd, '/')) { // already path
+        if (access(cmd, X_OK) == 0) return strdup(cmd);
+        return NULL;
+    }
+    char *path = getenv(&quot;PATH&quot;);
+    if (!path) return NULL;
+    char *dup = strdup(path);
+    char *dir = strtok(dup, &quot;:&quot;);
+    while (dir) {
+        char full[1024];
+        snprintf(full, sizeof(full), &quot;%s/%s&quot;, dir, cmd);
+        if (access(full, X_OK) == 0) {
+            free(dup);
+            return strdup(full);
+        }
+        dir = strtok(NULL, &quot;:&quot;);
+    }
+    free(dup);
+    return NULL;
+}
+</code></pre>
+<p>Then use <code>execve(resolved_path, args, environ)</code> instead of <code>execvp</code>. This gives you control over exactly what gets executed—crucial for security.</p>
+<h3 id="13-tilde-expansion-and">1.3 Tilde Expansion and <code>~</code></h3>
+<p>Before parsing, expand <code>~</code> to the home directory (<code>getenv("HOME")</code>). <code>~user</code> to that user’s home (<code>getpwnam</code>).</p>
+<h3 id="14-builtins-history">1.4 Builtins: <code>history</code></h3>
+<p>Keep a list of previously entered commands. You can store them in a fixed‑size ring buffer or linked list. Add a <code>history</code> command to print them. For arrow‑key support, we’ll eventually link with <code>libreadline</code>; for now, a simple file <code>~/.mysh_history</code> will do.</p>
+<p><strong>Exercise:</strong> Add <code>save_history()</code> and <code>load_history()</code> calls.</p>
+<hr />
+<h2 id="part-2-shell-enhancement-ii-background-jobs-1-hour">⚙️ PART 2: SHELL ENHANCEMENT II – BACKGROUND JOBS &amp; <code>&amp;</code> (1 HOUR)</h2>
+<p>Real shells allow commands to run in the background while you continue working. This is what <code>&amp;</code> signifies.</p>
+<h3 id="21-detecting">2.1 Detecting <code>&amp;</code></h3>
+<p>If the last token of the command line is <code>&amp;</code>, we remove it and set a flag <code>background = 1</code>.</p>
+<h3 id="22-running-in-background">2.2 Running in Background</h3>
+<p>In the parent process, if <code>background == 1</code>, do <strong>not</strong> <code>wait()</code> for the child. Instead, print the child’s PID and add it to a <strong>job list</strong>.</p>
+<pre><code class="language-c">typedef struct Job {
+    pid_t pid;
+    char *command;
+    struct Job *next;
+} Job;
+Job *jobs = NULL;
+</code></pre>
+<p>When we spawn a background child:</p>
+<pre><code class="language-c">pid_t pid = fork();
+if (pid == 0) {
+    // child setup and exec
+} else {
+    if (background) {
+        add_job(&amp;jobs, pid, line); // copy line
+        printf(&quot;[%d] %d\n&quot;, job_id, pid);
+        // do NOT wait
+    } else {
+        int status;
+        waitpid(pid, &amp;status, 0);
+    }
+}
+</code></pre>
+<h3 id="23-listing-jobs-jobs-builtin">2.3 Listing Jobs: <code>jobs</code> Builtin</h3>
+<p>Iterate the list and print their PIDs, status, and command.</p>
+<h3 id="24-bringing-jobs-to-foreground-fg">2.4 Bringing Jobs to Foreground: <code>fg</code></h3>
+<p><code>fg %d</code> needs to:
+- Find the job by id/pid.
+- Use <code>tcsetpgrp()</code> to give it terminal control (advanced); for now, just <code>waitpid(pid, &amp;status, 0)</code> to wait for it.</p>
+<p><strong>Exercise:</strong> Implement <code>fg</code> by waiting for the specified PID.</p>
+<p><strong>CTF connection:</strong> In a reverse shell scenario, you might need to run a long‑running scan or brute‑forcer in the background while keeping an interactive session alive. Your shell’s job control gives you that.</p>
+<hr />
+<h2 id="part-3-job-control-reaping-zombies-sigchld-05-hour">🧟 PART 3: JOB CONTROL &amp; REAPING ZOMBIES (SIGCHLD) (0.5 HOUR)</h2>
+<p>When a background child finishes, it becomes a zombie until the parent <code>wait()</code>s. We can avoid zombies by handling <code>SIGCHLD</code> asynchronously.</p>
+<h3 id="31-sigchld-handler">3.1 SIGCHLD Handler</h3>
+<pre><code class="language-c">void sigchld_handler(int sig) {
+    int saved_errno = errno;
+    pid_t pid;
+    int status;
+    while ((pid = waitpid(-1, &amp;status, WNOHANG)) &gt; 0) {
+        // find job in list and remove/update
+        remove_job(pid);
+    }
+    errno = saved_errno;
+}
+</code></pre>
+<p>Set this handler early in <code>main</code> (shell). This reaps children automatically, so no zombies accumulate.</p>
+<h3 id="32-updating-the-job-table">3.2 Updating the Job Table</h3>
+<p>In the handler, mark the job as done, and optionally print a message <code>[1] Done    ls -lR</code>.</p>
+<p><strong>Caution:</strong> Signal handlers must be minimal and async‑safe. We can’t call <code>printf</code> safely, so we just set a flag and let the main loop print messages.</p>
+<p><strong>Exercise:</strong> Integrate this into your shell and test with short background commands.</p>
+<hr />
+<h2 id="part-4-environment-configuration-files-05-hour">🏠 PART 4: ENVIRONMENT &amp; CONFIGURATION FILES (0.5 HOUR)</h2>
+<p>Every time a shell starts, it reads scripts like <code>.bashrc</code>. We’ll mimic that.</p>
+<h3 id="41-reading-a-startup-file">4.1 Reading a Startup File</h3>
+<p>On startup, attempt to open <code>~/.mysh_profile</code>. Read it line‑by‑line and execute each as a normal command (but without prompting). This allows users to set aliases, export variables, etc.</p>
+<pre><code class="language-c">void source_file(const char *path) {
+    FILE *f = fopen(path, &quot;r&quot;);
+    if (!f) return;
+    char *line = NULL;
+    size_t len = 0;
+    while (getline(&amp;line, &amp;len, f) != -1) {
+        execute(line); // reuse your main command executor
+    }
+    free(line);
+    fclose(f);
+}
+</code></pre>
+<p><strong>Exercise:</strong> Add a <code>source</code> builtin so users can reload config.</p>
+<h3 id="42-saving-history-on-exit">4.2 Saving History on Exit</h3>
+<p>Use <code>atexit()</code> or explicit save when <code>exit</code> is called.</p>
+<hr />
+<h2 id="part-5-gdb-scripting-with-python-automating-analysis-15-hours">🐍 PART 5: GDB SCRIPTING WITH PYTHON – AUTOMATING ANALYSIS (1.5 HOURS)</h2>
+<p>GDB’s Python API lets you write custom commands that introspect the inferior’s memory and registers, automate breakpoint handling, and build powerful reverse‑engineering assistants.</p>
+<h3 id="51-enabling-python-in-gdb">5.1 Enabling Python in GDB</h3>
+<p>Most modern GDBs have Python. Check with <code>gdb --configuration</code>. Create a file <code>mygdb.py</code> and source it: <code>source mygdb.py</code> in GDB, or put commands in <code>~/.gdbinit</code>.</p>
+<h3 id="52-writing-a-simple-gdb-command-in-python">5.2 Writing a Simple GDB Command in Python</h3>
+<pre><code class="language-python">import gdb
+
+class PrintStackFrame(gdb.Command):
+    &quot;&quot;&quot;Print the stack frame around RSP for a given size.&quot;&quot;&quot;
+    def __init__(self):
+        super().__init__(&quot;stack_frame&quot;, gdb.COMMAND_USER)
+
+    def invoke(self, arg, from_tty):
+        size = 64
+        try:
+            size = int(arg)
+        except:
+            pass
+        rsp = int(gdb.parse_and_eval(&quot;$rsp&quot;))
+        rip = int(gdb.parse_and_eval(&quot;$rip&quot;))
+        memory = gdb.selected_inferior().read_memory(rsp, size)
+        print(f&quot;   RSP = {rsp:#018x}  RIP = {rip:#018x}&quot;)
+        for i in range(0, size, 8):
+            qword = int.from_bytes(memory[i:i+8], 'little')
+            print(f&quot;   [{rsp+i:#018x}] {qword:#018x}&quot;)
+        # Mark if RIP is inside
+PrintStackFrame()
+</code></pre>
+<p><strong>Usage:</strong> <code>stack_frame 80</code> prints the top of stack.</p>
+<p><strong>Exercise:</strong> Write a GDB command <code>pattern_offset</code> that automates <code>cyclic</code>: given a crash value (like in <code>$rip</code>), runs <code>cyclic -l</code> in Python and prints offset.</p>
+<h3 id="53-hooking-breakpoints">5.3 Hooking Breakpoints</h3>
+<pre><code class="language-python">class BreakpointLogger(gdb.Breakpoint):
+    def stop(self):
+        print(f&quot;Hit breakpoint at {self.location}&quot;)
+        # Print registers
+        for reg in ['rax','rbx','rcx','rdx','rsi','rdi']:
+            val = gdb.parse_and_eval(f&quot;${reg}&quot;)
+            print(f&quot;   {reg}: {val}&quot;)
+        return False  # don't stop, continue (or True to stop)
+</code></pre>
+<p>Use it to trace function calls without stopping.</p>
+<h3 id="54-automating-exploit-offset-discovery">5.4 Automating Exploit Offset Discovery</h3>
+<p>With pwntools, you can run GDB headless and parse output. But a simple GDB script can do:
+- Load binary.
+- Set breakpoint at <code>ret</code> of vulnerable function.
+- Run with cyclic pattern.
+- Read <code>$rip</code> and compute offset.
+- Print result.</p>
+<p><strong>In‑session:</strong> Write a GDB script that sets a breakpoint on <code>vulnerable+offset</code>, runs with cyclic, catches the segfault, reads <code>$rsp</code> or <code>$rip</code>, and prints the offset. This becomes your “find_offset.py” GDB helper.</p>
+<h3 id="55-dumping-heap-chunks">5.5 Dumping Heap Chunks</h3>
+<p>Create a command that reads the <code>main_arena</code> from libc and walks the bins, printing chunk sizes and flags. This is advanced but I’ll provide a skeleton.</p>
+<p><strong>CTF connection:</strong> In complex heap exploits, you often need to inspect bin state. GDB scripting automates that, turning hours of manual <code>x/64gx</code> into a single command.</p>
+<hr />
+<h2 id="part-6-reverse-engineering-deep-dive-keygen-challenge-15-hours">🔍 PART 6: REVERSE ENGINEERING DEEP DIVE – KEYGEN CHALLENGE (1.5 HOURS)</h2>
+<p>We’ll use Ghidra and Python to crack a simple licence‑key verifier and write a keygen.</p>
+<h3 id="61-the-challenge-binary">6.1 The Challenge Binary</h3>
+<p>I’ll describe a binary we can create (or use a public one). The program takes a name and a serial, then checks if the serial matches a custom algorithm based on the name.</p>
+<p>Example algorithm: serial = name[0]<em>2 + name[1]</em>3 + ... XOR 0x2A. We’ll implement it in C, compile without symbols, and use Ghidra to reverse.</p>
+<p><strong>Live walkthrough:</strong>
+1. Load into Ghidra, find <code>main</code>, look for <code>scanf</code> or <code>fgets</code> calls.
+2. Track the input into a function that performs the check.
+3. The function loops over the name string, accumulates a sum, XORs a constant, and compares to user serial.
+4. Identify the constant and the operation. Re‑implement the algorithm in Python to generate valid serials for any name.</p>
+<p><strong>CTF connection:</strong> This mirrors many CTF “keygen” or “reverse” challenges where you must produce a valid input based on reversing a binary.</p>
+<h3 id="62-writing-a-keygen-in-python">6.2 Writing a Keygen in Python</h3>
+<pre><code class="language-python">def keygen(name):
+    s = 0
+    for i, ch in enumerate(name):
+        s += ord(ch) * (i + 2)
+    serial = s ^ 0x2A
+    return serial
+</code></pre>
+<p><strong>Exercise:</strong> After reversing, write the keygen, test it against the real binary, and capture the flag string if one is printed on success.</p>
+<h3 id="63-using-unicorn-for-emulation-teaser">6.3 Using Unicorn for Emulation (Teaser)</h3>
+<p>Unicorn is a CPU emulator that can run code snippets. Not today, but mention how you can emulate the check function to brute‑force quickly.</p>
+<hr />
+<h2 id="part-7-git-basics-project-management-05-hour">🧰 PART 7: GIT BASICS &amp; PROJECT MANAGEMENT (0.5 HOUR)</h2>
+<p>Your shell and tools deserve version control.</p>
+<h3 id="71-setting-up-a-repository">7.1 Setting Up a Repository</h3>
+<pre><code class="language-bash">cd ~/myshell
+git init
+git config user.name &quot;Your Name&quot;
+git config user.email &quot;you@example.com&quot;
+</code></pre>
+<h3 id="72-basic-workflow">7.2 Basic Workflow</h3>
+<pre><code>git add myshell.c Makefile
+git commit -m &quot;Initial commit of my shell&quot;
+git log
+git diff
+</code></pre>
+<h3 id="73-branching-and-merging">7.3 Branching and Merging</h3>
+<pre><code class="language-bash">git checkout -b feature-pipes
+# ... make changes
+git commit -a -m &quot;Implement multi-pipe support&quot;
+git checkout master
+git merge feature-pipes
+</code></pre>
+<h3 id="74-remote-repositories">7.4 Remote Repositories</h3>
+<p>Create a GitHub repo, push your code:</p>
+<pre><code class="language-bash">git remote add origin https://github.com/username/myshell.git
+git push -u origin master
+</code></pre>
+<p><strong>Why this matters:</strong> Your exploits and tools will be stored, versioned, and shareable. Collaborating on CTFs requires Git fluency.</p>
+<hr />
+<h2 id="week-10-problem-set-daily-24-hours">📝 WEEK 10 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps101-finish-your-shell-with-all-features">PS10‑1: Finish Your Shell with All Features</h3>
+<ul>
+<li><strong>Multi‑pipe</strong> support (e.g., <code>ls | grep foo | wc -l</code>). Build an n‑stage pipeline with careful descriptor handling (using arrays of pipe fds).</li>
+<li><strong>Background execution</strong> <code>&amp;</code> with <code>jobs</code> and <code>fg</code> builtins.</li>
+<li><strong>Signal handling</strong>: Proper <code>SIGINT</code> behavior (shell ignores, child gets default). <code>SIGCHLD</code> reaper updates job list and prints notifications.</li>
+<li><strong><code>history</code></strong> and <code>!</code> (repeat last command, e.g., <code>!ls</code>).</li>
+<li><strong>Redirection</strong> <code>&gt;</code>, <code>&lt;</code>, <code>&gt;&gt;</code>, and <code>&gt;&amp;</code> (redirect stderr).</li>
+<li><strong>File reader loop</strong> (<code>source</code> builtin) and startup config.</li>
+<li><strong>Bonus:</strong> Filename wildcard expansion (<code>*</code>) using <code>glob()</code>.</li>
+</ul>
+<h3 id="ps102-gdb-automation-scripts">PS10‑2: GDB Automation Scripts</h3>
+<p>Create a Python GDB script <code>auto_offset.py</code> that:
+- Takes a vulnerable binary and input causing crash (from argv).
+- Automatically finds the offset to return address using the cyclic method.
+- Prints the offset and exits.
+Test it against the overflow program from Week 7.</p>
+<p>Create another GDB command <code>heap_walk</code> that, given an address (or using the current arena), prints a summary of the first few free chunks in the small/large bins (using glibc symbols). This deepens your understanding of heap internals.</p>
+<h3 id="ps103-pwnablekr-input">PS10‑3: pwnable.kr – “input”</h3>
+<p>This challenge requires you to send input through multiple channels (argv, stdin, file descriptor, environment, etc.) to pass a series of checks. Use your shell skills and pwntools. Write a detailed write‑up, explaining each stage and the solution script.</p>
+<h3 id="ps104-reverse-engineering-keygen-challenge">PS10‑4: Reverse Engineering Keygen (Challenge)</h3>
+<p>I’ll provide a binary (or you can download an easy crackme from crackmes.one). Write a keygen in Python after reversing with Ghidra. Provide a full explanation of the algorithm and your keygen code.</p>
+<p>Example: https://crackmes.one/crackme/... (choose one with a serial check).</p>
+<h3 id="ps105-overthewire-leviathan-levels-02">PS10‑5: OverTheWire Leviathan Levels 0‑2</h3>
+<p>The Leviathan wargame begins with a setuid binary and a home directory with restricted permissions. Use your skills to find the password for the next level. Document each step.</p>
+<h3 id="ps106-read-advanced-programming-in-the-unix-environment-stevens">PS10‑6: Read “Advanced Programming in the UNIX Environment” (Stevens)</h3>
+<p>Read Chapter 9 (Process Relationships) and Chapter 10 (Signals) in <em>APUE</em>. This will fill in gaps on process groups, sessions, and terminal handling. Use the knowledge to improve your shell’s job control.</p>
+<h3 id="ps107-reflection">PS10‑7: Reflection</h3>
+<p>In <code>week10_reflection.md</code>:
+1. What was the most satisfying feature you added to your shell? Why?
+2. How has GDB scripting changed your debugging/exploit workflow? Give a concrete example.
+3. Describe the hardest part of the keygen challenge (e.g., understanding the algorithm, handling signed/unsigned, etc.).
+4. Now that you have a fully functional shell, how might you modify it for post‑exploitation tasks (e.g., automatic flag exfiltration)?</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>You now possess a <strong>personalized Unix shell</strong> that can run pipelines, manage jobs, and read your startup scripts. It’s the foundation of your future post‑exploitation agents. And you’ve unlocked the power of <strong>GDB Python scripting</strong>, turning the debugger from a manual tool into an automated exploit‑assist robot. You can reverse any binary, write keygens, and handle processes like a kernel hacker.</p>
+<p>Next week, we begin <strong>networking</strong>—sockets, packet crafting, and your first network‑based CTF. Then we’ll dive into the OS itself, building your own kernel modules and exploring privilege escalation at the system‑call level.</p>
+<p><strong>Type <code>make</code> in your shell directory. Watch it build. Then run <code>./myshell</code> and feel the power. The machine is yours.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

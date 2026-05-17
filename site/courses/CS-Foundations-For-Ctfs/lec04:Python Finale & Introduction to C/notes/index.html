@@ -1,0 +1,1476 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-4-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python-finale-introduction-to-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Python Finale &amp; Introduction to C”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-advanced-python-features-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 PART 1: ADVANCED PYTHON FEATURES (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐍 PART 1: ADVANCED PYTHON FEATURES (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-lambda-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Lambda Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-map-filter-reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 map, filter, reduce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-args-and-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 *args and **kwargs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-unpacking-and-argument-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Unpacking and Argument Forwarding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-decorators-quick-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Decorators (Quick Preview)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-networking-with-sockets-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 PART 2: NETWORKING WITH SOCKETS (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 PART 2: NETWORKING WITH SOCKETS (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-the-tcp-handshake-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 The TCP Handshake (Review)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-a-simple-tcp-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 A Simple TCP Client
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-building-a-port-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Building a Port Scanner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nonblocking-io-with-select-intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Non‑Blocking I/O with select (Intro)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-final-python-project-multiclient-chat-server-2-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 PART 3: FINAL PYTHON PROJECT – MULTI‑CLIENT CHAT SERVER (2 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💬 PART 3: FINAL PYTHON PROJECT – MULTI‑CLIENT CHAT SERVER (2 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-implementation-build-along" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Implementation (Build Along)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-introduction-to-c-the-language-2-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🇨 PART 4: INTRODUCTION TO C – THE LANGUAGE (2 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🇨 PART 4: INTRODUCTION TO C – THE LANGUAGE (2 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-why-c-for-ctfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Why C for CTFs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-compilation-process-code-to-executable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Compilation Process (Code to Executable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-basic-syntax-and-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Basic Syntax and Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-control-flow-loops-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Control Flow (Loops &amp; Conditionals)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-the-perils-of-scanf-and-why-we-use-fgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 The Perils of scanf and Why We Use fgets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-commandline-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Command‑Line Arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-functions-scope-in-c-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ PART 5: FUNCTIONS &amp; SCOPE IN C (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ PART 5: FUNCTIONS &amp; SCOPE IN C (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-function-definitions-prototypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Function Definitions &amp; Prototypes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-local-vs-global-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Local vs. Global Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-the-stack-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 The Stack (Conceptual)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-the-static-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 The static Keyword
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 4 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 4 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps41-complete-the-chat-server-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑1: Complete the Chat Server Enhancements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps42-cryptopals-set-1-challenge-3-singlebyte-xor-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑2: Cryptopals Set 1 – Challenge 3 (Single‑byte XOR cipher)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps43-kr-c-exercises-chapters-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑3: K&amp;R C Exercises – Chapters 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps44-overthewire-bandit-levels-1315" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑4: OverTheWire Bandit Levels 13‑15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps45-picoctf-python-general-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑5: picoCTF Python &amp; General Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps46-reflection-c-mindset-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS4‑6: Reflection &amp; C Mindset Shift
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>We’re closing the Python chapter with a bang: advanced features, network programming, and a full‑blown multi‑client chat server. Then we switch gears—hard—and dive into C, the language that will bring you closer to the machine. By the end of this week, you’ll be writing TCP servers, crafting raw HTTP requests, and writing compilable C programs. The bridge between high‑level scripting and bare‑metal exploitation begins here.</p>
+<h1 id="week-4-intensive-deep-dive">🔥 WEEK 4: INTENSIVE DEEP DIVE</h1>
+<h2 id="python-finale-introduction-to-c"><em>“Python Finale &amp; Introduction to C”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:00</td>
+<td>Advanced Python: Lambdas, Args, Functional Tools</td>
+</tr>
+<tr>
+<td>1:00 – 2:30</td>
+<td>Networking with Sockets</td>
+</tr>
+<tr>
+<td>2:30 – 4:30</td>
+<td>Final Python Project: Multi‑Client Chat Server</td>
+</tr>
+<tr>
+<td>4:30 – 6:30</td>
+<td>Introduction to C: The Language</td>
+</tr>
+<tr>
+<td>6:30 – 7:30</td>
+<td>Functions &amp; Scope in C</td>
+</tr>
+<tr>
+<td>7:30 – 8:00</td>
+<td>Problem Set Kickoff &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-advanced-python-features-1-hour">🐍 PART 1: ADVANCED PYTHON FEATURES (1 HOUR)</h2>
+<p>You’ve mastered functions, loops, and OOP. Now let’s explore the Python features that make your code concise, expressive, and CTF‑ready. These are the tools you’ll use to write one‑liner decoders, fuzzers, and protocol parsers.</p>
+<h3 id="11-lambda-functions">1.1 Lambda Functions</h3>
+<p>A lambda is an anonymous function defined in a single expression. No <code>def</code>, no name.</p>
+<pre><code class="language-python">add = lambda x, y: x + y
+print(add(3, 5))   # 8
+</code></pre>
+<p>Useful when you need a simple function for a short time, like a key for sorting:</p>
+<pre><code class="language-python">pairs = [(1, 'b'), (2, 'a'), (3, 'c')]
+pairs.sort(key=lambda p: p[1])   # sort by second element
+</code></pre>
+<p><strong>CTF connection:</strong> In exploit scripts, you often need a quick converter (e.g., pack integer to little‑endian bytes). While <code>struct.pack</code> exists, lambdas let you write ad‑hoc helpers without cluttering the namespace.</p>
+<p><strong>Exercise:</strong> Write a lambda that takes a hex string and returns its decimal value. (Hint: <code>lambda s: int(s, 16)</code>).</p>
+<h3 id="12-map-filter-reduce">1.2 <code>map</code>, <code>filter</code>, <code>reduce</code></h3>
+<p>These functional tools process iterables with functions.</p>
+<ul>
+<li><strong><code>map(func, iterable)</code>:</strong> apply func to every item, returns an iterator.
+  <code>python
+  nums = [1, 2, 3, 4]
+  squared = list(map(lambda x: x**2, nums))   # [1,4,9,16]</code></li>
+<li><strong><code>filter(func, iterable)</code>:</strong> keep items where func returns True.
+  <code>python
+  evens = list(filter(lambda x: x % 2 == 0, nums))  # [2,4]</code></li>
+<li><strong><code>reduce(func, iterable)</code>:</strong> cumulatively apply func, returning a single value (from <code>functools</code>).
+  <code>python
+  from functools import reduce
+  product = reduce(lambda a, b: a * b, nums)   # 24</code></li>
+</ul>
+<p><strong>Pythonic alternative:</strong> list comprehensions are often more readable. Compare:</p>
+<pre><code class="language-python"># map+filter:
+list(map(lambda x: x**2, filter(lambda x: x%2==0, range(10))))
+# vs list comprehension:
+[x**2 for x in range(10) if x % 2 == 0]
+</code></pre>
+<p>In CTF scripting, use what’s clearest; but knowing both ensures you can read other people’s code.</p>
+<h3 id="13-args-and-kwargs">1.3 <code>*args</code> and <code>**kwargs</code></h3>
+<p>Functions can accept arbitrary numbers of arguments.</p>
+<ul>
+<li><strong><code>*args</code></strong> gathers extra positional arguments into a tuple.</li>
+<li><strong><code>**kwargs</code></strong> gathers extra keyword arguments into a dictionary.</li>
+</ul>
+<pre><code class="language-python">def build_url(base, *paths, **params):
+    url = base.rstrip('/') + '/' + '/'.join(paths)
+    if params:
+        query = '&amp;'.join(f&quot;{k}={v}&quot; for k,v in params.items())
+        url += '?' + query
+    return url
+
+print(build_url(&quot;http://ctf.local&quot;, &quot;api&quot;, &quot;v1&quot;, &quot;flag&quot;, user=&quot;admin&quot;, token=&quot;secret&quot;))
+# http://ctf.local/api/v1/flag?user=admin&amp;token=secret
+</code></pre>
+<p><strong>Exercise:</strong> Write a function <code>log_event(message, **details)</code> that prints a timestamp, the message, and any extra key‑value pairs formatted nicely. Use <code>datetime.datetime.now()</code>.</p>
+<h3 id="14-unpacking-and-argument-forwarding">1.4 Unpacking and Argument Forwarding</h3>
+<p>You can unpack sequences/dicts into function arguments:</p>
+<pre><code class="language-python">def send_packet(dst, src, data):
+    print(f&quot;Sending from {src} to {dst}: {data}&quot;)
+
+args = (&quot;10.0.0.2&quot;, &quot;10.0.0.1&quot;, b&quot;\xde\xad\xbe\xef&quot;)
+send_packet(*args)
+</code></pre>
+<p>This is crucial when writing wrappers that forward parameters to lower‑level libraries.</p>
+<h3 id="15-decorators-quick-preview">1.5 Decorators (Quick Preview)</h3>
+<p>A decorator is a function that wraps another function to modify its behavior. You’ll use them heavily later for timing, logging, and resource management. For now, just understand the syntax:</p>
+<pre><code class="language-python">def debug(func):
+    def wrapper(*args, **kwargs):
+        print(f&quot;Calling {func.__name__} with args={args}, kwargs={kwargs}&quot;)
+        result = func(*args, **kwargs)
+        print(f&quot;Returned {result}&quot;)
+        return result
+    return wrapper
+
+@debug
+def add(a, b):
+    return a + b
+</code></pre>
+<p>You don’t need to write complex decorators yet, but be aware they exist.</p>
+<p><strong>Wrap‑up:</strong> These features will appear in the problem set and later in your exploit toolkits. Spend the next 5 minutes rewriting one of your previous functions (like Caesar cipher) using <code>map</code> and a lambda, just to feel the shift.</p>
+<hr />
+<h2 id="part-2-networking-with-sockets-15-hours">🌐 PART 2: NETWORKING WITH SOCKETS (1.5 HOURS)</h2>
+<p>Networking is the lifeblood of CTFs. You’ll connect to remote services, send crafted packets, and intercept traffic. Today we build the foundational socket programming skills.</p>
+<h3 id="21-the-tcp-handshake-review">2.1 The TCP Handshake (Review)</h3>
+<p>Before coding, recall: a TCP client creates a socket, calls <code>connect()</code> to the server (IP:port), then <code>send()</code> and <code>recv()</code> data. The server calls <code>bind()</code>, <code>listen()</code>, <code>accept()</code>, and then communicates.</p>
+<h3 id="22-a-simple-tcp-client">2.2 A Simple TCP Client</h3>
+<p>Write a Python script to connect to a web server and manually send an HTTP GET request.</p>
+<pre><code class="language-python">import socket
+
+HOST = 'example.com'  # change to a known server or localhost
+PORT = 80
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    request = &quot;GET / HTTP/1.0\r\nHost: example.com\r\n\r\n&quot;
+    s.sendall(request.encode())
+    response = b''
+    while True:
+        chunk = s.recv(4096)
+        if not chunk:
+            break
+        response += chunk
+print(response.decode())
+</code></pre>
+<p><strong>Run this.</strong> Inspect the raw HTTP headers. This is how your browser communicates. Later, you’ll use this to talk to CTF flag servers.</p>
+<p><strong>Exercise:</strong> Modify the client to send a request to <code>httpbin.org</code> port 80, path <code>/get?flag=test</code>. Observe the JSON response. Parse it to extract the <code>flag</code> parameter.</p>
+<h3 id="23-building-a-port-scanner">2.3 Building a Port Scanner</h3>
+<p>Write a script that scans ports 1–1024 on <code>127.0.0.1</code> to find open ones. Use a for loop, try to connect on each port, and if successful, print the port number. Catch connection refused errors with <code>socket.error</code>.</p>
+<pre><code class="language-python">import socket
+
+def scan_port(host, port):
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(0.5)   # don't wait too long
+            s.connect((host, port))
+            return True
+    except:
+        return False
+
+host = '127.0.0.1'
+for port in range(1, 1025):
+    if scan_port(host, port):
+        print(f&quot;Port {port} OPEN&quot;)
+</code></pre>
+<p><strong>CTF context:</strong> In network reconnaissance, you’ll need to identify open services quickly. This scanner is slow (iterative), but you’ll later add threading or <code>select</code> to make it faster.</p>
+<p><strong>Enhancement (time permitting):</strong> Use the <code>socket.setdefaulttimeout()</code> to avoid setting per socket.</p>
+<h3 id="24-nonblocking-io-with-select-intro">2.4 Non‑Blocking I/O with <code>select</code> (Intro)</h3>
+<p>Blocking <code>recv()</code> can stall your program if the server doesn’t respond. <code>select.select()</code> lets you monitor multiple sockets and wait until one is ready to read or write.</p>
+<pre><code class="language-python">import select, socket
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.setblocking(False)
+try:
+    sock.connect(('example.com', 80))
+except BlockingIOError:
+    pass  # connection in progress
+
+while True:
+    ready, _, _ = select.select([sock], [], [], 2.0)
+    if ready:
+        # can send or recv now
+        break
+</code></pre>
+<p>You’ll use this heavily in the chat server. For now, understand that <code>select</code> prevents busy‑waiting and allows handling multiple clients.</p>
+<hr />
+<h2 id="part-3-final-python-project-multiclient-chat-server-2-hours">💬 PART 3: FINAL PYTHON PROJECT – MULTI‑CLIENT CHAT SERVER (2 HOURS)</h2>
+<p>This is the capstone of your Python journey. You will build a <strong>multi‑client TCP chat server</strong> using <code>select</code>. This project combines sockets, concurrency, OOP, error handling, and protocol design—all skills you need for CTF attack automation.</p>
+<h3 id="31-requirements">3.1 Requirements</h3>
+<ul>
+<li>The server listens on a host:port and accepts multiple clients simultaneously.</li>
+<li>Each client sends messages (text) terminated by <code>\n</code>.</li>
+<li>The server broadcasts received messages to all connected clients, prefixed with a client identifier (e.g., <code>[Client1] Hello</code>).</li>
+<li>Support <strong>private messages</strong>: a client can send <code>/msg &lt;id&gt; &lt;message&gt;</code> and only that client receives it.</li>
+<li>Support a <code>/list</code> command to see all client IDs.</li>
+<li>Clients can gracefully disconnect; server removes them and notifies others.</li>
+</ul>
+<h3 id="32-architecture">3.2 Architecture</h3>
+<p>We’ll create a <code>ChatServer</code> class that:
+- Holds a <code>socket</code> (listening) and a dictionary <code>{socket: client_info}</code>.
+- Uses <code>select.select()</code> to monitor the listening socket and all client sockets for readability.
+- When the listening socket is ready, accept a new client and add it.
+- When a client socket is ready, read data, parse commands, and handle.</p>
+<h3 id="33-implementation-build-along">3.3 Implementation (Build Along)</h3>
+<p><strong>Step 1 – Skeleton &amp; Server Setup</strong></p>
+<pre><code class="language-python">import select
+import socket
+
+class ChatServer:
+    def __init__(self, host='127.0.0.1', port=9999):
+        self.server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.server_sock.bind((host, port))
+        self.server_sock.listen(5)
+        self.server_sock.setblocking(False)
+        self.clients = {}   # socket -&gt; {'id': int, 'addr': str, 'buffer': bytes}
+        self.next_id = 1
+
+    def run(self):
+        print(f&quot;[*] Chat server started on {self.server_sock.getsockname()}&quot;)
+        inputs = [self.server_sock]
+        while True:
+            readable, _, exceptional = select.select(inputs, [], inputs)
+            for s in readable:
+                if s is self.server_sock:
+                    self._accept_client()
+                else:
+                    self._handle_client(s)
+            for s in exceptional:
+                self._remove_client(s)
+</code></pre>
+<p><strong>Step 2 – Accepting Clients</strong></p>
+<pre><code class="language-python">    def _accept_client(self):
+        client_sock, addr = self.server_sock.accept()
+        client_sock.setblocking(False)
+        self.clients[client_sock] = {
+            'id': self.next_id,
+            'addr': addr,
+            'buffer': b''
+        }
+        self.next_id += 1
+        print(f&quot;[+] New connection from {addr} assigned ID {self.clients[client_sock]['id']}&quot;)
+        self._broadcast(f&quot;[Server] Client {self.clients[client_sock]['id']} joined.\n&quot;, exclude=client_sock)
+</code></pre>
+<p><strong>Step 3 – Handling a Client (Reading &amp; Processing)</strong></p>
+<pre><code class="language-python">    def _handle_client(self, client_sock):
+        try:
+            data = client_sock.recv(4096)
+            if not data:
+                self._remove_client(client_sock)
+                return
+            client_info = self.clients[client_sock]
+            client_info['buffer'] += data
+            while b'\n' in client_info['buffer']:
+                msg_bytes, client_info['buffer'] = client_info['buffer'].split(b'\n', 1)
+                msg = msg_bytes.decode().strip()
+                if msg:
+                    self._process_message(client_sock, msg)
+        except ConnectionResetError:
+            self._remove_client(client_sock)
+
+    def _process_message(self, sender_sock, msg):
+        sender_id = self.clients[sender_sock]['id']
+        if msg.startswith('/'):
+            self._handle_command(sender_sock, msg)
+        else:
+            self._broadcast(f&quot;[{sender_id}] {msg}\n&quot;, exclude=None)
+</code></pre>
+<p><strong>Step 4 – Commands: /msg and /list</strong></p>
+<pre><code class="language-python">    def _handle_command(self, sender_sock, msg):
+        parts = msg.split(maxsplit=2)
+        cmd = parts[0].lower()
+        if cmd == '/msg':
+            if len(parts) &lt; 3:
+                self._send_to(sender_sock, &quot;Usage: /msg &lt;id&gt; &lt;message&gt;\n&quot;)
+                return
+            try:
+                target_id = int(parts[1])
+            except ValueError:
+                self._send_to(sender_sock, &quot;Invalid client ID.\n&quot;)
+                return
+            message = parts[2]
+            target_sock = self._find_client_by_id(target_id)
+            if target_sock:
+                sender_id = self.clients[sender_sock]['id']
+                self._send_to(target_sock, f&quot;[{sender_id} -&gt; You] {message}\n&quot;)
+            else:
+                self._send_to(sender_sock, f&quot;No client with ID {target_id}\n&quot;)
+        elif cmd == '/list':
+            ids = [str(info['id']) for info in self.clients.values()]
+            self._send_to(sender_sock, &quot;Connected: &quot; + &quot;, &quot;.join(ids) + &quot;\n&quot;)
+        else:
+            self._send_to(sender_sock, &quot;Unknown command.\n&quot;)
+</code></pre>
+<p><strong>Step 5 – Helper Methods</strong></p>
+<pre><code class="language-python">    def _send_to(self, sock, text):
+        try:
+            sock.sendall(text.encode())
+        except:
+            self._remove_client(sock)
+
+    def _broadcast(self, text, exclude=None):
+        for sock in self.clients:
+            if sock != exclude:
+                self._send_to(sock, text)
+
+    def _find_client_by_id(self, cid):
+        for sock, info in self.clients.items():
+            if info['id'] == cid:
+                return sock
+        return None
+
+    def _remove_client(self, sock):
+        if sock in self.clients:
+            cid = self.clients[sock]['id']
+            print(f&quot;[-] Client {cid} disconnected.&quot;)
+            del self.clients[sock]
+            sock.close()
+            self._broadcast(f&quot;[Server] Client {cid} left.\n&quot;)
+</code></pre>
+<p><strong>Step 6 – Test It!</strong>
+Run the server: <code>python3 chat_server.py</code>. Open two more terminals and connect using <code>nc 127.0.0.1 9999</code>. Chat, try <code>/list</code>, <code>/msg 2 hello</code>, and watch the magic.</p>
+<p><strong>Exercise:</strong> Add a <code>/nick &lt;name&gt;</code> command that lets a client set a display name. The broadcast then uses the nickname instead of the numeric ID. This will teach you to update client state.</p>
+<p><strong>Why this project matters:</strong> You now understand a concurrent network server. When you exploit a service later, you’ll know exactly how the server might be handling input, buffering, and broadcasting—knowledge that reveals vulnerabilities like race conditions, buffer misuse, or command injection.</p>
+<p><strong>Congratulations</strong> — you’re no longer just a scripter, you’re a <strong>network programmer</strong>. You could replace this chat backend with a CTF bot that accepts commands from multiple handlers.</p>
+<hr />
+<h2 id="part-4-introduction-to-c-the-language-2-hours">🇨 PART 4: INTRODUCTION TO C – THE LANGUAGE (2 HOURS)</h2>
+<p>Now we leave Python’s warm embrace and step into the world of manual memory management, close‑to‑the‑metal execution, and the language that runs the world’s operating systems and exploitable binaries. C is <strong>not</strong> forgiving, but it’s honest. Every byte matters.</p>
+<h3 id="41-why-c-for-ctfs">4.1 Why C for CTFs?</h3>
+<ul>
+<li>The vast majority of binary exploitation targets are compiled C/C++ programs.</li>
+<li>You must <strong>think like the compiler</strong> to understand stack frames, buffer layouts, and memory corruption.</li>
+<li>Writing shellcode often requires C‑level knowledge of system calls and memory.</li>
+<li>Reversing binaries is much easier when you can mentally translate assembly back to C.</li>
+</ul>
+<h3 id="42-compilation-process-code-to-executable">4.2 Compilation Process (Code to Executable)</h3>
+<ol>
+<li><strong>Preprocessor:</strong> handles <code>#include</code>, <code>#define</code> macros.</li>
+<li><strong>Compiler:</strong> translates C to assembly (<code>gcc -S</code>).</li>
+<li><strong>Assembler:</strong> converts assembly to object code (<code>gcc -c</code>).</li>
+<li><strong>Linker:</strong> combines objects and libraries into an executable.</li>
+</ol>
+<p><strong>Let’s watch it happen:</strong></p>
+<pre><code class="language-bash">echo '#include &lt;stdio.h&gt;
+int main() { printf(&quot;Hello, CTF!\n&quot;); return 0; }' &gt; hello.c
+gcc -E hello.c -o hello.i   # preprocessed
+gcc -S hello.i -o hello.s   # assembly
+gcc -c hello.s -o hello.o   # object
+gcc hello.o -o hello        # executable
+./hello
+</code></pre>
+<p>Use <code>cat hello.s</code> to see the assembly. You’ll see <code>main:</code> with function prologue, a <code>call printf</code>, etc. We’ll dissect this in Phase 2; for now, just appreciate the pipeline.</p>
+<h3 id="43-basic-syntax-and-types">4.3 Basic Syntax and Types</h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main(void) {
+    int age = 25;
+    float pi = 3.14159;
+    char grade = 'A';
+    printf(&quot;I am %d years old, pi is %f, grade %c\n&quot;, age, pi, grade);
+    return 0;
+}
+</code></pre>
+<p>Key differences from Python:
+- Semicolons end statements.
+- Variable types must be declared (<code>int x;</code>).
+- Curly braces <code>{}</code> define blocks, not indentation (indentation is for readability).
+- <code>printf</code> format specifiers: <code>%d</code> (int), <code>%f</code> (float), <code>%c</code> (char), <code>%s</code> (string), <code>%x</code> (hex).</p>
+<p><strong>Code‑along:</strong> Write a C program that prints the sizes of various types using <code>sizeof</code>:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    printf(&quot;Size of int: %zu bytes\n&quot;, sizeof(int));
+    printf(&quot;Size of char: %zu\n&quot;, sizeof(char));
+    printf(&quot;Size of float: %zu\n&quot;, sizeof(float));
+    printf(&quot;Size of double: %zu\n&quot;, sizeof(double));
+    printf(&quot;Size of pointer: %zu\n&quot;, sizeof(int*));
+    return 0;
+}
+</code></pre>
+<p>Compile and run. On a 64‑bit system, <code>int</code> is 4 bytes, pointer is 8 bytes. This size matters for buffer overflows: you’ll overwrite exactly these many bytes.</p>
+<h3 id="44-control-flow-loops-conditionals">4.4 Control Flow (Loops &amp; Conditionals)</h3>
+<p>Exactly like you’d expect, but with typed conditions.</p>
+<p><strong>Fahrenheit‑Celsius Table:</strong></p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    int fahr;
+    for (fahr = 0; fahr &lt;= 300; fahr += 20) {
+        printf(&quot;%3d F = %6.1f C\n&quot;, fahr, (5.0/9.0)*(fahr-32));
+    }
+    return 0;
+}
+</code></pre>
+<p>Note: <code>5.0/9.0</code> ensures floating‑point division; <code>5/9</code> would be integer 0.</p>
+<p><strong>Exercise:</strong> Write a C program that calculates the sum of numbers from 1 to N, where N is hardcoded. Then modify to read N from the user (we’ll get to input shortly).</p>
+<h3 id="45-the-perils-of-scanf-and-why-we-use-fgets">4.5 The Perils of <code>scanf</code> and Why We Use <code>fgets</code></h3>
+<p>In C, reading user input is dangerous. Consider:</p>
+<pre><code class="language-c">char name[20];
+scanf(&quot;%s&quot;, name);  // if user types more than 19 chars -&gt; overflow!
+</code></pre>
+<p><code>scanf</code> doesn’t know the buffer size. Instead, use:</p>
+<pre><code class="language-c">char name[20];
+fgets(name, sizeof(name), stdin);
+</code></pre>
+<p><code>fgets</code> reads at most <code>sizeof(name)-1</code> characters and null‑terminates. Always use it for strings.</p>
+<p><strong>Why this is critical:</strong> Buffer overflows are the heart of binary exploitation. You will learn to overflow buffers with <code>scanf</code>/<code>gets</code> and exploit them. Understanding safe input is the defender’s view; today we’re the defender. Later we become the attacker.</p>
+<h3 id="46-commandline-arguments">4.6 Command‑Line Arguments</h3>
+<pre><code class="language-c">int main(int argc, char *argv[]) {
+    // argc = argument count, argv = array of strings
+    if (argc &lt; 2) {
+        printf(&quot;Usage: %s &lt;name&gt;\n&quot;, argv[0]);
+        return 1;
+    }
+    printf(&quot;Hello, %s!\n&quot;, argv[1]);
+    return 0;
+}
+</code></pre>
+<p><code>argv[0]</code> is the program name. This is how you’ll pass exploit parameters later.</p>
+<p><strong>Code‑along:</strong> Write a program <code>calc.c</code> that takes two integers as command‑line arguments, converts them with <code>atoi()</code> (from <code>&lt;stdlib.h&gt;</code>), and prints their sum. Handle missing arguments gracefully.</p>
+<p>Now you’ve written your first useful C programs. The syntax will start to feel natural.</p>
+<hr />
+<h2 id="part-5-functions-scope-in-c-1-hour">⚙️ PART 5: FUNCTIONS &amp; SCOPE IN C (1 HOUR)</h2>
+<h3 id="51-function-definitions-prototypes">5.1 Function Definitions &amp; Prototypes</h3>
+<p>In C, you can’t call a function before it’s declared. So either define it before <code>main</code>, or provide a <strong>prototype</strong>:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+double power(double base, int exp); // prototype
+
+int main() {
+    printf(&quot;%f\n&quot;, power(2.0, 3));
+    return 0;
+}
+
+double power(double base, int exp) {
+    double result = 1.0;
+    for (int i = 0; i &lt; exp; i++) {
+        result *= base;
+    }
+    return result;
+}
+</code></pre>
+<p><strong>Call by value:</strong> arguments are copied; changes inside the function do not affect the original variables. To modify a caller’s variable, you must pass a pointer (next week!).</p>
+<h3 id="52-local-vs-global-variables">5.2 Local vs. Global Variables</h3>
+<pre><code class="language-c">int global = 100;   // visible everywhere in this file (bad practice)
+
+void test() {
+    int local = 42;
+    printf(&quot;%d\n&quot;, local);
+    printf(&quot;%d\n&quot;, global);  // accessible
+}
+
+int main() {
+    test();
+    // printf(&quot;%d&quot;, local);  ERROR, local not in scope
+    return 0;
+}
+</code></pre>
+<p>Keep variables as local as possible. Global state leads to confusion and security bugs.</p>
+<h3 id="53-the-stack-conceptual">5.3 The Stack (Conceptual)</h3>
+<p>Every function call creates a <strong>stack frame</strong> containing:
+- Return address (where to go back)
+- Saved frame pointer
+- Local variables
+- Possible alignment padding</p>
+<p>We’ll draw this next week; for now, just know that local variables are placed on the stack, and a function that declares a buffer like <code>char buf[64]</code> puts it on the stack. If you overflow <code>buf</code>, you can overwrite the return address. This is the fundamental attack we’ll study.</p>
+<p><strong>Mental model:</strong> start imagining the stack as an array of values, growing downward. When you write past the end of <code>buf</code>, you’re changing the return address. GDB will make this visible.</p>
+<h3 id="54-the-static-keyword">5.4 The <code>static</code> Keyword</h3>
+<p>Inside a function, <code>static int count = 0;</code> persists its value across calls. Not critical now, but you’ll see it in some CTF challenges.</p>
+<hr />
+<h2 id="week-4-problem-set-daily-24-hours">📝 WEEK 4 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps41-complete-the-chat-server-enhancements">PS4‑1: Complete the Chat Server Enhancements</h3>
+<ul>
+<li>Add the <code>/nick</code> command as described. Store nicknames in the client info dict.</li>
+<li>Add a <code>/exit</code> command that gracefully disconnects the client.</li>
+<li>(Bonus) Implement a file‑transfer feature: <code>/send &lt;id&gt; &lt;filepath&gt;</code> that reads a local file and sends it to the target client, who receives it as a new file. This simulates an exfiltration tool.</li>
+</ul>
+<h3 id="ps42-cryptopals-set-1-challenge-3-singlebyte-xor-cipher">PS4‑2: Cryptopals Set 1 – Challenge 3 (Single‑byte XOR cipher)</h3>
+<p>Solve <strong>Challenge 3</strong> from Cryptopals. The hex‑encoded string has been XORed against a single character. Find the key, decrypt, and print the message. You’ll implement a frequency scoring function that uses English letter frequencies. This problem combines hex decoding, XOR, and statistical analysis—all Python. Use your <code>ctf_tools</code> conversions.</p>
+<h3 id="ps43-kr-c-exercises-chapters-1">PS4‑3: K&amp;R C Exercises – Chapters 1</h3>
+<p>Complete the following exercises from <em>The C Programming Language</em> (2nd Ed.):
+- 1‑1, 1‑2, 1‑3, 1‑4, 1‑5 (introductory)
+- 1‑6, 1‑7 (EOF)
+- 1‑8, 1‑9, 1‑10 (character counting, word replacement)
+- 1‑11 to 1‑15 (word counting, arrays, functions)
+At minimum, do 1‑1 through 1‑10, and 1‑15 (temperature conversion using function). Type every program, compile with <code>gcc -Wall -Wextra -pedantic -o prog prog.c</code>, fix all warnings, and test.</p>
+<h3 id="ps44-overthewire-bandit-levels-1315">PS4‑4: OverTheWire Bandit Levels 13‑15</h3>
+<ul>
+<li><strong>Level 13:</strong> SSH private key login.</li>
+<li><strong>Level 14:</strong> Send password to a service on a specific port using <code>nc</code>.</li>
+<li><strong>Level 15:</strong> SSL/TLS connection using <code>openssl s_client</code>.
+Document each in your notes.</li>
+</ul>
+<h3 id="ps45-picoctf-python-general-skills">PS4‑5: picoCTF Python &amp; General Skills</h3>
+<p>Go to <a href="https://play.picoctf.org/practice">picoGym</a> and solve <strong>5 challenges</strong> under categories:
+- “General Skills” (e.g., “Obedient Cat”, “Python Wrangling”)
+- “Cryptography” (any easy ones like “Mod 26”, “Transformation”)
+Apply your Python skills to solve them, and write short write‑ups.</p>
+<h3 id="ps46-reflection-c-mindset-shift">PS4‑6: Reflection &amp; C Mindset Shift</h3>
+<p>Create <code>week4_reflection.md</code>:
+1. How does thinking in C (static types, manual memory) differ from Python? What felt most alien?
+2. Describe a mistake you made in C (e.g., missing <code>&amp;</code> in <code>scanf</code> or forgetting a semicolon) and how you fixed it.
+3. What did the chat server project teach you about concurrency and protocol design?
+4. Look ahead: what do you think “overflowing a buffer” means now, having seen fixed‑size arrays in C?</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>This week you crossed a major threshold: from the comfort of Python into the raw truth of C. You built a concurrent server that could serve as the backbone of a CTF command‑and‑control system, and you wrote your first C programs that will soon be exploited. You’ve seen both sides: the high‑level logic and the low‑level memory layout.</p>
+<p>Next week, we’ll dive deeper into C’s memory model: pointers, arrays, dynamic allocation, and the stack frame diagrams that will unlock binary exploitation. You’ll start using GDB to step through your C programs and witness the stack in action.</p>
+<p><strong>Start your terminal. Activate your environment. Finish that chat server, then open <code>vim hello.c</code> and compile it with <code>gcc -Wall -o hello hello.c</code>. The machine is waiting.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

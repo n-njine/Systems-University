@@ -1,0 +1,1300 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-12-super-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integration-capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Integration &amp; Capstone”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-minictf-simulation-attack-defend-3-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛡️ PART 1: MINI‑CTF SIMULATION – ATTACK &amp; DEFEND (3 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ PART 1: MINI‑CTF SIMULATION – ATTACK &amp; DEFEND (3 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-setup-the-battlefield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Setup the Battlefield
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-challenge-1-stack-buffer-overflow-vulnerable-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Challenge 1 – Stack Buffer Overflow (Vulnerable Service)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-challenge-2-format-string-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Challenge 2 – Format String Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-challenge-3-heap-overflow-useafterfree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Challenge 3 – Heap Overflow / Use‑After‑Free
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-defense-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Defense Phase
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-forensics-file-carving-memory-analysis-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 PART 2: FORENSICS – FILE CARVING &amp; MEMORY ANALYSIS (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 PART 2: FORENSICS – FILE CARVING &amp; MEMORY ANALYSIS (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-file-carving-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 File Carving Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-memory-dump-analysis-volatility-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Memory Dump Analysis (Volatility Framework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-network-traffic-forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Network Traffic Forensics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-cryptography-refresher-realworld-crypto-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 PART 3: CRYPTOGRAPHY REFRESHER &amp; REAL‑WORLD CRYPTO (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔐 PART 3: CRYPTOGRAPHY REFRESHER &amp; REAL‑WORLD CRYPTO (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-xor-and-onetime-pads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 XOR and One‑Time Pads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-aes-modes-ecb-vs-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 AES Modes – ECB vs CBC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-padding-oracle-attack-concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Padding Oracle Attack (Concept)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-rsa-basics-optional-glimpse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 RSA Basics (Optional Glimpse)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-shell-final-polish-readline-history-completion-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 PART 4: SHELL FINAL POLISH – READLINE, HISTORY, COMPLETION (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 PART 4: SHELL FINAL POLISH – READLINE, HISTORY, COMPLETION (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-integrating-readline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Integrating Readline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-custom-tab-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Custom Tab Completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-environment-and-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Environment and Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-startup-script-and-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Startup Script and Aliases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-git-cleanup-documentation-repo-release-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 PART 5: GIT CLEANUP, DOCUMENTATION &amp; REPO RELEASE (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 PART 5: GIT CLEANUP, DOCUMENTATION &amp; REPO RELEASE (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-repository-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Repository Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-writing-a-good-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Writing a Good README
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-creating-a-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Creating a Release
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-writeup-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Write‑Up Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-phase-2-roadmap-next-steps-05-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ PART 6: PHASE 2 ROADMAP &amp; NEXT STEPS (0.5 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ PART 6: PHASE 2 ROADMAP &amp; NEXT STEPS (0.5 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-what-awaits-in-phase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 What Awaits in Phase 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-immediate-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Immediate Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-12-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 12 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 12 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps121-complete-the-minictf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑1: Complete the Mini‑CTF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps122-forensics-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑2: Forensics Deep Dive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps123-crypto-challenge-padding-oracle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑3: Crypto Challenge – Padding Oracle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps124-shell-final-touches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑4: Shell Final Touches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps125-pwnablekr-random-input2-leg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑5: pwnable.kr “random”, “input2”, “leg”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps126-start-csapp-chapter-3-deep-read" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑6: Start CS:APP Chapter 3 Deep Read
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps127-final-retrospective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS12‑7: Final Retrospective
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-end-of-the-beginning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 THE END OF THE BEGINNING
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>You’ve built a Python toolkit, a C shell, a network stack, and exploit primitives. Now it’s time to fuse everything into one cohesive, unstoppable skillset. This week is your <strong>capstone</strong>: you’ll simulate a full CTF — attacking your own vulnerable services, defending them, and analyzing forensic artifacts. You’ll unlock the basics of memory forensics and file carving, refresh essential cryptography, and polish your shell into a work of art. By the end, you won’t just be ready for Phase 2; you’ll be a competitor.</p>
+<h1 id="week-12-super-intensive-deep-dive">🔥 WEEK 12: SUPER INTENSIVE DEEP DIVE</h1>
+<h2 id="integration-capstone"><em>“Integration &amp; Capstone”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 3:00</td>
+<td>Mini‑CTF Simulation: Attack &amp; Defend</td>
+</tr>
+<tr>
+<td>3:00 – 4:00</td>
+<td>Forensics: File Carving &amp; Memory Analysis</td>
+</tr>
+<tr>
+<td>4:00 – 5:00</td>
+<td>Cryptography Refresher &amp; Real‑World Crypto</td>
+</tr>
+<tr>
+<td>5:00 – 6:30</td>
+<td>Shell Final Polish: Readline, History, Completion</td>
+</tr>
+<tr>
+<td>6:30 – 7:00</td>
+<td>Git Cleanup, Documentation &amp; Repo Release</td>
+</tr>
+<tr>
+<td>7:00 – 7:30</td>
+<td>Phase 2 Roadmap &amp; Next Steps</td>
+</tr>
+<tr>
+<td>7:30 – 8:00</td>
+<td>Final Reflection &amp; Retrospective</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-minictf-simulation-attack-defend-3-hours">🛡️ PART 1: MINI‑CTF SIMULATION – ATTACK &amp; DEFEND (3 HOURS)</h2>
+<p>This is the capstone event of Phase 1. You will set up <strong>three custom vulnerable services</strong> on your local VM, exploit them, capture flags, and then patch the vulnerabilities. You’ll practice the complete attack‑defense cycle.</p>
+<h3 id="11-setup-the-battlefield">1.1 Setup the Battlefield</h3>
+<p>Create a directory <code>~/mini_ctf</code> with subdirectories for each challenge. Also create a <code>flags/</code> directory to store the flag files that your services will read.</p>
+<pre><code class="language-bash">mkdir -p ~/mini_ctf/{stack_chall,format_chall,heap_chall,exploits,flags}
+echo &quot;CTF{st4ck_0v3rfl0w_m4ster}&quot; &gt; ~/mini_ctf/flags/stack_flag.txt
+echo &quot;CTF{f0rm4t_str1ng_l34k}&quot; &gt; ~/mini_ctf/flags/format_flag.txt
+echo &quot;CTF{h34p_c0rrupt10n_w1n}&quot; &gt; ~/mini_ctf/flags/heap_flag.txt
+</code></pre>
+<h3 id="12-challenge-1-stack-buffer-overflow-vulnerable-service">1.2 Challenge 1 – Stack Buffer Overflow (Vulnerable Service)</h3>
+<p>Write a simple TCP server in C that reads a message and echoes it back — but using <code>gets()</code> instead of <code>fgets()</code>.</p>
+<p><strong>Vulnerable code skeleton:</strong></p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;sys/socket.h&gt;
+#include &lt;netinet/in.h&gt;
+
+void handle_client(int clientfd) {
+    char buffer[64];
+    char flag_buf[128];
+    FILE *f = fopen(&quot;flags/stack_flag.txt&quot;, &quot;r&quot;);
+    if (f) {
+        fgets(flag_buf, sizeof(flag_buf), f);
+        fclose(f);
+    }
+    // Read client data — VULNERABLE
+    write(clientfd, &quot;Enter name: &quot;, 12);
+    gets(buffer);  // deliberate overflow
+    write(clientfd, &quot;Hello, &quot;, 7);
+    write(clientfd, buffer, strlen(buffer));
+    write(clientfd, &quot;\n&quot;, 1);
+    close(clientfd);
+}
+
+int main() {
+    int servfd = socket(AF_INET, SOCK_STREAM, 0);
+    struct sockaddr_in addr = {.sin_family=AF_INET, .sin_port=htons(8888), .sin_addr.s_addr=INADDR_ANY};
+    bind(servfd, (struct sockaddr*)&amp;addr, sizeof(addr));
+    listen(servfd, 5);
+    while (1) {
+        int clientfd = accept(servfd, NULL, NULL);
+        if (fork() == 0) {
+            close(servfd);
+            handle_client(clientfd);
+            exit(0);
+        }
+        close(clientfd);
+    }
+}
+</code></pre>
+<p>Compile without protections: <code>gcc -fno-stack-protector -z execstack -no-pie -o stack_svc stack_svc.c</code></p>
+<p><strong>Your mission:</strong> Write a pwntools exploit that overflows the buffer, overwrites the return address, and executes shellcode to read and send back <code>stack_flag.txt</code>. Then patch the source to use <code>fgets</code> and recompile.</p>
+<h3 id="13-challenge-2-format-string-vulnerability">1.3 Challenge 2 – Format String Vulnerability</h3>
+<p>Create a similar service that uses <code>printf(user_input)</code> directly.</p>
+<p><strong>Vulnerable code:</strong> <code>recv(clientfd, buffer, sizeof(buffer)-1, 0); printf(buffer);</code></p>
+<p>Put a secret variable on the stack containing a pointer to the flag. The flag itself is loaded into a global buffer.</p>
+<p><strong>Your mission:</strong> Use format string <code>%x</code> to leak the secret pointer, then use <code>%s</code> to read the flag at that address. Alternatively, use <code>%n</code> to overwrite a function pointer (like the return address or a GOT entry) to redirect execution to a <code>print_flag</code> function that you add. Write the exploit. Then patch to <code>printf("%s", buffer)</code>.</p>
+<h3 id="14-challenge-3-heap-overflow-useafterfree">1.4 Challenge 3 – Heap Overflow / Use‑After‑Free</h3>
+<p>Create a service that manages a simple note‑taking system:
+- <code>CREATE &lt;size&gt; &lt;data&gt;</code> — allocates memory.
+- <code>READ &lt;id&gt;</code> — prints note.
+- <code>DELETE &lt;id&gt;</code> — frees note (but doesn't remove the pointer — UAF).
+- <code>EDIT &lt;id&gt; &lt;data&gt;</code> — overwrites note with same size.</p>
+<p>The flag is read into a note at startup and hidden.</p>
+<p><strong>Your mission:</strong> Exploit the use‑after‑free to read or overwrite an existing note and leak the flag. Then patch to NULL the pointer after free.</p>
+<h3 id="15-defense-phase">1.5 Defense Phase</h3>
+<p>After exploiting, patch all three sources, recompile, and verify the exploits no longer work. Write a short report on each vulnerability, its impact, and the mitigation. This report is your <strong>first security advisory</strong>.</p>
+<p><strong>CTF connection:</strong> In attack‑defense CTFs, you need to patch your own services while exploiting others. Speed matters. This simulation teaches the flow.</p>
+<hr />
+<h2 id="part-2-forensics-file-carving-memory-analysis-1-hour">🔍 PART 2: FORENSICS – FILE CARVING &amp; MEMORY ANALYSIS (1 HOUR)</h2>
+<p>Forensics challenges are common in CTFs. You’ll learn to recover deleted files from disk images and extract secrets from memory dumps.</p>
+<h3 id="21-file-carving-basics">2.1 File Carving Basics</h3>
+<ul>
+<li><strong><code>strings</code></strong>: extract ASCII strings from any binary.</li>
+<li><strong><code>binwalk</code></strong>: find embedded files inside firmware or disk images.</li>
+<li><strong><code>foremost</code>/<code>scalpel</code></strong>: carve files based on headers/footers (e.g., JPEG, PNG).</li>
+</ul>
+<p><strong>Hands‑on:</strong> Download a simple CTF forensics challenge (e.g., “shark on wire” or a known dump) or create your own:</p>
+<pre><code class="language-bash">dd if=/dev/zero of=test.img bs=1M count=10
+mkfs.ext4 test.img
+mkdir mnt &amp;&amp; sudo mount test.img mnt
+echo &quot;CTF{f1le_c4rv1ng_r0cks}&quot; &gt; mnt/secret.txt
+sudo umount mnt
+# Now delete the file by overwriting the inode (complicated) or just provide the image
+</code></pre>
+<p><strong>Exercise:</strong> Use <code>strings</code> and <code>grep</code> to find the flag. Then use <code>foremost</code> to recover the file.</p>
+<h3 id="22-memory-dump-analysis-volatility-framework">2.2 Memory Dump Analysis (Volatility Framework)</h3>
+<p>Install Volatility3 (<code>pip install volatility3</code>). Download a sample memory dump (e.g., from a CTF like “memlapse” or publicly available test dumps).</p>
+<p>Commands to know:
+- <code>vol -f mem.raw windows.info</code> or <code>linux.info</code>
+- <code>vol -f mem.raw linux.pslist</code> — list processes.
+- <code>vol -f mem.raw linux.filescan</code> — find open file handles.
+- <code>vol -f mem.raw linux.dumpfile --pid &lt;PID&gt; --virtaddr &lt;addr&gt;</code> — dump a file from memory.</p>
+<p><strong>Exercise:</strong> In a Linux memory dump, find the bash process, dump its command history, and extract a flag that was passed as an environment variable.</p>
+<p><strong>CTF connection:</strong> Memory forensics is often the only way to retrieve encryption keys, injected shellcode, or hidden malware from a live system.</p>
+<h3 id="23-network-traffic-forensics">2.3 Network Traffic Forensics</h3>
+<p>Revisit the pcap from Week 11. Use Wireshark to follow TCP streams, extract objects (HTTP files), and identify suspicious patterns. Use <code>tcpflow</code> or <code>foremost</code> on the pcap.</p>
+<p><strong>Hands‑on:</strong> Given a pcap, extract a ZIP file transferred over HTTP, then crack its password using the dictionary from Phase 1.</p>
+<hr />
+<h2 id="part-3-cryptography-refresher-realworld-crypto-1-hour">🔐 PART 3: CRYPTOGRAPHY REFRESHER &amp; REAL‑WORLD CRYPTO (1 HOUR)</h2>
+<p>You’ve done Caesar and XOR. Now we touch <strong>modern symmetric encryption modes</strong> and <strong>padding oracle attacks</strong> — a classic CTF crypto vulnerability.</p>
+<h3 id="31-xor-and-onetime-pads">3.1 XOR and One‑Time Pads</h3>
+<p>Quick recall: XOR with a repeating key is breakable via frequency analysis (Vigenère on bytes). Write a Python function <code>break_repeating_key_xor(ciphertext)</code> using Hamming distance to guess key size, then single‑byte XOR on each transposed block.</p>
+<h3 id="32-aes-modes-ecb-vs-cbc">3.2 AES Modes – ECB vs CBC</h3>
+<ul>
+<li><strong>ECB (Electronic Codebook):</strong> identical plaintext blocks produce identical ciphertext blocks. You can detect patterns (e.g., Tux penguin image encrypted with ECB still shows outlines). In CTFs, ECB allows block‑swapping and byte‑by‑te‑byte decryption through oracle attacks.</li>
+<li><strong>CBC (Cipher Block Chaining):</strong> more secure, but vulnerable to <strong>padding oracle</strong> if error messages differ.</li>
+</ul>
+<h3 id="33-padding-oracle-attack-concept">3.3 Padding Oracle Attack (Concept)</h3>
+<p>When a server decrypts CBC‑encrypted data and returns a padding error versus a generic error, you can decrypt the whole ciphertext without the key. This is a classic crypto challenge.</p>
+<p><strong>Hands‑on:</strong> Use CryptoHack’s “Padding Oracle” challenge or set up a local server with Python’s <code>cryptography</code> library. Write a script that performs the attack byte by byte. We’ll do a simplified walkthrough:</p>
+<ol>
+<li>Given an IV and ciphertext, you control a modified ciphertext sent to the server.</li>
+<li>The server decrypts and checks PKCS#7 padding; if invalid, it tells you “bad padding”.</li>
+<li>You brute‑force the last byte of the intermediate state until padding becomes valid (0x01), then move backwards.</li>
+</ol>
+<p><strong>Exercise:</strong> Solve the “Padding Oracle” challenge from CryptoHack.</p>
+<h3 id="34-rsa-basics-optional-glimpse">3.4 RSA Basics (Optional Glimpse)</h3>
+<ul>
+<li>Public key (n,e), private key (d). Encryption: <code>c = m^e mod n</code>.</li>
+<li>Common CTF pitfalls: small e (3) with short messages, common modulus, Wiener’s attack on small d, etc.</li>
+<li>We won’t dive deep, but introduce the concepts for Phase 2 crypto specialisation.</li>
+</ul>
+<p><strong>CTF connection:</strong> Crypto challenges range from simple rot13 to complex lattice attacks. This refresher puts you in the game.</p>
+<hr />
+<h2 id="part-4-shell-final-polish-readline-history-completion-15-hours">💻 PART 4: SHELL FINAL POLISH – READLINE, HISTORY, COMPLETION (1.5 HOURS)</h2>
+<p>Your shell is functional. Now we make it a <strong>pleasure to use</strong>, adding GNU Readline support for line editing, history, and tab completion.</p>
+<h3 id="41-integrating-readline">4.1 Integrating Readline</h3>
+<p>Replace your <code>fgets</code>/<code>getline</code> with <code>readline</code>:</p>
+<pre><code class="language-c">#include &lt;readline/readline.h&gt;
+#include &lt;readline/history.h&gt;
+
+char *line = readline(&quot;mysh $ &quot;);
+if (!line) break; // EOF
+if (*line) {
+    add_history(line);  // automatically saved/loaded if you want
+}
+execute(line);
+free(line);
+</code></pre>
+<p>Compile with <code>-lreadline</code>.</p>
+<p><strong>Benefits:</strong>
+- Line editing (left/right, delete).
+- Persistent history if you set <code>history_file</code> and call <code>read_history</code>/<code>write_history</code>.
+- Tab completion via custom completion function.</p>
+<h3 id="42-custom-tab-completion">4.2 Custom Tab Completion</h3>
+<p>Write a completion generator that suggests builtin names and filenames. This uses the GNU Readline callback mechanism.</p>
+<p>Simplified:</p>
+<pre><code class="language-c">char *completion_generator(const char *text, int state) {
+    static int i, len;
+    static char **list;
+    if (!state) {
+        i = 0;
+        len = strlen(text);
+        // Build list of possible completions (builtins + binaries in PATH)
+        list = build_completion_list(text);
+    }
+    while (list[i]) {
+        if (strncmp(list[i], text, len) == 0)
+            return strdup(list[i]);
+        i++;
+    }
+    return NULL; // no more matches
+}
+</code></pre>
+<p>Register it with <code>rl_attempted_completion_function = custom_completion;</code>.</p>
+<p><strong>Exercise:</strong> Implement completion for filenames only, using <code>opendir</code>/<code>readdir</code>. Then add builtin completion.</p>
+<h3 id="43-environment-and-prompt">4.3 Environment and Prompt</h3>
+<p>Make the prompt dynamic: <code>[user@host cwd]$</code>. Use <code>getenv</code>, <code>getcwd</code>, <code>gethostname</code>.</p>
+<h3 id="44-startup-script-and-aliases">4.4 Startup Script and Aliases</h3>
+<p>Your <code>~/.mysh_profile</code> can now define functions and aliases. Implement simple alias substitution: <code>alias ll='ls -l'</code>.</p>
+<p><strong>Exercise:</strong> Add a builtin <code>alias</code> that manages a dictionary of aliases and expands them before parsing.</p>
+<p><strong>CTF connection:</strong> This fully‑featured shell becomes your post‑exploitation agent. You can add builtins like <code>download</code>, <code>upload</code>, <code>exec</code> for easy remote control.</p>
+<hr />
+<h2 id="part-5-git-cleanup-documentation-repo-release-05-hour">📦 PART 5: GIT CLEANUP, DOCUMENTATION &amp; REPO RELEASE (0.5 HOUR)</h2>
+<p>You’ve built a mountain of code. Now package it for the world (or your future self).</p>
+<h3 id="51-repository-structure">5.1 Repository Structure</h3>
+<pre><code>~/myshell/          – your Unix shell
+~/ctf_tools/        – Python library
+~/mini_ctf/         – challenges and exploits
+~/writeups/         – weekly reflections
+</code></pre>
+<h3 id="52-writing-a-good-readme">5.2 Writing a Good README</h3>
+<p>Each project gets a <code>README.md</code>:
+- What it does.
+- How to build and run.
+- Examples.
+- License (MIT).</p>
+<h3 id="53-creating-a-release">5.3 Creating a Release</h3>
+<p>Commit all final changes, tag a version (<code>v1.0</code>), and push to GitHub. This builds a public portfolio.</p>
+<h3 id="54-writeup-collection">5.4 Write‑Up Collection</h3>
+<p>Collect your weekly reflection files and problem set solutions into a single document. This is your personal CTF learning journal.</p>
+<hr />
+<h2 id="part-6-phase-2-roadmap-next-steps-05-hour">🗺️ PART 6: PHASE 2 ROADMAP &amp; NEXT STEPS (0.5 HOUR)</h2>
+<p>You’ve completed Phase 1 — the bedrock. Over the 12 weeks, you’ve gone from “Hello World” to building a shell, writing exploits, reversing binaries, and crafting network packets. This is equivalent to the first 1–2 years of a top CS degree focused on security.</p>
+<h3 id="61-what-awaits-in-phase-2">6.1 What Awaits in Phase 2</h3>
+<ul>
+<li><strong>CMU 15‑213 (ICS) full labs:</strong> Attack Lab (deeper ROP), Malloc Lab (implement a real allocator, exploit it), Proxy Lab.</li>
+<li><strong>MIT 6.828 (xv6):</strong> Implement system calls, copy‑on‑write fork, file systems, network drivers. Exploit your kernel modules.</li>
+<li><strong>Stanford CS144:</strong> Build a complete TCP stack in C++. Real understanding of sequence numbers, retransmission, congestion control.</li>
+<li><strong>Applied Security Courses:</strong> Stanford CS155, MIT 6.858, CMU 18‑330 — deep dives into web, network, system, and advanced binary exploitation.</li>
+<li><strong>Specialization:</strong> Choose your track — pwn, web, RE, crypto.</li>
+</ul>
+<h3 id="62-immediate-next-steps">6.2 Immediate Next Steps</h3>
+<ul>
+<li>Set up the CMU ICS environment (download the labs from CS:APP website).</li>
+<li>Start reading CS:APP Ch 3 thoroughly — you already have the assembly background.</li>
+<li>Begin the Bomb Lab Phase 2 if you haven’t. Use your improved GDB scripting.</li>
+</ul>
+<p><strong>You are ready.</strong> The skills you’ve built aren’t fragile; they’re hammered into muscle memory through hundreds of hours of deliberate practice.</p>
+<hr />
+<h2 id="week-12-problem-set-daily-24-hours">📝 WEEK 12 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps121-complete-the-minictf">PS12‑1: Complete the Mini‑CTF</h3>
+<ul>
+<li>Exploit all three challenges (stack, format, heap) and capture the flags.</li>
+<li>Write the patches and verify them.</li>
+<li>Write a <strong>security advisory</strong> report (2‑3 pages) describing the vulnerabilities, exploitation steps, and patches. Include code snippets.</li>
+</ul>
+<h3 id="ps122-forensics-deep-dive">PS12‑2: Forensics Deep Dive</h3>
+<ul>
+<li>Solve the “Shark on Wire” series (1 and 2) from picoCTF if you haven’t.</li>
+<li>Download a memory dump from a public CTF (e.g., “memlapse” from picoCTF) and use Volatility to find the flag.</li>
+<li>Create your own forensics challenge: hide a flag in a PNG file using <code>echo "CTF{stego}" &gt;&gt; image.png</code>, then recover it with <code>strings</code>.</li>
+</ul>
+<h3 id="ps123-crypto-challenge-padding-oracle">PS12‑3: Crypto Challenge – Padding Oracle</h3>
+<ul>
+<li>Complete the CryptoHack “Padding Oracle” challenge (under Symmetric Ciphers).</li>
+<li>Write your own padding oracle server in Python (using Flask or just TCP) and attack it.</li>
+</ul>
+<h3 id="ps124-shell-final-touches">PS12‑4: Shell Final Touches</h3>
+<ul>
+<li>Integrate Readline, tab completion, history file, and dynamic prompt.</li>
+<li>Add <code>alias</code> and <code>unalias</code> builtins.</li>
+<li>Write a <code>~/.mysh_profile</code> that sets up useful aliases.</li>
+<li>Push your final shell to GitHub with a polished README.</li>
+</ul>
+<h3 id="ps125-pwnablekr-random-input2-leg">PS12‑5: pwnable.kr “random”, “input2”, “leg”</h3>
+<p>Continue the pwnable.kr journey. “random” is a classic, “input2” deepens the multi‑vector input challenge, “leg” involves ARM assembly. Use everything you’ve learned.</p>
+<h3 id="ps126-start-csapp-chapter-3-deep-read">PS12‑6: Start CS:APP Chapter 3 Deep Read</h3>
+<p>Spend 2 hours reading CS:APP Chapter 3 (Machine‑Level Representation) up to 3.7. You’ll find it much easier now with your assembly and GDB background.</p>
+<h3 id="ps127-final-retrospective">PS12‑7: Final Retrospective</h3>
+<p>Write a comprehensive <code>week12_final_reflection.md</code> covering:
+1. What are the top 5 skills you gained over these 12 weeks?
+2. Which week was the hardest? Why?
+3. Describe a bug you spent hours on and how you solved it.
+4. How has your mental model of computers changed?
+5. What are you most excited to learn in Phase 2?
+6. Advice for your past self starting Week 1.</p>
+<hr />
+<h2 id="the-end-of-the-beginning">🏁 THE END OF THE BEGINNING</h2>
+<p>You’ve completed an extraordinary journey. Twelve weeks ago, you were wondering how to set up a CLI. Now you write shellcode, reverse engineer binaries, forge packets, and automate exploits. You’ve built a custom shell, a CTF toolkit, and a full capstone competition. You’ve absorbed the curriculum of the world’s best universities and made it your own.</p>
+<p>Phase 2 will take you even deeper — into kernel internals, advanced ROP, hardware attacks, and competitive CTF dominance. But for now, breathe. Take a snapshot of your VM. Save everything. You’ve earned a moment of pride.</p>
+<p>The machine will be waiting when you’re ready. <strong>Go break something—and then fix it.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1263 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Notes - Systems University</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-8-super-intensive-deep-dive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Systems University" class="md-header__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Systems University
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Systems University" class="md-nav__button md-logo" aria-label="Systems University" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Systems University
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../problem-sets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Sets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-heap-the-format-the-pwntools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “The Heap, The Format, The pwntools”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview-8hour-immersive-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏳ Session Overview (8‑Hour Immersive Block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-heap-management-chunk-anatomy-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 PART 1: HEAP MANAGEMENT &amp; CHUNK ANATOMY (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 PART 1: HEAP MANAGEMENT &amp; CHUNK ANATOMY (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-the-heap-vs-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 The Heap vs. Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-how-malloc-works-glides-eye-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 How malloc Works (Glide’s Eye View)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-free-chunks-and-bins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Free Chunks and Bins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-handson-writing-a-naive-allocator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Hands‑On: Writing a Naive Allocator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-heap-overflow-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Heap Overflow Demo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-format-string-vulnerabilities-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔓 PART 2: FORMAT STRING VULNERABILITIES (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔓 PART 2: FORMAT STRING VULNERABILITIES (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-leaking-stack-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Leaking Stack Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-writing-to-memory-with-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Writing to Memory with %n
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-exercise-leak-libc-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Exercise: Leak libc address
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-integer-overflows-other-c-pitfalls-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ PART 3: INTEGER OVERFLOWS &amp; OTHER C PITFALLS (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ PART 3: INTEGER OVERFLOWS &amp; OTHER C PITFALLS (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-integer-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Integer Overflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-signedunsigned-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Signed/Unsigned Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-offbyone-and-loop-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Off‑by‑One and Loop Conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-intro-to-ghidra-solving-a-crackme-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 PART 4: INTRO TO GHIDRA &amp; SOLVING A CRACKME (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 PART 4: INTRO TO GHIDRA &amp; SOLVING A CRACKME (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-ghidra-setup-first-look" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Ghidra Setup &amp; First Look
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-the-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 The Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-solving-a-crackme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Solving a Crackme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-pwndeep-dive-rop-automation-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ PART 5: PWNDEEP DIVE: ROP &amp; AUTOMATION (1.5 HOURS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ PART 5: PWNDEEP DIVE: ROP &amp; AUTOMATION (1.5 HOURS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-rop-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 ROP Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-automating-with-fmtstr_payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Automating with fmtstr_payload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-template-and-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Template and Debugging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-ctf-strategy-live-minichallenge-1-hour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 PART 6: CTF STRATEGY &amp; LIVE MINI‑CHALLENGE (1 HOUR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 PART 6: CTF STRATEGY &amp; LIVE MINI‑CHALLENGE (1 HOUR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-live-minichallenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Live Mini‑Challenge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-8-problem-set-daily-24-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 WEEK 8 PROBLEM SET (Daily 2‑4 Hours)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 WEEK 8 PROBLEM SET (Daily 2‑4 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ps81-csapp-chapter-9-virtual-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑1: CS:APP Chapter 9 (Virtual Memory)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps82-write-your-own-simple-allocator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑2: Write Your Own Simple Allocator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps83-pwnablekr-fd-collision-bof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑3: pwnable.kr – fd, collision, bof
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps84-crackmesone-easy-re-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑4: Crackmes.one – Easy RE Challenges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps85-picoctf-pwn-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑5: picoCTF – Pwn Category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps86-overthewire-narnia-levels-0-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑6: OverTheWire Narnia Levels 0 – 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ps87-reflection-mind-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PS8‑7: Reflection &amp; Mind Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-dive-wrapup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔥 DEEP DIVE WRAP‑UP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>We’ve hijacked <code>rip</code> and popped our first shell. Now we go deeper into the memory corruption underworld: the <strong>heap</strong>, format strings, integer bugs, and automated exploitation. This week is about turning your fragile “works in GDB” overflow into a reliable, weaponized exploit, and about learning to see vulnerabilities in every line of C.</p>
+<h1 id="week-8-super-intensive-deep-dive">🔥 WEEK 8: SUPER INTENSIVE DEEP DIVE</h1>
+<h2 id="the-heap-the-format-the-pwntools"><em>“The Heap, The Format, The pwntools”</em></h2>
+<hr />
+<h2 id="session-overview-8hour-immersive-block">⏳ Session Overview (8‑Hour Immersive Block)</h2>
+<table>
+<thead>
+<tr>
+<th>Time (total)</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00 – 1:30</td>
+<td>Heap Management &amp; Chunk Anatomy</td>
+</tr>
+<tr>
+<td>1:30 – 3:00</td>
+<td>Format String Vulnerabilities</td>
+</tr>
+<tr>
+<td>3:00 – 4:00</td>
+<td>Integer Overflows &amp; Other C Pitfalls</td>
+</tr>
+<tr>
+<td>4:00 – 5:30</td>
+<td>Intro to Ghidra &amp; Solving a Crackme</td>
+</tr>
+<tr>
+<td>5:30 – 7:00</td>
+<td>pwntools Deep Dive: ROP &amp; Automation</td>
+</tr>
+<tr>
+<td>7:00 – 7:30</td>
+<td>CTF Strategy &amp; Live Mini‑Challenge</td>
+</tr>
+<tr>
+<td>7:30 – 8:00</td>
+<td>Problem Set Kickoff &amp; Reflection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-1-heap-management-chunk-anatomy-15-hours">🧠 PART 1: HEAP MANAGEMENT &amp; CHUNK ANATOMY (1.5 HOURS)</h2>
+<p>The stack was your first target. Now meet the <strong>heap</strong>: a more flexible, more complex region of memory where <code>malloc</code>/<code>free</code> play. Understanding the heap is essential because modern exploits (use‑after‑free, heap spraying, House of Force) rely on corrupting its metadata.</p>
+<h3 id="11-the-heap-vs-stack">1.1 The Heap vs. Stack</h3>
+<ul>
+<li><strong>Stack:</strong> LIFO, fast, limited size, automatically managed, data tied to function calls. Overwrite return address.</li>
+<li><strong>Heap:</strong> large pool, allocation survives function returns, manual management, vulnerable to use‑after‑free, double‑free, arbitrary write via corrupted pointers.</li>
+</ul>
+<h3 id="12-how-malloc-works-glides-eye-view">1.2 How <code>malloc</code> Works (Glide’s Eye View)</h3>
+<p>In most Unix systems, <code>malloc</code> is provided by <strong>ptmalloc2</strong> (glibc’s allocator). It manages memory in <strong>chunks</strong>. A chunk is a contiguous block of memory with a header (metadata) preceding the user data pointer.</p>
+<p>When you call <code>malloc(24)</code>, you get a pointer to a region with at least 24 bytes, but just before that pointer (8 or 16 bytes back) lies a control structure:</p>
+<pre><code>chunk -&gt; +-------------------+  (prev_size: size of previous chunk if free)
+         |   size | flags    |  (size of chunk, 3 bits at bottom: PREV_INUSE, IS_MMAPPED, NON_MAIN_ARENA)
+         +-------------------+
+user -&gt; |   user data ...    |
+         +-------------------+
+</code></pre>
+<p>The <code>size</code> field includes the header size and is aligned to 16 bytes (on 64‑bit). If the previous chunk is in use, its <code>prev_size</code> is available for data (that’s a space optimization).</p>
+<p><strong>Key flags:</strong> If <code>PREV_INUSE</code> bit is 0, the previous chunk is free, and we can use its <code>prev_size</code> to find the beginning of the previous chunk to unlink.</p>
+<h3 id="13-free-chunks-and-bins">1.3 Free Chunks and Bins</h3>
+<p>When you <code>free(p)</code>, the allocator doesn’t just mark it free; it coalesces with adjacent free chunks to avoid fragmentation. Free chunks are stored in <strong>bins</strong> (doubly‑linked lists for various sizes). A free chunk has <code>fd</code> (forward pointer) and <code>bk</code> (backward pointer) stored inside the old user data area:</p>
+<pre><code>free chunk:
+  prev_size
+  size
+  fd (pointer to next free chunk in bin)
+  bk (pointer to previous free chunk)
+  (unused space)
+</code></pre>
+<p><strong>Unlink attack (classic):</strong> If you can overwrite the <code>fd</code> and <code>bk</code> of a free chunk, then when the allocator removes it from the bin, it writes <code>fd-&gt;bk = bk</code> and <code>bk-&gt;fd = fd</code>, which can turn into an <strong>arbitrary write</strong>. This was exploited before glibc hardened unlinking with integrity checks (check <code>fd-&gt;bk == p &amp;&amp; bk-&gt;fd == p</code>). Still, understanding the concept is foundational.</p>
+<h3 id="14-handson-writing-a-naive-allocator">1.4 Hands‑On: Writing a Naive Allocator</h3>
+<p>To truly internalize heap mechanics, we’ll write a simple bump‑allocator or explicit free‑list allocator in 20 minutes.</p>
+<p><strong>Simple bump allocator:</strong></p>
+<pre><code class="language-c">#define HEAP_SIZE 1024
+static char heap[HEAP_SIZE];
+static char *free_ptr = heap;
+
+void *simple_malloc(size_t size) {
+    if (free_ptr + size &gt; heap + HEAP_SIZE) return NULL;
+    void *p = free_ptr;
+    free_ptr += size;
+    return p;
+}
+void simple_free(void *p) { /* nope */ } // trivial, but shows limitation
+</code></pre>
+<p><strong>Explicit free‑list:</strong> maintains a linked list of free blocks. Each free block stores size, next pointer. When freeing, coalesce adjacent if possible. Write basic <code>my_malloc</code>/<code>my_free</code> and test it with a sequence of allocations and frees.</p>
+<p><strong>Exercise:</strong> Implement <code>my_free</code> that marks the block free and inserts into a linked list (unsorted). Then simulate a use‑after‑free: allocate a block, free it, but still have a pointer. Allocate again, and you may reuse the same memory; the old pointer still points there. Print its content before and after new allocation—corrupted.</p>
+<p>This is exactly how use‑after‑free works.</p>
+<h3 id="15-heap-overflow-demo">1.5 Heap Overflow Demo</h3>
+<p>Compile a program with two adjacent <code>malloc</code>s:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char *a = (char*)malloc(16);
+    char *b = (char*)malloc(16);
+    strcpy(b, &quot;SECRET&quot;);
+    printf(&quot;Before: b = %s\n&quot;, b);
+
+    // overflow 'a'
+    memset(a, 'A', 40);  // writes into b's chunk
+    printf(&quot;After:  b = %s\n&quot;, b);
+    free(a); free(b);
+    return 0;
+}
+</code></pre>
+<p>Run: <code>b</code> might become <code>AAAAA...</code>. In more sophisticated attacks, you overwrite the chunk header of the next chunk (<code>size</code> field) to trick <code>free</code> into performing an unlink, leading to arbitrary write.</p>
+<p><strong>Why this matters:</strong> Many CTF heap challenges involve corrupting the <code>size</code> field to overlap chunks, then reading/writing sensitive data.</p>
+<hr />
+<h2 id="part-2-format-string-vulnerabilities-15-hours">🔓 PART 2: FORMAT STRING VULNERABILITIES (1.5 HOURS)</h2>
+<p>The format string bug is one of the most powerful primitives: it can <strong>read arbitrary memory</strong> and <strong>write arbitrary values</strong> to arbitrary addresses, all with a single <code>printf(user_input)</code>.</p>
+<h3 id="21-how-it-works">2.1 How It Works</h3>
+<p>When <code>printf</code> is called with a format string like <code>"%d %s"</code>, it expects arguments on the stack corresponding to each format specifier. If the user supplies the format string (e.g., <code>printf(input)</code> instead of <code>printf("%s", input)</code>), and the input contains <code>%x</code> or <code>%n</code>, they can dump stack values or write to addresses.</p>
+<p>Let’s craft a vulnerable program:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    char buf[100];
+    fgets(buf, sizeof(buf), stdin);
+    printf(buf);   // BUG!
+    return 0;
+}
+</code></pre>
+<h3 id="22-leaking-stack-data">2.2 Leaking Stack Data</h3>
+<p>Input: <code>"%p %p %p %p"</code> will print hex values from the stack. This can leak libc addresses, canaries, or return addresses, bypassing ASLR.</p>
+<p><strong>In‑session:</strong> Run the program and input <code>"%p"</code> repeatedly. Count how many <code>%p</code>s it takes to start seeing the contents of <code>buf</code> itself. Then you can read arbitrary strings by pointing to an address placed on the stack.</p>
+<p>Exercise: Put an address (e.g., the GOT entry for <code>exit</code>) into the beginning of your buffer, then use <code>%s</code> at an appropriate offset to print that address’s content as a string. This is a <strong>format string read</strong>.</p>
+<h3 id="23-writing-to-memory-with-n">2.3 Writing to Memory with <code>%n</code></h3>
+<p><code>%n</code> writes the number of characters printed so far to an integer pointer from the stack. If we can control that pointer, we can write arbitrary values.</p>
+<p><strong>Experiment:</strong></p>
+<pre><code class="language-python">payload = p32(target_addr) + b&quot;%x%x%x%n&quot;  # simple overwrite
+</code></pre>
+<p>We want to write a specific value (e.g., the address of <code>win</code> function to GOT entry). Fine‑tune the count with precision specifiers: <code>"%&lt;num&gt;c%&lt;offset&gt;$n"</code>.</p>
+<h3 id="24-exercise-leak-libc-address">2.4 Exercise: Leak libc address</h3>
+<p>Use format string to leak a libc address from the GOT (e.g., <code>printf</code>’s GOT entry contains actual printf address after resolution). Then calculate <code>system</code> and overwrite a function pointer with it. This is a classic attack.</p>
+<p>We’ll do a guided example with a toy binary.</p>
+<p><strong>Step‑by‑step:</strong>
+1. Compile with <code>-no-pie -fno-stack-protector -m32</code> (or 64-bit).
+2. Find address of <code>printf</code>@GOT via <code>objdump -R ./fmt</code>.
+3. Determine offset to our input on the stack (using <code>%p</code>s).
+4. Construct payload that writes the address of <code>win</code> to the GOT of <code>exit</code> (or <code>puts</code>). We’ll use pwntools’ <code>fmtstr_payload</code> later.</p>
+<p><strong>Time‑saving:</strong> pwntools provides <code>fmtstr_payload(offset, {addr: value})</code> that calculates all the %c and %n for you. We’ll use it later in pwntools section.</p>
+<hr />
+<h2 id="part-3-integer-overflows-other-c-pitfalls-1-hour">⚠️ PART 3: INTEGER OVERFLOWS &amp; OTHER C PITFALLS (1 HOUR)</h2>
+<p>Integer vulnerabilities are often overlooked but can lead to buffer overflows when a naive size check is bypassed.</p>
+<h3 id="31-integer-overflow">3.1 Integer Overflow</h3>
+<pre><code class="language-c">int n;
+scanf(&quot;%d&quot;, &amp;n);
+char *buf = (char*)malloc(n + 1);  // if n is 0x7FFFFFFF, n+1 wraps to negative/small positive
+</code></pre>
+<p>In unsigned arithmetic, <code>UINT_MAX + 1 == 0</code>. If <code>n</code> is 0xFFFFFFFF (uint32_t), <code>n + 1</code> overflows to 0, <code>malloc(0)</code> returns a minimal chunk (or NULL), and then a <code>read</code> with size <code>n</code> overflows.</p>
+<p><strong>Demo:</strong></p>
+<pre><code class="language-c">unsigned short len = 65535;
+if (len &lt; 256) {
+    // assume safe
+    char buf[256];
+    read(fd, buf, len);  // len is truncated to 65535 &amp; 0xFFFF? Actually read uses size_t, but len is 16-bit, passed as int -&gt; large value
+}
+</code></pre>
+<p>Compile with <code>-Wall</code> to see warnings.</p>
+<h3 id="32-signedunsigned-mismatch">3.2 Signed/Unsigned Mismatch</h3>
+<pre><code class="language-c">int len = read(fd, &amp;n, sizeof(int));  // len is -1 on error, but if stored in unsigned, becomes huge
+if (len &lt; 256) {
+    buf[len] = 'a';  // off-by-one or worse
+}
+</code></pre>
+<h3 id="33-offbyone-and-loop-conditions">3.3 Off‑by‑One and Loop Conditions</h3>
+<p>Classic <code>&lt;=</code> vs <code>&lt;</code> in loops, leading to a single byte zero overflow (null‑byte poisoning). In heap, a null byte overwriting the <code>PREV_INUSE</code> bit of the next chunk can lead to chunk confusion (see “House of Einherjar”).</p>
+<p><strong>Exercise:</strong> Write a function that copies a string into a buffer with <code>strncpy(dest, src, n)</code> but forgets to null‑terminate when src length equals n, leading to info leak. (Already discussed, but now actively think exploitation.)</p>
+<hr />
+<h2 id="part-4-intro-to-ghidra-solving-a-crackme-15-hours">🔍 PART 4: INTRO TO GHIDRA &amp; SOLVING A CRACKME (1.5 HOURS)</h2>
+<p>Reverse engineering is your scalpel. Ghidra (NSA’s open‑source reverse engineering framework) turns binaries back into readable C, drastically speeding up analysis.</p>
+<h3 id="41-ghidra-setup-first-look">4.1 Ghidra Setup &amp; First Look</h3>
+<ul>
+<li>Download and install Ghidra from <a href="https://ghidra-sre.org/">ghidra-sre.org</a>.</li>
+<li>Create a project, import a simple binary (e.g., the vulnerable program from Week 7).</li>
+<li>Double‑click to analyze with default options.</li>
+</ul>
+<h3 id="42-the-interface">4.2 The Interface</h3>
+<ul>
+<li><strong>Program Tree:</strong> list of functions.</li>
+<li><strong>Listing:</strong> disassembly and decompiled C.</li>
+<li><strong>Decompiler window:</strong> Shows C code generated from assembly. It’s not perfect, but incredibly useful.</li>
+<li><strong>Symbol Tree:</strong> exports, imports, labels.</li>
+</ul>
+<p><strong>Walkthrough:</strong> Open <code>main</code>. Ghidra will show something like:</p>
+<pre><code class="language-c">undefined8 main(int argc, char **argv) {
+    if (argc &lt; 2) {
+        printf(&quot;Usage: ...&quot;);
+        return 1;
+    }
+    vulnerable(argv[1]);
+    return 0;
+}
+</code></pre>
+<p>Click on <code>vulnerable</code> to see its decompilation: <code>strcpy((char *)&amp;local_18, param_1);</code> where <code>local_18</code> is a 24‑byte buffer. That’s your overflow.</p>
+<h3 id="43-solving-a-crackme">4.3 Solving a Crackme</h3>
+<p>I’ll provide a simple crackme (we can create one). Write a C program that asks for a password, compares the input to a hardcoded string using a simple transformation (e.g., XOR with 0xAA). Compile without symbols: <code>gcc -s -o crackme crackme.c</code>. Use Ghidra to understand the logic and extract the password.</p>
+<p><strong>Live demo:</strong></p>
+<pre><code class="language-c">// crackme.c
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char pass[32];
+    printf(&quot;Password: &quot;);
+    fgets(pass, sizeof(pass), stdin);
+    pass[strcspn(pass, &quot;\n&quot;)] = 0;
+    char secret[32];
+    for (int i = 0; i &lt; strlen(pass); i++) {
+        secret[i] = pass[i] ^ 0xAA;
+    }
+    secret[strlen(pass)] = '\0';
+    if (strcmp(secret, &quot;\xeb\xf2\xf7\xe6\xd8&quot;) == 0) { // XORed &quot;hello&quot;
+        printf(&quot;Correct!\n&quot;);
+    } else {
+        printf(&quot;Wrong.\n&quot;);
+    }
+}
+</code></pre>
+<p>In Ghidra, find the <code>strcmp</code> call; one argument is a constant string (the XORed value). Then figure out the XOR, reverse it, and get the password. This is a typical easy RE challenge.</p>
+<p><strong>Why Ghidra?</strong> It reveals hidden constants, control flow, and even handles function IDA-like FLIRT signatures. In CTFs, you’ll use it to analyze malware, find backdoors, and understand custom protocols.</p>
+<hr />
+<h2 id="part-5-pwndeep-dive-rop-automation-15-hours">🛠️ PART 5: PWNDEEP DIVE: ROP &amp; AUTOMATION (1.5 HOURS)</h2>
+<p><code>pwntools</code> is your exploit Swiss Army knife. We’ve used basic send/recv. Now we master <strong>ROP</strong> and <code>fmtstr</code> helpers.</p>
+<h3 id="51-rop-basics">5.1 ROP Basics</h3>
+<p>When NX (non‑executable stack) is enabled, you can’t just execute shellcode on the stack. Instead, you chain together existing code snippets (“gadgets”) that end with <code>ret</code> to achieve arbitrary execution (Return‑Oriented Programming).</p>
+<p>A typical ROP chain for x86‑64 calls <code>execve("/bin/sh", 0, 0)</code> by setting <code>rax=59</code> (syscall number), <code>rdi=pointer to "/bin/sh"</code>, etc. This is done by popping values into registers from the stack.</p>
+<p><strong>pwntools makes it easy:</strong></p>
+<pre><code class="language-python">from pwn import *
+elf = ELF('./vuln')
+rop = ROP(elf)
+# Find gadgets
+pop_rdi = rop.find_gadget(['pop rdi', 'ret'])[0]
+pop_rsi = rop.find_gadget(['pop rsi', 'ret'])[0]  # maybe rsi, rdx
+# etc.
+# Or use rop.rdi.address, etc. But often you can just call syscall if you have control of rax.
+# However, easier is to leak libc and call system(&quot;/bin/sh&quot;)
+</code></pre>
+<p><strong>Exercise:</strong> Given a simple overflow with NX enabled, use <code>rop</code> to call <code>printf</code> to leak a libc address, then call <code>system</code>. This is ret2libc. We’ll do a guided example with a provided binary.</p>
+<p><strong>In‑session task:</strong> We’ll use the same vulnerable program but compiled with <code>-no-pie -fno-stack-protector -z noexecstack</code>. Without shellcode, we need to call <code>system("/bin/sh")</code>. Find <code>system</code> in libc (we’ll assume libc given). Use pwntools to build a ROP chain: <code>pop rdi; ret</code> gadget, string address, <code>system</code>. Then exploit. This might be a bit advanced for one hour, so we’ll provide step‑by‑step instructions.</p>
+<h3 id="52-automating-with-fmtstr_payload">5.2 Automating with <code>fmtstr_payload</code></h3>
+<pre><code class="language-python">payload = fmtstr_payload(offset, {write_addr: value})
+</code></pre>
+<p>This computes the minimal format string to write <code>value</code> to <code>write_addr</code> given the offset where the format string input appears on the stack. We’ll use it on the format string binary from Part 2 to overwrite a GOT entry.</p>
+<p><strong>Hands‑on:</strong> Complete the format string exploit you started earlier using pwntools. Get a shell.</p>
+<h3 id="53-template-and-debugging">5.3 Template and Debugging</h3>
+<p>Integrate <code>context.log_level = 'debug'</code> to see sent/received bytes. Use <code>gdb.attach()</code> within pwntools to attach GDB to the process at a certain point for debugging.</p>
+<p><strong>Create a robust exploit template for future use.</strong></p>
+<hr />
+<h2 id="part-6-ctf-strategy-live-minichallenge-1-hour">🎯 PART 6: CTF STRATEGY &amp; LIVE MINI‑CHALLENGE (1 HOUR)</h2>
+<h3 id="61-strategy">6.1 Strategy</h3>
+<ul>
+<li><strong>Recon:</strong> <code>checksec</code> (from pwntools) tells you protections (PIE, RELRO, canary, NX). Use <code>file</code>, <code>strings</code>.</li>
+<li><strong>Vulnerability identification:</strong> look for <code>gets</code>, <code>sprintf</code>, <code>strcpy</code>, format string.</li>
+<li><strong>Gather offsets:</strong> cyclic pattern.</li>
+<li><strong>Build exploit:</strong> start with crash, get control of <code>rip</code>, then decide payload (shellcode, ROP, format string write).</li>
+<li><strong>Remote adjustments:</strong> may need to brute force ASLR base if no leak, use libc database.</li>
+</ul>
+<h3 id="62-live-minichallenge">6.2 Live Mini‑Challenge</h3>
+<p>Provide a simple binary (maybe from pwnable.kr "bof") and solve it together. For instance, the "bof" challenge from pwnable.kr: it’s a stack overflow where you need to overwrite a variable to pass a check. We’ll walk through downloading, analyzing, exploiting with pwntools.</p>
+<p><strong>Task:</strong> Fetch <code>bof</code> from pwnable.kr (if they have access), or use a similar local binary. Exploit it in 20 minutes, covering all steps.</p>
+<hr />
+<h2 id="week-8-problem-set-daily-24-hours">📝 WEEK 8 PROBLEM SET (Daily 2‑4 Hours)</h2>
+<h3 id="ps81-csapp-chapter-9-virtual-memory">PS8‑1: CS:APP Chapter 9 (Virtual Memory)</h3>
+<p>Read Sections 9.9 – 9.11 on Dynamic Memory Allocation. Understand implicit free lists, coalescing, and the basics of a simple allocator. This will deepen your heap knowledge.</p>
+<h3 id="ps82-write-your-own-simple-allocator">PS8‑2: Write Your Own Simple Allocator</h3>
+<p>Implement a <strong>first‑fit free‑list allocator</strong> with coalescing in C. Use sized headers and a global free list. Write test programs that allocate, free, and check for block reuse. Then, simulate a heap overflow that corrupts the <code>size</code> of a neighboring chunk and show how a subsequent <code>free</code> could be tricked into writing to an arbitrary location (basic unlink). Document the steps. This is a mini‑research project.</p>
+<h3 id="ps83-pwnablekr-fd-collision-bof">PS8‑3: pwnable.kr – fd, collision, bof</h3>
+<p>Complete these three challenges on <a href="http://pwnable.kr">pwnable.kr</a>. Use <code>ssh</code> or the provided download. For each, write a full exploit script in Python with pwntools, and a detailed write‑up explaining the vulnerability and how you exploited it.</p>
+<h3 id="ps84-crackmesone-easy-re-challenges">PS8‑4: Crackmes.one – Easy RE Challenges</h3>
+<p>Go to <a href="https://crackmes.one/">crackmes.one</a> and solve 2 easy crackmes. Use Ghidra to reverse engineer them. Write short solutions.</p>
+<h3 id="ps85-picoctf-pwn-category">PS8‑5: picoCTF – Pwn Category</h3>
+<p>Solve as many easy/medium pwn challenges as possible from picoGym (e.g., “buffer overflow 0”, “buffer overflow 1”, “format string 0”, “format string 1”). If you already did some, pick new ones. Aim for at least 5.</p>
+<h3 id="ps86-overthewire-narnia-levels-0-2">PS8‑6: OverTheWire Narnia Levels 0 – 2</h3>
+<p>Continue your wargame journey. Narnia is classic buffer overflows with various twists. Level 0 is a simple environment variable overflow. Level 1 is a classic shellcode injection. Level 2 introduces format strings. Use your new pwntools skills.</p>
+<h3 id="ps87-reflection-mind-map">PS8‑7: Reflection &amp; Mind Map</h3>
+<p>Create a mind map of vulnerability classes you’ve learned so far: stack overflow, format string, integer overflow, heap overflow, use‑after‑free. For each, note the cause, the impact (control flow, info leak, write), and a key defense.</p>
+<hr />
+<h2 id="deep-dive-wrapup">🔥 DEEP DIVE WRAP‑UP</h2>
+<p>You’ve graduated from “I can write C” to “I can break C.” You now wield the heap, format strings, and reverse engineering like a professional. pwntools is your mechanized infantry. With the bomb lab behind you and the Narnia ahead, you’re building a formidable exploit arsenal.</p>
+<p>This week’s projects will solidify these concepts under your fingers. The heap allocator you write will teach you more about corruption than any lecture. The crackmes will train your Ghidra‑fu. And the pwnable.kr trio will be your first real-world CTF victories.</p>
+<p><strong>Fire up Ghidra. Crack the crackme. Then <code>nc pwnable.kr 9000</code> and break the BOF. You’re not just a programmer anymore—you’re a bender of execution.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
