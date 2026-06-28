@@ -1,0 +1,13 @@
+// Printing "meow" 3 times using a for loop.
+
+#include <stdio.h>
+
+int main(void)
+{
+        for (int i = 0; i < 3; i++)
+        {
+                printf("meow\n");
+        }
+
+        return 0;
+}

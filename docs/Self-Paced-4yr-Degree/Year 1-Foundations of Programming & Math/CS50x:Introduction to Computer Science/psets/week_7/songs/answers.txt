@@ -1,0 +1,18 @@
+1. Characterizing the listener's audio aura
+Based on the average energy, valence, and danceability of the listener's top 100 songs,the listener's audio can be characterized as a combination of the various musical attributes:
+    - If The averages are relatively high, the listener's aura might be described as upbeat, energetic, and dance-friendly, suggesting a preference for lively and positve music.
+    - If the averages are lower, the aura may instead reflect a calmer, more introspective, or emotionaly subdued mood.
+    - Overall, this method gives a rough, numerical summary of the general mood conveyed by the listener's most played songs.
+
+2. Why this aura may not be very representative
+This approach may not be representative of the listener for several reasons:
+    - First, using simple averages ignores variation within the music, a listener might enjoy both very energetic and very calm songs, but averaging them together hides these extremes.
+    - Second, the top 100 songs can disproportionately affect the averages.
+    - Third, musical taste is context-dependent, a listener might play energetic songs while exercising and calmer songs while studying, which a single "audio aura" cannot capture.
+    - Finally; energy, valence, and danceability alone might not fully reflect emotional nuance or lyrical content.
+
+3. Better ways to calculate an audio aura
+    - A more representative audio aura could be calculated by clustering songs into different mood categories rather than averaging all values together.
+    - Another improvement would be weighting songs less by number of plays and more by diversity, ensuring that repeated listens do not dominate the result.
+    - Incorporating additional audio features, such as tempo or loudness, or even lyrical sentiment analysis, could also produce a richer characterization.
+    - Finally; calculating multiple auras for different listening contexts or time periods would better reflect the listener's full musical preferences.
