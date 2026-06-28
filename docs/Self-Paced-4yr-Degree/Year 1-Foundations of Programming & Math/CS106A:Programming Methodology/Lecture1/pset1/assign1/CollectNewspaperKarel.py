@@ -21,29 +21,47 @@ def main():
         - pick_beeper()
     Goal: Use the basic motions to move Karel to pick beeper by either the basic motions or creating one for yourself
     """
+    # 1. Move to newspaper
+    move_to_newspaper()
 
-    # Turn south and move two steps down
-    turn_position(3)
-    steps_to_move(1)
-
-    # Turn right and towards beeper
-    turn_position(1)
-    steps_to_move(3)
-
-    # Collect beeper
+    # 2. Pick newspaper
     pick_beeper()
 
+    # 3. Return to starting point
+    return_to_start()
 
-
-def steps_to_move(n):
-    for i in range(n):
+# Steps
+# 1. Move to the newspaper
+def move_to_newspaper():
+    # Move 2 steps forward
+    for i in range(2):
         move()
 
-def turn_position(n):
-    for i in range(n):
+    # Turn south
+    for i in range(3):
         turn_left()
 
+    # Move to newpaper
+    move()
+    turn_left()
+    move()
 
+# 3. Return to starting point
+def return_to_start():
+    # Turn backwards
+    for i in range(2):
+        turn_left()
+
+    # Move three steps and turn up
+    for i in range(3):
+        move()
+    for i in range(3):
+        turn_left()
+
+    # Move to start position
+    move()
+    for i in range(3):
+        turn_left()
 # There is no need to edit code beyond this point
 
 if __name__ == "__main__":
