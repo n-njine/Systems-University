@@ -73,11 +73,11 @@
         + Pseudocode for bubble sort is:
                 ```C
                 Repeat n-1 times
-                        For i from 0 to n-2
-                                If numbers[i] and numbers[i+1] out of order
-                                        swap them
-                                If no swaps
-                                        Quit
+                    For i from 0 to n-2
+                    If numbers[i] and numbers[i+1] out of order
+                         swap them
+                    If no swaps
+                    Quit
                 ```
         + Analysis:
                 (n - 1) x (n - 1)
