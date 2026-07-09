@@ -12,13 +12,65 @@ sample worlds supplied in the starter folder.
 
 def main():
     """
-    You should write your code to make Karel do its task in
-    this function. Make sure to delete the 'pass' line before
-    starting to write your own code. You should also delete this
-    comment and replace it with a better, more descriptive one.
+    Creating a Checkerboard in any given m by n grid
     """
-    pass
+    # Fill Beeper in one row
+    beeper_row_one()
+    move()
+    turn_left()
+    move()
+    turn_right()
+    beeper_row_one()
+    move()
 
+def turn_right():
+    """
+    Makes Karel face right
+    """
+    for _ in range(3):
+        turn_left()
+
+def beeper_row_one():
+    """
+    Places a beeper on the first row of grid.
+    """
+    turn_left()
+    place_beeper()
+    turn_around()
+    move_to_wall()
+    turn_left()
+
+def place_beeper():
+    """
+    Intermittently places beepers on Checkerboard
+    """
+    put_beeper()
+    while front_is_clear():
+        place_beeper_stepwise()
+        
+
+def place_beeper_stepwise():
+    """
+    Places beeper after a step
+    """
+    move()
+    if front_is_clear():
+        move()
+        put_beeper()
+
+def turn_around():
+    """
+    Turns Karel 180 degrees
+    """
+    for _ in range(2):
+        turn_left()
+
+def move_to_wall():
+    """
+    Moves Karel back to where he came form
+    """
+    while front_is_clear():
+        move()
 
 # There is no need to edit code beyond this point
 
