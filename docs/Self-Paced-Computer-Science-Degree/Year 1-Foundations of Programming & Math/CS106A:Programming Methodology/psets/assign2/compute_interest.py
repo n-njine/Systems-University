@@ -24,7 +24,6 @@ def main():
     end_year = 0
     end_month = 0
     interest_rate = 0
-    amount = 0
 
     # Get input from the user
     initial_balance = float(input("Initial balance: "))
